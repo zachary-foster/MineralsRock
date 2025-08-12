@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+  <ThingDef ParentName="MAU_StoneBlocksBase">
+    <defName>MAU_BlocksBasalt</defName>
+    <label>basalt blocks</label>
+    <description>Blocks of solid basalt. Basalt is a tough igenous rock but not very pretty.</description>
+    <graphicData>
+      <color>(50,50,50)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>1.0</MarketValue>
+      <Mass>1.2</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(50,50,50)</color>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <stuffAdjective>basalt</stuffAdjective>
+      <statFactors>
+        <Beauty>0.8</Beauty>  
+        <MarketValue>0.8</MarketValue>
+        <MaxHitPoints>1.6</MaxHitPoints>
+        <WorkToBuild>5.5</WorkToBuild>
+        <WorkToMake>4.5</WorkToMake>
+        <Mass>1.25</Mass>
+      </statFactors>
+    </stuffProps>
+	</ThingDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+  <ThingDef ParentName="MF_ChunkRockBase">
+    <defName>MR_ChunkBasalt</defName>
+    <label>basalt chunk</label>
+    <graphicData>
+      <color>(50,50,50)</color>
+      <graphicClass>Graphic_Random</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>10</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <MAU_BlocksBasalt>20</MAU_BlocksBasalt>  
+    </butcherProducts>
+  </ThingDef>
+  
+</Defs>

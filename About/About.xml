@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>MineralsRock: Overhaul of rocks, mountains, and mining</name>
+  <author>Zachary S. L. Foster</author>
+	<packageId>zacharyfoster.mineralsrock</packageId>
+  <description>Complete overhaul of mineral generation, mining mechanics, and stone visuals.</description>
+  <url>https://github.com/zachary-foster/MineralsRock</url>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+	<loadAfter>
+		<li>sarg.alphabiomes</li>
+	</loadAfter>
+</ModMetaData>

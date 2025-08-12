@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+	<boulderAbundanceSetting>Boulder Abundance</boulderAbundanceSetting>
+	<rocksAbundanceSetting>Small rock Abundance</rocksAbundanceSetting>
+	<replaceWallsSetting>Replace Rock Walls</replaceWallsSetting>
+	<replaceChunksSetting>Replace Initial Rock Chunks</replaceChunksSetting>
+	<removeStartingChunksSetting>Remove Initial Rock Chunks</removeStartingChunksSetting>
+	<underwaterMineralsSetting>Hide underwater rocks</underwaterMineralsSetting>
+	<snowyRockSetting>Show snow on rocks</snowyRockSetting>
+	<abundanceSettingsHeader>Mineral Abundance Settings</abundanceSettingsHeader>
+	<gameplaySettingsHeader>Gameplay Settings</gameplaySettingsHeader>
+	<graphicalSettingsHeader>Graphical Settings</graphicalSettingsHeader>
+	<visualSpreadFactor>Visual spread</visualSpreadFactor>
+	<resourceDropFreqSetting>Resource Drop Frequency</resourceDropFreqSetting>
+	<resourceDropAmountSetting>Resource Drop Amount</resourceDropAmountSetting>
+	<miningEffortSetting>Mining Speed</miningEffortSetting>
+	<terrainCountRangeSetting>Number of rock types in each map</terrainCountRangeSetting>
+</LanguageData>

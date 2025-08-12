@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <TipSetDef>
+    <defName>MineralsRockTips</defName>
+    <tips>
+      <li>Granite is the hardest common stone and has moderate beauty, but is also the hardest to mine.</li>
+      <li>Slate sometimes yields natraully rectangular blocks that can be used for building without stonecutting.</li>
+      <li>Marble is a beautiful and relatively hard stone, but does not yield many chunks.</li>
+      <li>Sandstone is a beautiful and somewhat soft stone that yields lots of chunks.</li>
+      <li>Limestone is a somewhat hard stone that yields lots of stone chunks.</li>
+      <li>Basalt is a hard stone, but is not very attrative. Basalt terrain is rocky and difficult to traverse and build on.</li>
+      <li>Stone types influence landscape attributes, such as easy of building and travesal and amount of cover in a gunfight.</li>
+    </tips>
+  </TipSetDef>
+  
+</Defs>
