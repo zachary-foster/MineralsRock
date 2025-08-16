@@ -14,8 +14,14 @@
       <displayName>Harmony</displayName>
       <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
     </li>
+    <li>
+       <packageId>zacharyfoster.mineralsframework</packageId>
+       <displayName>MineralsFramework</displayName>
+       <downloadUrl>https://github.com/zachary-foster/MineralsFramework</downloadUrl>
+    </li>
   </modDependencies>
 	<loadAfter>
 		<li>sarg.alphabiomes</li>
+		<li>zacharyfoster.mineralsframework</li>
 	</loadAfter>
 </ModMetaData>
