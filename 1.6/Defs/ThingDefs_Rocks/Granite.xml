@@ -99,7 +99,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidGranite" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef Name="SolidGranite" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidGranite</defName>
     <label>Solid Granite</label>
     <description>A solid wall of granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>

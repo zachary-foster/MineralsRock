@@ -87,7 +87,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidMarble" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef Name="SolidMarble" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidMarble</defName>
     <label>Solid Marble</label>
     <description>A soild wall of marble, a metamorphic rock of metled and recrystallized limestone. Its consistency and softness make it an attractive building material.</description>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef ParentName="MAU_StoneBlocksBase">
-    <defName>MAU_BlocksBasalt</defName>
+  <ThingDef ParentName="MF_StoneBlocksBase">
+    <defName>MR_BlocksBasalt</defName>
     <label>basalt blocks</label>
     <description>Blocks of solid basalt. Basalt is a tough igenous rock but not very pretty.</description>
     <graphicData>

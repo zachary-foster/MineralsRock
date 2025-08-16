@@ -103,7 +103,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidSlate" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef Name="SolidSlate" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidSlate</defName>
     <label>Solid Slate</label>
     <description>A solid wall of slate, a fine-grained metamorphic rock formed from compacted volcanic ash or silt. Some of these naturally rectangular stones can be used for building without stonecutting.</description>

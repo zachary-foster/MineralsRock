@@ -13,7 +13,7 @@
     </statBases>
     <soundDrop>ChunkRock_Drop</soundDrop>
     <butcherProducts>
-      <MAU_BlocksBasalt>20</MAU_BlocksBasalt>  
+      <MR_BlocksBasalt>20</MR_BlocksBasalt>  
     </butcherProducts>
   </ThingDef>
   

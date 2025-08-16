@@ -41,6 +41,10 @@
       <HintPath>lib\Assembly-CSharp.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="MineralsFramework">
+      <HintPath>..\..\..\..\MineralsFramework\1.6\Assemblies\MineralsFramework.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -56,17 +60,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BigMineral.cs" />
-    <Compile Include="DynamicMineral.cs" />
     <Compile Include="harmonyPatching.cs" />
     <Compile Include="initialization.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RiverRock.cs" />
-    <Compile Include="SaltCrystal.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="SolidRock.cs" />
-    <Compile Include="StaticMineral.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

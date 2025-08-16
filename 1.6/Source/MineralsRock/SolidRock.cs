@@ -5,6 +5,7 @@ using System.Text;
 using UnityEngine;   // Always needed
 using RimWorld;      // RimWorld specific functions 
 using Verse;         // RimWorld universal objects 
+using MineralsFramework;
 
 namespace MineralsRock
 {

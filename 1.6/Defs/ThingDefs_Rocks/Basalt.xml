@@ -109,7 +109,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidBasalt" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef Name="SolidBasalt" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidBasalt</defName>
     <label>Solid Basalt</label>
     <description>A solid wall of basalt, composed of deep layers of ancient lava flows.  It makes a good building material but is difficult to quarry.</description>
@@ -687,7 +687,7 @@
       </thingDefs>
     </fixedIngredientFilter>
     <products>
-      <MAU_BlocksBasalt>20</MAU_BlocksBasalt>
+      <MR_BlocksBasalt>20</MR_BlocksBasalt>
     </products>
   </RecipeDef>
   

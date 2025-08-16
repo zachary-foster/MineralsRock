@@ -34,7 +34,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidOreSteel</defName>
     <label>Solid Iron Ore Deposits</label>
     <graphicData>
@@ -147,7 +147,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidOreSilver</defName>
     <label>Solid Silver Ore Deposits</label>
     <graphicData>
@@ -259,7 +259,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidOreGold</defName>
     <label>Solid Gold Ore Deposits</label>
     <graphicData>
@@ -370,7 +370,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidOreJade</defName>
     <label>Solid Jade Deposits</label>
     <graphicData>
@@ -515,7 +515,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidOreTech</defName>
     <label>Solid compacted machinery</label>
     <graphicData>
@@ -597,7 +597,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>HewnOreTech</defName>
     <label>Hewn compacted machinery</label>
     <graphicData>
@@ -716,7 +716,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="SolidOre" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidOreUranium</defName>
     <label>Solid Uranium Deposits</label>
     <graphicData>

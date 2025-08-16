@@ -93,7 +93,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="SolidLimestone" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef Name="SolidLimestone" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidLimestone</defName>
     <label>Solid Limestone</label>
     <description>A wall of solid limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material and is easily quarried.</description>

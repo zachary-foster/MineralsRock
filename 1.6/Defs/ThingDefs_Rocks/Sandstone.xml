@@ -108,7 +108,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidSandstone" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock">
+  <ThingDef Name="SolidSandstone" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidSandstone</defName>
     <label>Solid Sandstone</label>
     <description>A solid wall of sandstone, a sedimentary rock made of cemented silica and feldspar grains.</description>

@@ -7,7 +7,7 @@
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
+      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
@@ -39,12 +39,12 @@
   </ThingDef>
 
 
-  <ThingDef Name="SolidOre" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_SolidRock" Abstract="True">
+  <ThingDef Name="SolidOre" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
     <defName>SolidOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
+      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
@@ -81,7 +81,7 @@
     <uiIconPath>Things/Ore/HewnOre/HewnOreA</uiIconPath>
     <building>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
+      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>

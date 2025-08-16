@@ -5,7 +5,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="ImpassableRockBase" ParentName="StaticMineralBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+  <ThingDef Name="ImpassableRockBase" ParentName="MF_StaticMineralBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
     <drawerType>MapMeshOnly</drawerType>
     <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
     <filthLeaving>Filth_RubbleRock</filthLeaving>
@@ -30,7 +30,7 @@
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <isNaturalRock>true</isNaturalRock>
       <isResourceRock>true</isResourceRock>
-      <mineableThing>RoughGem</mineableThing>
+      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
@@ -99,7 +99,7 @@
   </ThingDef>
   
   
-  <ThingDef Name="SolidRockBase" ParentName="ImpassableRockBase" Class="MineralsFramework.ThingDef_SolidRock" Abstract="True">
+  <ThingDef Name="SolidRockBase" ParentName="ImpassableRockBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
     <thingClass>MineralsRock.SolidRock</thingClass>
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
@@ -196,7 +196,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="PassableRockBase" ParentName="StaticMineralBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+  <ThingDef Name="PassableRockBase" ParentName="MF_StaticMineralBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
     <graphicData>
       <shaderType>CutoutComplex</shaderType>
       <graphicClass>Graphic_Random</graphicClass>

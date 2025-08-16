@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="RiverRock" ParentName="DynamicMineralBase" Class="MineralsFramework.ThingDef_RiverRock">
+  <ThingDef Name="RiverRock" ParentName="MF_DynamicMineralBase" Class="MineralsRock.ThingDef_RiverRock">
     <thingClass>MineralsRock.RiverRock</thingClass>
     <defName>RiverRock</defName>
     <label>Rounded river rocks</label>
@@ -186,7 +186,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="BeachRock" ParentName="DynamicMineralBase" Class="MineralsFramework.ThingDef_RiverRock">
+  <ThingDef Name="BeachRock" ParentName="MF_DynamicMineralBase" Class="MineralsRock.ThingDef_RiverRock">
     <thingClass>MineralsRock.RiverRock</thingClass>
     <defName>BeachRock</defName>
     <label>Rounded beach rocks</label>
