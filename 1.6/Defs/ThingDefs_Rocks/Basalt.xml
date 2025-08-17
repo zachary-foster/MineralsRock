@@ -3,7 +3,7 @@
   
   <ThingDef Name="MR_BasaltBase" ParentName="MR_UglyRockBase">
     <defName>MR_BasaltBase</defName>
-    <label>Basalt Deposit</label>
+    <label>Basalt</label>
     <description>Basalt is a very hard igneous rock.</description>
     <graphicData>
       <color>(50,50,50)</color>

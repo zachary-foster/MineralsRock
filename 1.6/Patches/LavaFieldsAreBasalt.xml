@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+        <xpath>/Defs/BiomeDef[defName="LavaField"]</xpath>
+      <value>
+        <forceRockTypes>
+            <li>MR_BasaltBase</li>
+        </forceRockTypes>
+        </value>
+    </match>
+  </Operation>
+
+</Patch>
