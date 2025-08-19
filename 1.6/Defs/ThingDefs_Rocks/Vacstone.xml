@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+  
+  <ThingDef Name="MR_VacstoneBase" ParentName="MR_UglyRockBase">
+    <defName>MR_VacstoneBase</defName>
+    <label>Vacstone</label>
+    <description>A dense volcanic rock formed under extreme vacuum conditions, exhibiting unusual crystalline structures from rapid depressurization cooling. Its low porosity makes it exceptionally durable.</description>
+    <graphicData>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1800</MaxHitPoints>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.35</mineableDropChance>
+    </building>
+  </ThingDef>
+
+  <ThingDef Name="WeatheredVacstone" ParentName="WeatheredRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>WeatheredVacstone</defName>
+    <label>Weathered Vacstone</label>
+    <description>Pitted vacstone formations showing characteristic surface vesiculation patterns from ancient volcanic outgassing events. Despite erosion, the underlying matrix remains remarkably intact.</description>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <statBases>
+      <MaxHitPoints>1650</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.35</mineableDropChance>
+    </building>
+    <spawnRadius>1.5</spawnRadius>
+    <perMapProbability>1</perMapProbability>
+    <minClusterProbability>0.015</minClusterProbability>
+    <maxClusterProbability>0.025</maxClusterProbability>
+    <allowedTerrains>
+      <li>MR_VacstoneBase_Rough</li>
+		</allowedTerrains>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.035</DropProbability>
+        <MinMiningSkill>7</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+      <li>
+        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.12</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>weathered</li>
+    </tags>
+    <mineSpeedFactor>0.75</mineSpeedFactor>
+  </ThingDef>
+  
+  <ThingDef Name="SolidVacstone" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
+    <defName>SolidVacstone</defName>
+    <label>Solid Vacstone</label>
+    <description>Massive vacstone deposit showing columnar jointing from uniform thermal contraction. The lack of atmospheric weathering during formation results in exceptional structural integrity.</description>
+    <graphicData>
+      <texPath>Things/Rock/WeatheredBasalt</texPath>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
+    <statBases>
+      <MaxHitPoints>1900</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.35</mineableDropChance>
+    </building>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.04</DropProbability>
+        <MinMiningSkill>7</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+      <li>
+        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>solid</li>
+    </tags>
+    <mineSpeedFactor>0.7</mineSpeedFactor>
+  </ThingDef>
+
+  <ThingDef Name="HewnVacstone" ParentName="HewnRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>HewnVacstone</defName>
+    <label>Hewn Vacstone</label>
+    <description>Precisely cut vacstone blocks showcasing the material's characteristic conchoidal fracture patterns. The glassy surface sheen indicates high silica content.</description>
+    <graphicData>
+			<texPath>Things/Rock/HewnRockWall</texPath>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
+    <statBases>
+      <MaxHitPoints>2000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.35</mineableDropChance>
+      <smoothedThing>SmoothedHewnVacstone</smoothedThing>
+    </building>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.045</DropProbability>
+        <MinMiningSkill>7</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+      <li>
+        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
+        <DropProbability>0.08</DropProbability>
+        <CountPerDrop>1</CountPerDrop>
+      </li>
+    </randomlyDropResources>
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    <mineSpeedFactor>0.65</mineSpeedFactor>
+  </ThingDef>
+
+  <ThingDef Name="SmoothedHewnVacstone" ParentName="HewnRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>SmoothedHewnVacstone</defName>
+    <label>Polished Vacstone</label>
+    <description>Precision-polished vacstone revealing subtle flow banding from its volcanic origin. The smooth surface highlights rare mineral inclusions.</description>
+    <graphicData>
+			<texPath>Things/Rock/SmoothedRockWall</texPath>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1850</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.35</mineableDropChance>
+    </building>
+    <mineSpeedFactor>0.75</mineSpeedFactor>
+  </ThingDef>
+
+  <ThingDef Name="BoulderVacstone" ParentName="BoulderRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>BoulderVacstone</defName>
+    <label>Vacstone Boulder</label>
+    <description>Large vacstone erratic with characteristic amygdaloidal texture, its surface pocked with gas vesicles filled with secondary minerals.</description>
+    <graphicData>
+      <texPath>Things/Rock/PassableBasalt</texPath>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1200</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.5</mineableDropChance>
+    </building>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.035</DropProbability>
+        <MinMiningSkill>7</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <tags>
+      <li>rock</li>
+      <li>boulder</li>
+    </tags>
+    <mineSpeedFactor>0.7</mineSpeedFactor>
+  </ThingDef>
+
+  <ThingDef Name="PassableVacstone" ParentName="SmallRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>PassableVacstone</defName>
+    <label>Vacstone Debris</label>
+    <description>Angular vacstone fragments showing fresh cleavage planes. The sharp edges and high hardness make traversing this terrain hazardous.</description>
+    <graphicData>
+      <texPath>Things/Rock/PassableBasalt</texPath>
+      <color>(40,40,40)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Flammability>0</Flammability>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>MR_ChunkVacstone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+    </building>
+    <mineSpeedFactor>1.1</mineSpeedFactor>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>Make_StoneBlocksVacstone</defName>
+    <label>Make Vacstone Blocks</label>
+    <description>Process vacstone chunks into construction-grade blocks. Requires diamond-tipped tools due to extreme hardness.</description>
+    <recipeUsers>
+      <li>TableMachining</li>
+      <li>TableStonecutter</li>
+    </recipeUsers>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>MR_ChunkVacstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <products>
+      <MR_BlocksVacstone>18</MR_BlocksVacstone>
+    </products>
+  </RecipeDef>
+  
+</Defs>
