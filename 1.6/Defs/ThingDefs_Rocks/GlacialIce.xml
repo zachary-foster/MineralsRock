@@ -3,8 +3,8 @@
 
   <ThingDef Name="WeatheredGlacialIce" ParentName="WeatheredRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>WeatheredGlacialIce</defName>
-    <label>Weathered GlacialIce</label>
-    <description>Weathered glacial ice</description>
+    <label>Weathered glacial ice</label>
+    <description>The ragged edge of a glacier. Deep cracks reveal blue ice inside formed from decades old compacted snow.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredClaystone</texPath>
       <color>(255,255,255)</color>
@@ -15,7 +15,7 @@
     </randomColorsOne>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsTwo>
-      <li>(255,255,255)</li>
+      <li>(230,235,255)</li>
     </randomColorsTwo>
     <!-- If true, then the probability of each color is randomly chosen for each map, so each map has distinctive colors.   -->
     <seedRandomColorByMap>true</seedRandomColorByMap>
@@ -28,13 +28,13 @@
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>6</Beauty>
+      <Beauty>4</Beauty>
     </statBases>
     <building>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -42,7 +42,7 @@
     <maxClusterProbability>0.08</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>20</maxClusterSize>
+    <maxClusterSize>30</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -81,27 +81,27 @@
   
   <ThingDef Name="SolidGlacialIce" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
     <defName>SolidGlacialIce</defName>
-    <label>Solid GlacialIce</label>
-    <description>A solid wall of glacial ice</description>
+    <label>Solid glacial ice</label>
+    <description>A solid wall of glacial ice with small cracks running through it.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredLimestone</texPath>
       <color>(255,255,255)</color>
     </graphicData>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsOne>
-      <li>(255,255,255)</li>
+      <li>(240,250,255)</li>
     </randomColorsOne>
     <uiIconPath>Things/Rock/WeatheredLimestone/WeatheredLimestoneA</uiIconPath>
     <statBases>
       <MaxHitPoints>300</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>1</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <building>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>5</spawnRadius>
+    <spawnRadius>3</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
@@ -109,7 +109,7 @@
     <maxClusterProbability>0.01</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>3</maxClusterSize>
+    <maxClusterSize>5</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -149,11 +149,11 @@
   
   <ThingDef Name="HewnGlacialIce" ParentName="HewnRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>HewnGlacialIce</defName>
-    <label>Hewn GlacialIce</label>
-    <description>A hewn wall of GlacialIce, a sedimentary rock made of cemented silica and feldspar grains.</description>
+    <label>Hewn glacial ice</label>
+    <description>A hewn wall of glacial ice.</description>
     <graphicData>
 			<texPath>Things/Rock/HewnRockWall</texPath>
-      <color>(255,255,255)</color>
+      <color>(240,245,255)</color>
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
@@ -225,11 +225,11 @@
   
   <ThingDef Name="SmoothedHewnGlacialIce" ParentName="HewnRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>SmoothedHewnGlacialIce</defName>
-    <label>Smoothed GlacialIce wall</label>
-    <description>A smoothed wall of GlacialIce. The layers of different colors make it quite interesting.</description>
+    <label>Smoothed glacial ice wall</label>
+    <description>A smoothed wall of glacial ice.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
-      <color>(255,255,255)</color>
+      <color>(240,245,255)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
@@ -259,7 +259,7 @@
     <description>A glacial ice outcropping</description>
     <graphicData>
       <texPath>Things/Rock/PassableClaystone</texPath>
-      <color>(255,255,255)</color>
+      <color>(240,245,255)</color>
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <!-- If defined, randomly pick colors from this set -->
@@ -268,7 +268,7 @@
     </randomColorsOne>
     <!-- If defined, randomly pick colors from this set -->
     <randomColorsTwo>
-      <li>(255,255,255)</li>
+      <li>(240,245,255)</li>
     </randomColorsTwo>
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.1</verticalOffset>
@@ -277,14 +277,14 @@
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <Flammability>0</Flammability>
-      <Beauty>4</Beauty>
+      <Beauty>2</Beauty>
     </statBases>
     <pathCost>100</pathCost>
     <building>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>2</spawnRadius>
+    <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
