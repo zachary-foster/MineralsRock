@@ -2,9 +2,12 @@ using HarmonyLib;
 using MineralsFramework;
 using MineralsRock;
 using RimWorld;
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine;
 using Verse;
+using Verse.Noise;
 
 namespace MineralsRock
 {
@@ -47,25 +50,36 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
     [HarmonyPatch(typeof(Skyfaller), "Impact")]
     public static class Skyfaller_Impact_Patch
     {
-        [HarmonyPostfix]
+        [HarmonyPrefix]
         public static void Postfix(Skyfaller __instance)
         {
-            if (respawningAfterLoad || __instance.innerContainer.Count == 0)
+            if (MineralsFrameworkMain.Settings.debugModeEnabled)
+            {
+                Log.Message($"MineralsRock: attempting to make skyfaller rock ring.");
+            }
+            
+            if (__instance.innerContainer.Count < 3)
+            {
+                if (MineralsFrameworkMain.Settings.debugModeEnabled)
+                {
+                    Log.Message($"MineralsRock: to small of a skyfaller to make ring.");
+                }
                 return;
+            }
 
-            // Get nearest rocky terrain within 15 tiles
+            // Get nearest rocky terrain
             IntVec3 center = __instance.Position;
             TerrainDef nearestRockTerrain = null;
-            int maxDist = 30;
+            int maxDist = 25;
             
             for (int x = center.x - maxDist; x <= center.x + maxDist; x++)
             {
                 for (int z = center.z - maxDist; z <= center.z + maxDist; z++)
                 {
                     IntVec3 pos = new IntVec3(x, 0, z);
-                    if (pos.InBounds(map))
+                    if (pos.InBounds(__instance.Map))
                     {
-                        TerrainDef terrain = map.terrainGrid.TerrainAt(pos);
+                        TerrainDef terrain = __instance.Map.terrainGrid.TerrainAt(pos);
                         if (terrain != null && terrain.IsRock)
                         {
                             nearestRockTerrain = terrain;
@@ -84,25 +98,43 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
             ThingDef rockDef = DefDatabase<ThingDef>.GetNamedSilentFail($"Passable{rockName}");
             
             if (rockDef == null)
+            {
+                if (MineralsFrameworkMain.Settings.debugModeEnabled)
+                {
+                    Log.Message($"MineralsRock: cant find nearby terrain to make ring.");
+                }
                 return;
+            }
 
             // Calculate ring size based on item count
             int itemCount = __instance.innerContainer.Count;
             int radius = (int)(GenMath.Sqrt(itemCount) * 2f);
+            if (radius < 2)
+            {
+                radius = 2;
+            }
 
             // Generate hollow ring pattern
-            foreach (IntVec3 cell in GenRadial.RadialPatternInRadius(radius))
+            Log.Message($"MineralsRock: center: {center}.");
+            foreach (IntVec3 offset in GenRadial.RadialPatternInRadius(radius))
             {
-                // Only place rocks in outer ring (distance >= 70% of radius)
-                if (cell.DistanceTo(center) < radius * 0.7f)
+                Log.Message($"MineralsRock: offset: {offset}.");
+                // Only place rocks in outer ring
+                float distance = (float)Math.Sqrt(offset.x * offset.x + offset.y * offset.y + offset.z * offset.z);
+                float rockSize = (0.33f - (radius - distance) / radius) * 3 + ((float)Rand.Range(-7, 2) / 10f);
+                Log.Message($"MineralsRock: distance: {distance}.");
+                if (rockSize < 0.05f)
                     continue;
+                if (rockSize > 1f)
+                    rockSize = 1;
 
-                IntVec3 targetPos = center + cell;
-                if (targetPos.InBounds(map) && 
-                    targetPos.GetEdifice(map) == null && 
-                    GenSight.LineOfSight(center, targetPos, map))
+                IntVec3 targetPos = center + offset;
+                if (targetPos.InBounds(__instance.Map) && 
+                    targetPos.GetEdifice(__instance.Map) == null && 
+                    GenSight.LineOfSight(center, targetPos, __instance.Map))
                 {
-                    GenSpawn.Spawn(rockDef, targetPos, map);
+                    MineralsFramework.StaticMineral spawned = (MineralsFramework.StaticMineral) GenSpawn.Spawn(rockDef, targetPos, __instance.Map);
+                    spawned.size = rockSize;
                 }
             }
 
