@@ -53,6 +53,7 @@
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
+      <mineablePreventMeteorite>false</mineablePreventMeteorite>
     </building>
     <statBases>
       <MaxHitPoints>1800</MaxHitPoints>

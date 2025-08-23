@@ -98,6 +98,7 @@
       <Beauty>2</Beauty>
     </statBases>
     <building>
+      <mineablePreventMeteorite>true</mineablePreventMeteorite>
     </building>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->

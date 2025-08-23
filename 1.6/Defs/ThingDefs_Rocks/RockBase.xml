@@ -129,6 +129,9 @@
     <verticalOffset>0.2</verticalOffset>
     <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
     <newMapSpawnOrder>50</newMapSpawnOrder>
+    <building>
+      <mineablePreventMeteorite>false</mineablePreventMeteorite>
+    </building>
   </ThingDef>
   
   
