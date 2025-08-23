@@ -43,4 +43,70 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
             return false; // Skip original method
         }
     }
+
+    [HarmonyPatch(typeof(Skyfaller), "SpawnSetup")]
+    public static class Skyfaller_SpawnSetup_Patch
+    {
+        [HarmonyPostfix]
+        public static void Postfix(Skyfaller __instance, Map map, bool respawningAfterLoad)
+        {
+            if (respawningAfterLoad || __instance.innerContainer.Count == 0)
+                return;
+
+            // Get nearest rocky terrain within 15 tiles
+            IntVec3 center = __instance.Position;
+            TerrainDef nearestRockTerrain = null;
+            int maxDist = 15;
+            
+            for (int x = center.x - maxDist; x <= center.x + maxDist; x++)
+            {
+                for (int z = center.z - maxDist; z <= center.z + maxDist; z++)
+                {
+                    IntVec3 pos = new IntVec3(x, 0, z);
+                    if (pos.InBounds(map))
+                    {
+                        TerrainDef terrain = map.terrainGrid.TerrainAt(pos);
+                        if (terrain != null && terrain.IsRock)
+                        {
+                            nearestRockTerrain = terrain;
+                            break;
+                        }
+                    }
+                }
+                if (nearestRockTerrain != null) break;
+            }
+
+            if (nearestRockTerrain == null)
+                return;
+
+            // Try to find matching passable rock def (e.g. "Granite_Rough" -> "PassableGranite")
+            string rockName = nearestRockTerrain.defName.Split('_')[0];
+            ThingDef rockDef = DefDatabase<ThingDef>.GetNamedSilentFail($"Passable{rockName}");
+            
+            if (rockDef == null)
+                return;
+
+            // Calculate ring size based on item count
+            int itemCount = __instance.innerContainer.Count;
+            float radius = Mathf.Sqrt(itemCount) * 1.5f;
+            int diameter = Mathf.Clamp(Mathf.RoundToInt(radius * 2), 3, 15);
+
+            // Generate circular pattern
+            foreach (IntVec3 pos in GenRadial.RadialPatternInRadius(diameter/2))
+            {
+                IntVec3 targetPos = center + pos;
+                if (targetPos.InBounds(map) && 
+                    targetPos.GetEdifice(map) == null && 
+                    GenSight.LineOfSight(center, targetPos, map))
+                {
+                    GenSpawn.Spawn(rockDef, targetPos, map);
+                }
+            }
+
+            if (MineralsFrameworkMain.Settings.debugModeEnabled)
+            {
+                Log.Message($"Generated {rockDef.defName} ring with diameter {diameter} around {center}");
+            }
+        }
+    }
 }
