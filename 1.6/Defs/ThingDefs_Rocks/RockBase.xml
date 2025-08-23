@@ -96,6 +96,8 @@
     <visualSizeVariation>0.08</visualSizeVariation>
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.2</verticalOffset>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>60</newMapSpawnOrder>
   </ThingDef>
   
   
@@ -125,6 +127,8 @@
     <visualSizeVariation>0.08</visualSizeVariation>
     <!-- How much to change the vertical position of the texture. Positive is up -->
     <verticalOffset>0.2</verticalOffset>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>50</newMapSpawnOrder>
   </ThingDef>
   
   
@@ -193,6 +197,8 @@
     <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>40</newMapSpawnOrder>
   </ThingDef>
   
 
@@ -250,6 +256,8 @@
     </tags>
     <!-- at what snow depth the snow texture is used, if it exists -->
     <snowTextureThreshold>0.7</snowTextureThreshold>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>80</newMapSpawnOrder>
   </ThingDef>
   
   
@@ -272,6 +280,8 @@
     <snowTextureThreshold>0.8</snowTextureThreshold>
     <!-- If textures overlapping walls above them should be printed on top -->
     <printOverWalls>true</printOverWalls>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>70</newMapSpawnOrder>
   </ThingDef>
   
   
