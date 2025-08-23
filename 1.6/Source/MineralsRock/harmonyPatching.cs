@@ -44,11 +44,11 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
         }
     }
 
-    [HarmonyPatch(typeof(Skyfaller), "SpawnSetup")]
-    public static class Skyfaller_SpawnSetup_Patch
+    [HarmonyPatch(typeof(Skyfaller), "Impact")]
+    public static class Skyfaller_Impact_Patch
     {
         [HarmonyPostfix]
-        public static void Postfix(Skyfaller __instance, Map map, bool respawningAfterLoad)
+        public static void Postfix(Skyfaller __instance)
         {
             if (respawningAfterLoad || __instance.innerContainer.Count == 0)
                 return;
@@ -90,10 +90,14 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
             int itemCount = __instance.innerContainer.Count;
             int radius = (int)(GenMath.Sqrt(itemCount) * 2f);
 
-            // Generate circular pattern
-            foreach (IntVec3 pos in GenRadial.RadialPatternInRadius(radius))
+            // Generate hollow ring pattern
+            foreach (IntVec3 cell in GenRadial.RadialPatternInRadius(radius))
             {
-                IntVec3 targetPos = center + pos;
+                // Only place rocks in outer ring (distance >= 70% of radius)
+                if (cell.DistanceTo(center) < radius * 0.7f)
+                    continue;
+
+                IntVec3 targetPos = center + cell;
                 if (targetPos.InBounds(map) && 
                     targetPos.GetEdifice(map) == null && 
                     GenSight.LineOfSight(center, targetPos, map))
@@ -104,7 +108,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
             if (MineralsFrameworkMain.Settings.debugModeEnabled)
             {
-                Log.Message($"Generated {rockDef.defName} ring with diameter {diameter} around {center}");
+                Log.Message($"Generated {rockDef.defName} ring with radius {radius} around {center}");
             }
         }
     }
