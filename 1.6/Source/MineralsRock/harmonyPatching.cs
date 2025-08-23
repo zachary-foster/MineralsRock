@@ -89,7 +89,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
             // Calculate ring size based on item count
             int itemCount = __instance.innerContainer.Count;
             float radius = GenMath.Sqrt(itemCount) * 1.5f;
-            int diameter = GenMath.Clamp(GenMath.RoundToInt(radius * 2), 3, 15);
+            int diameter = Math.Min(Math.Max((int)Math.Round(radius * 2), 3), 15);
 
             // Generate circular pattern
             foreach (IntVec3 pos in GenRadial.RadialPatternInRadius(diameter/2))
