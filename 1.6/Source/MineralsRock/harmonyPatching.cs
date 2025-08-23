@@ -56,7 +56,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
             // Get nearest rocky terrain within 15 tiles
             IntVec3 center = __instance.Position;
             TerrainDef nearestRockTerrain = null;
-            int maxDist = 15;
+            int maxDist = 30;
             
             for (int x = center.x - maxDist; x <= center.x + maxDist; x++)
             {
@@ -88,11 +88,10 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
             // Calculate ring size based on item count
             int itemCount = __instance.innerContainer.Count;
-            float radius = GenMath.Sqrt(itemCount) * 1.5f;
-            int diameter = Math.Min(Math.Max((int)Math.Round(radius * 2), 3), 15);
+            int radius = (int)(GenMath.Sqrt(itemCount) * 2f);
 
             // Generate circular pattern
-            foreach (IntVec3 pos in GenRadial.RadialPatternInRadius(diameter/2))
+            foreach (IntVec3 pos in GenRadial.RadialPatternInRadius(radius))
             {
                 IntVec3 targetPos = center + pos;
                 if (targetPos.InBounds(map) && 
