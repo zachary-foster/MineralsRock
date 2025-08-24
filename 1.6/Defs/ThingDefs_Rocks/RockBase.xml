@@ -218,28 +218,6 @@
     </building>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-      <li>Limestone_Rough</li>
-      <li>Sandstone_Rough</li>
-      <li>Slate_Rough</li>
-      <li>Marble_Rough</li>
-      <li>MR_BasaltBase_Rough</li>
-      <li>MAU_ClaystoneBase_Rough</li>
-      <li>Granite_Rough</li>
-  		<li>IceShallow</li>
-  		<li>Soil</li>
-  		<li>MossyTerrain</li>
-  		<li>MarshyTerrain</li>
-  		<li>Gravel</li>
-  		<li>Sand</li>
-  		<li>SoftSand</li>
-  		<li>Mud</li>
-  		<li>Marsh</li>
-  		<li>SavannaSoil</li>
-  		<li>RockySoil</li>
-  		<li>PoorSoil</li>
-  		<li>MarginalSoil</li>
-  		<li>DustySoil</li>
-      <li>Crashland_Wasteland</li>
 		</allowedTerrains>
   </ThingDef>
   

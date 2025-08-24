@@ -1,92 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="WeatheredVacstone" ParentName="WeatheredRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>WeatheredVacstone</defName>
-    <label>Weathered Vacstone</label>
-    <description>A wall of rough weathered vacstone, riddled with micometeorite impacts.</description>
-    <graphicData>
-      <texPath>Things/Rock/WeatheredBasalt</texPath>
-      <color>(115,106,98)</color>
-    </graphicData>
-    <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
-    <statBases>
-      <MaxHitPoints>1700</MaxHitPoints>
-      <Flammability>0</Flammability>
-      <Beauty>-2</Beauty>
-    </statBases>
-    <building>
-      <mineableThing>ChunkVacstone</mineableThing>
-      <mineableDropChance>0.4</mineableDropChance>
-    </building>
-    <!--How far away it can spawn from an existing location-->
-    <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
-    <spawnRadius>1.5</spawnRadius>
-    <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>1</perMapProbability>
-    <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.01</minClusterProbability>
-    <maxClusterProbability>0.02</maxClusterProbability>
-    <!-- How  many squares each cluster will be -->
-    <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
-    <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>1</initialSizeMin>
-    <initialSizeMax>1</initialSizeMax>
-    <!-- How much initial sizes of individuals randomly vary -->
-    <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-    <allowedTerrains>
-      <li>Vacstone_Rough</li>
-		</allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>WeatheredVacstone</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
-    <!-- Other resources it might drop -->
-    <randomlyDropResources>
-      <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.04</DropProbability>
-        <MinMiningSkill>6</MinMiningSkill>
-      </li>
-      <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
-      </li>
-      <li>
-        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-      </li>
-    </randomlyDropResources>
-    <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
-      <li>Vacstone</li>
-    </ThingsToReplace>
-    <!-- Tags which determine how some options behave  -->
-    <tags>
-      <li>rock</li>
-      <li>wall</li>
-      <li>weathered</li>
-    </tags>
-    <!-- How easy it is to mine -->
-    <mineSpeedFactor>0.8</mineSpeedFactor>
-  </ThingDef>
-  
-  
-  <ThingDef Name="SolidVacstone" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock">
+  <ThingDef Name="SolidVacstone" ParentName="SolidRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>SolidVacstone</defName>
     <label>Solid Vacstone</label>
     <description>A solid wall of vacstone, a mixture of silicate rich rock and occasional streaks of unoxidized metal.</description>
@@ -108,13 +23,13 @@
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
     <!-- The probability that this mineral type will be spawned at all on a given map -->
-    <perMapProbability>0</perMapProbability>
+    <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0</minClusterProbability>
-    <maxClusterProbability>0</maxClusterProbability>
+    <minClusterProbability>1</minClusterProbability>
+    <maxClusterProbability>1</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>1</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -150,6 +65,8 @@
       <li>Vacstone</li>
       <li>HewnVacstone</li>
     </ThingsToReplace>
+    <replaceAll>false</replaceAll>
+    <mustReplace>true</mustReplace>
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
@@ -158,6 +75,14 @@
     </tags>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.8</mineSpeedFactor>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    <mustBeNearPassable>true</mustBeNearPassable>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>40</newMapSpawnOrder>
   </ThingDef>
   
 
@@ -190,7 +115,7 @@
     <maxClusterProbability>0</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>10</maxClusterSize>
+    <maxClusterSize>1</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>1</initialSizeMin>
     <initialSizeMax>1</initialSizeMax>
@@ -251,6 +176,13 @@
     </tags>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.7</mineSpeedFactor>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
+    <newMapSpawnOrder>30</newMapSpawnOrder>
   </ThingDef>
  
 
@@ -322,31 +254,31 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1.0</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.004</minClusterProbability>
-    <maxClusterProbability>0.008</maxClusterProbability>
+    <minClusterProbability>0.1</minClusterProbability>
+    <maxClusterProbability>0.4</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>6</maxClusterSize>
+    <maxClusterSize>1</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
-    <initialSizeMin>0.6</initialSizeMin>
+    <initialSizeMin>0.5</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.2</initialSizeVariation>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+      <li>Vacstone_Rough</li>
+		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-			<li>Vacstone_Rough</li>
-      <li>WeatheredVacstone</li>
+			<li>HewnVacstone</li>
       <li>SolidVacstone</li>
-      <li>BoulderVacstone</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>6</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>WeatheredVacstone</li>
-      <li>SolidVacstone</li>
     </associatedOres>
     <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
@@ -433,11 +365,11 @@
     <!-- The probability that this mineral type will be spawned at all on a given map -->
     <perMapProbability>1</perMapProbability>
     <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
-    <minClusterProbability>0.02</minClusterProbability>
-    <maxClusterProbability>0.04</maxClusterProbability>
+    <minClusterProbability>0.1</minClusterProbability>
+    <maxClusterProbability>0.3</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
     <minClusterSize>1</minClusterSize>
-    <maxClusterSize>15</maxClusterSize>
+    <maxClusterSize>1</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.5</initialSizeMin>
     <initialSizeMax>1.0</initialSizeMax>
@@ -446,20 +378,21 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>Vacstone_Rough</li>
-      <li>WeatheredVacstone</li>
       <li>SolidVacstone</li>
       <li>BoulderVacstone</li>
       <li>PassableVacstone</li>
     </neededNearbyTerrains>
+    <!-- The terrains this can appear on. The default is rocky terrains-->
+		<allowedTerrains>
+      <li>Vacstone_Rough</li>
+		</allowedTerrains>
     <!-- how far away it can be from needed nearby terrains-->
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Vacstone_Rough</li>
       <li>BoulderVacstone</li>
-      <li>WeatheredVacstone</li>
       <li>SolidVacstone</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
@@ -468,7 +401,7 @@
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
     <mustBeUnroofed>false</mustBeUnroofed>
     <!-- The maximum number of images that will be printed per square -->
-    <maxMeshCount>4</maxMeshCount>
+    <maxMeshCount>5</maxMeshCount>
     <!-- The size range -->
     <visualSizeRange>
       <min>0.3</min>
