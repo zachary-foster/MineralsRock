@@ -6,13 +6,11 @@
     <defName>WeatheredOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
     <building>
-      <isResourceRock>true</isResourceRock>
       <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -43,13 +41,11 @@
     <defName>SolidOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
     <building>
-      <isResourceRock>true</isResourceRock>
       <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -81,13 +77,11 @@
     <defName>HewnOre</defName>
     <uiIconPath>Things/Ore/HewnOre/HewnOreA</uiIconPath>
     <building>
-      <isResourceRock>true</isResourceRock>
       <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>

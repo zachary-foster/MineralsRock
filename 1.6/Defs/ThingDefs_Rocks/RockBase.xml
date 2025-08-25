@@ -28,9 +28,6 @@
     <building>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
-      <isResourceRock>true</isResourceRock>
-      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <mineableNonMinedEfficiency>0</mineableNonMinedEfficiency>
@@ -211,6 +208,8 @@
       <graphicClass>Graphic_Random</graphicClass>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
+    <holdsRoof>false</holdsRoof>
+    <blockLight>false</blockLight>
     <altitudeLayer>SmallWire</altitudeLayer>
     <building>
       <mineableYield>1</mineableYield>

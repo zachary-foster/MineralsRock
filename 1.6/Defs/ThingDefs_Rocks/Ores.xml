@@ -340,6 +340,122 @@
   
   
   <ThingDef ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>WeatheredOreObsidian</defName>
+    <label>Weathered Obsidian Deposits</label>
+    <description>Weathered chunks of sharp volcanic glass.</description>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(40,40,40)</color>
+      <colorTwo>(5,5,5)</colorTwo>
+    </graphicData>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Obsidian</ResourceDefName>
+        <DropProbability>5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineableObsidian</li>
+    </ThingsToReplace>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
+    <defName>SolidOreObsidian</defName>
+    <label>Solid Obsidian Deposits</label>
+    <description>Solid rock containing streaks of volcanic glass.</description>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(40,40,40)</color>
+      <colorTwo>(5,5,5)</colorTwo>
+    </graphicData>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Obsidian</ResourceDefName>
+        <DropProbability>4</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineableObsidian</li>
+      <li>HewnOreObsidian</li>
+    </ThingsToReplace>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.5</mineSpeedFactor>
+  </ThingDef>
+
+  
+  <ThingDef ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>HewnOreObsidian</defName>
+    <label>Hewn Obsidian Deposits</label>
+    <description>Hewn rock containing streaks of volcanic glass.</description>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+        <li>Rock</li>
+        <li>MapEdge</li>
+			</linkFlags>
+			<damageData>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+				<cornerBL>Damage/Corner</cornerBL>
+				<cornerBR>Damage/Corner</cornerBR>
+				<edgeTop>Damage/Edge</edgeTop>
+				<edgeBot>Damage/Edge</edgeBot>
+				<edgeLeft>Damage/Edge</edgeLeft>
+				<edgeRight>Damage/Edge</edgeRight>
+			</damageData>
+      <texPath>Things/Ore/HewnOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+      <color>(40,40,40)</color>
+      <colorTwo>(5,5,5)</colorTwo>
+    </graphicData>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Obsidian</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>RoughGem</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineableObsidian</li>
+    </ThingsToReplace>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.6</mineSpeedFactor>
+  </ThingDef>
+
+
+  <ThingDef ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>WeatheredOreJade</defName>
     <label>Weathered Jade Deposits</label>
     <graphicData>
@@ -450,6 +566,211 @@
   
 
   <ThingDef ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>WeatheredOrePlasteel</defName>
+    <label>Weathered plasteel</label>
+    <description>Ancient plasteel-rich machinery, compacted over time and weatherd by the elements. Can be mined for plasteel.</description>
+    <graphicData>
+      <texPath>Things/Ore/CompactedTech</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Ore/CompactedTech/CompactedTechA</uiIconPath>
+    <statBases>
+		  <Beauty>-4</Beauty>
+    </statBases>
+    <building>
+      <mineableThing>Plasteel</mineableThing>
+      <mineableYield>10</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Plasteel</ResourceDefName>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>AluminiumBar</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Mechanism</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <MinMiningSkill>8</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
+        <DropProbability>0.3</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentSpacer</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <MinMiningSkill>10</MinMiningSkill>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineablePlasteel</li>
+    </ThingsToReplace>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.35</mineSpeedFactor>
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
+    <defName>SolidOrePlasteel</defName>
+    <label>Solid compacted plasteel</label>
+    <description>Ancient plasteel-rich machinery, compacted over time. Can be mined for plasteel.</description>
+    <graphicData>
+      <texPath>Things/Ore/SolidOreTech</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
+     <building>
+      <mineableThing>ComponentIndustrial</mineableThing>
+      <mineableYield>2</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <statBases>
+		  <Beauty>-4</Beauty>
+    </statBases>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Plasteel</ResourceDefName>
+        <DropProbability>2.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>AluminiumBar</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Mechanism</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.08</DropProbability>
+        <MinMiningSkill>8</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
+        <DropProbability>0.4</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentSpacer</ResourceDefName>
+        <DropProbability>0.03</DropProbability>
+        <MinMiningSkill>10</MinMiningSkill>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineablePlasteel</li>
+      <li>HewnOrePlasteel</li>
+    </ThingsToReplace>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.3</mineSpeedFactor>
+  </ThingDef>
+
+
+  <ThingDef ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock">
+    <defName>HewnOrePlasteel</defName>
+    <label>Hewn compacted plasteel</label>
+    <description>Ancient plasteel-rich machinery, compacted over time. Can be mined for plasteel.</description>
+    <graphicData>
+      <texPath>Things/Ore/SolidOreTech</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
+    <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
+     <building>
+      <mineableThing>ComponentIndustrial</mineableThing>
+      <mineableYield>3</mineableYield>
+      <isInert>true</isInert>
+      <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
+      <claimable>false</claimable>
+      <deconstructible>false</deconstructible>
+      <isEdifice>true</isEdifice>
+    </building>
+    <statBases>
+		  <Beauty>-4</Beauty>
+    </statBases>
+    <randomlyDropResources>
+      <li>
+        <ResourceDefName>Plasteel</ResourceDefName>
+        <DropProbability>3</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>AluminiumBar</ResourceDefName>
+        <DropProbability>0.7</DropProbability>
+        <CountPerDrop>10</CountPerDrop>
+      </li>
+      <li>
+        <ResourceDefName>Mechanism</ResourceDefName>
+        <DropProbability>0.15</DropProbability>
+        <MinMiningSkill>5</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ElectronicComponents</ResourceDefName>
+        <DropProbability>0.1</DropProbability>
+        <MinMiningSkill>8</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentIndustrial</ResourceDefName>
+        <DropProbability>0.5</DropProbability>
+        <MinMiningSkill>3</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>ComponentSpacer</ResourceDefName>
+        <DropProbability>0.05</DropProbability>
+        <MinMiningSkill>10</MinMiningSkill>
+      </li>
+    </randomlyDropResources>
+    <ThingsToReplace>
+      <li>MineablePlasteel</li>
+    </ThingsToReplace>
+    <!-- If the primary color is based on the stone below it -->
+    <coloredByTerrain>false</coloredByTerrain>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>rock</li>
+      <li>wall</li>
+      <li>hewn</li>
+    </tags>
+    <!-- Roof requirements -->
+    <mustBeUnderRoof>false</mustBeUnderRoof>
+    <mustBeUnderThickRoof>true</mustBeUnderThickRoof>
+    <mustBeUnroofed>false</mustBeUnroofed>
+    <mustBeNotUnderThickRoof>false</mustBeNotUnderThickRoof>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.25</mineSpeedFactor>
+  </ThingDef>
+
+
+
+  <ThingDef ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>WeatheredOreTech</defName>
     <label>Weathered compacted machinery</label>
     <graphicData>
@@ -463,12 +784,10 @@
     </statBases>
     <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <building>
-      <isResourceRock>true</isResourceRock>
       <mineableThing>ComponentIndustrial</mineableThing>
       <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -526,12 +845,10 @@
     <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
      <building>
-      <isResourceRock>true</isResourceRock>
       <mineableThing>ComponentIndustrial</mineableThing>
       <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
@@ -608,12 +925,10 @@
     <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
      <building>
-      <isResourceRock>true</isResourceRock>
       <mineableThing>ComponentIndustrial</mineableThing>
       <mineableYield>3</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
-      <isNaturalRock>true</isNaturalRock>
       <claimable>false</claimable>
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
