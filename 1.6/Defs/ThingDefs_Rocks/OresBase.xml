@@ -6,7 +6,6 @@
     <defName>WeatheredOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
     <building>
-      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
@@ -41,7 +40,6 @@
     <defName>SolidOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
     <building>
-      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
@@ -77,7 +75,6 @@
     <defName>HewnOre</defName>
     <uiIconPath>Things/Ore/HewnOre/HewnOreA</uiIconPath>
     <building>
-      <!-- <mineableThing>RoughGem</mineableThing> -->
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
       <isInert>true</isInert>
