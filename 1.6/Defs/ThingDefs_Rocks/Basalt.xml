@@ -6,7 +6,7 @@
     <label>basalt</label>
     <description>Basalt is a very hard igneous rock.</description>
     <graphicData>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
     </graphicData>
     <statBases>
       <MaxHitPoints>1600</MaxHitPoints>
@@ -24,7 +24,7 @@
     <description>A wall of rough weathered basalt, the most common igneous rock. It makes a good building material but is difficult to mine.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
@@ -115,7 +115,7 @@
     <description>A solid wall of basalt, composed of deep layers of ancient lava flows.  It makes a good building material but is difficult to quarry.</description>
     <graphicData>
       <texPath>Things/Rock/WeatheredBasalt</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
@@ -201,7 +201,7 @@
     <description>A hewn wall of basalt, composed of deep layers of ancient lava flows.  It makes a good building material but is difficult to quarry.</description>
     <graphicData>
 			<texPath>Things/Rock/HewnRockWall</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
@@ -305,7 +305,7 @@
     <description>A smooth wall of basalt, composed of deep layers of ancient lava flows.  Its a bit dull.</description>
     <graphicData>
 			<texPath>Things/Rock/SmoothedRockWall</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
     </graphicData>
     <uiIconPath>Things/Rock/SmoothedRockWall/SmoothedRockWallA</uiIconPath>
     <statBases>
@@ -358,7 +358,7 @@
     <description>Basalt boulder. These can be climbed over with some difficulty and provide good cover.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
     </graphicData>
     <uiIconPath>Things/Rock/PassableBasalt/PassableBasaltA</uiIconPath>
     <fillPercent>0.4</fillPercent>
@@ -472,7 +472,7 @@
     <description>Basalt rocks that are easily walked over and provide little cover.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -572,7 +572,7 @@
     <description>A weathered lava flow. This was once a river of molted rock, but has since cooled and shattered. Very difficult to walk over but provides little cover in a gunfight.</description>
     <graphicData>
       <texPath>Things/Rock/PassableBasalt</texPath>
-      <color>(90,90,90)</color>
+      <color>(100,100,100)</color>
       <damageData>
         <enabled>false</enabled>
       </damageData>
@@ -598,8 +598,8 @@
     <minClusterProbability>0</minClusterProbability>
     <maxClusterProbability>0.002</maxClusterProbability>
     <!-- How  many squares each cluster will be -->
-    <minClusterSize>20</minClusterSize>
-    <maxClusterSize>400</maxClusterSize>
+    <minClusterSize>30</minClusterSize>
+    <maxClusterSize>600</maxClusterSize>
     <!-- The range of starting sizes of individuals in clusters -->
     <initialSizeMin>0.4</initialSizeMin>
     <initialSizeMax>0.9</initialSizeMax>

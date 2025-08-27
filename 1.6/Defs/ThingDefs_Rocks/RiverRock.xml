@@ -47,31 +47,13 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>Granite_Rough</li>
-			<li>Limestone_Rough</li>
-			<li>Marble_Rough</li>
-			<li>Slate_Rough</li>
-      <li>MR_BasaltBase_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>Soil</li>
-			<li>MarshyTerrain</li>
-			<li>Marsh</li>
-			<li>PoorSoil</li>
-			<li>MarginalSoil</li>
-			<li>Mud</li>
-      <li>SavannaSoil</li>
-      <li>MarginalSoil</li>
-			<li>SaltField</li>
-			<li>SandBeachWetSalt</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>WaterMovingShallow</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
@@ -232,23 +214,13 @@
     <initialSizeVariation>.3</initialSizeVariation>
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
-			<li>AB_FineSand</li>
-			<li>Granite_Rough</li>
-			<li>Limestone_Rough</li>
-			<li>Marble_Rough</li>
-			<li>Slate_Rough</li>
-      <li>MR_BasaltBase_Rough</li>
-			<li>RockySoil</li>
-			<li>Gravel</li>
-			<li>Sand</li>
-			<li>SandBeachWetSalt</li>
 		</allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
 			<li>WaterOceanShallow</li>
     </neededNearbyTerrains>
     <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>5</neededNearbyTerrainRadius>
+    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
     <!-- If true, growth rate and initial size depends on distance from needed terrains -->
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Roof requirements -->
