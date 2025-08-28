@@ -76,6 +76,8 @@
     </tags>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1.2</mineSpeedFactor>
+    <!-- What stage of map generation the thing is spawned during (rocks or ice) -->
+    <newMapGenStep>ice</newMapGenStep>
   </ThingDef>
   
   
@@ -145,6 +147,8 @@
     </tags>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1.2</mineSpeedFactor>
+    <!-- What stage of map generation the thing is spawned during (rocks or ice) -->
+    <newMapGenStep>ice</newMapGenStep>
   </ThingDef>
 
   
@@ -221,6 +225,8 @@
     </tags>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1.1</mineSpeedFactor>
+    <!-- What stage of map generation the thing is spawned during (rocks or ice) -->
+    <newMapGenStep>ice</newMapGenStep>
   </ThingDef>
   
   
@@ -342,6 +348,8 @@
     </tags>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1.2</mineSpeedFactor>
+    <!-- What stage of map generation the thing is spawned during (rocks or ice) -->
+    <newMapGenStep>ice</newMapGenStep>
   </ThingDef>
   
   

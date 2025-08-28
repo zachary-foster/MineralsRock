@@ -35,36 +35,15 @@
       <deconstructible>false</deconstructible>
       <isEdifice>true</isEdifice>
     </building>
-    <!-- The terrains this can appear on. The default is rocky terrains-->
-		<!-- <allowedTerrains> -->
-		<!-- 		<li>Ice</li> -->
-		<!-- 		<li>IceShallow</li> -->
-		<!-- 		<li>Soil</li> -->
-		<!-- 		<li>MossyTerrain</li> -->
-		<!-- 		<li>MarshyTerrain</li> -->
-		<!-- 		<li>SoilRich</li> -->
-		<!-- 		<li>Gravel</li> -->
-		<!-- 		<li>Sand</li> -->
-		<!-- 		<li>SoftSand</li> -->
-		<!-- 		<li>Mud</li> -->
-		<!-- 		<li>Marsh</li> -->
-		<!-- 		<li>SavannaSoil</li> -->
-		<!-- 		<li>RockySoil</li> -->
-		<!-- 		<li>PoorSoil</li> -->
-		<!-- 		<li>MarginalSoil</li> -->
-		<!-- 		<li>DustySoil</li> -->
-		<!--     <li>WaterDeep</li> -->
-		<!--     <li>WaterOceanDeep</li> -->
-		<!--     <li>WaterMovingChestDeep</li> -->
-		<!--     <li>Crashland_Wasteland</li> -->
-		<!-- </allowedTerrains> -->
     <!-- Tags which determine how some options behave  -->
     <tags>
       <li>rock</li>
       <li>wall</li>
     </tags>
     <!-- at what snow depth the snow texture is used, if it exists -->
-    <snowTextureThreshold>0.9</snowTextureThreshold>
+    <snowTextureThreshold>0.8</snowTextureThreshold>
+    <!-- at what snow depth the mineral is completely hidden -->
+    <hiddenInSnowThreshold>999</hiddenInSnowThreshold>
   </ThingDef>
   
   
@@ -95,6 +74,8 @@
     <verticalOffset>0.2</verticalOffset>
     <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
     <newMapSpawnOrder>60</newMapSpawnOrder>
+    <!-- at what snow depth the snow texture is used, if it exists -->
+    <snowTextureThreshold>0.8</snowTextureThreshold>
   </ThingDef>
   
   
@@ -129,6 +110,8 @@
     <building>
       <mineablePreventMeteorite>false</mineablePreventMeteorite>
     </building>
+    <!-- at what snow depth the snow texture is used, if it exists -->
+    <snowTextureThreshold>1</snowTextureThreshold>
   </ThingDef>
   
   
@@ -218,6 +201,10 @@
     <!-- The terrains this can appear on. The default is rocky terrains-->
 		<allowedTerrains>
 		</allowedTerrains>
+    <!-- at what snow depth the snow texture is used, if it exists -->
+    <snowTextureThreshold>0.7</snowTextureThreshold>
+    <!-- at what snow depth the mineral is completely hidden -->
+    <hiddenInSnowThreshold>0.8</hiddenInSnowThreshold>
   </ThingDef>
   
 
@@ -238,6 +225,10 @@
     <snowTextureThreshold>0.7</snowTextureThreshold>
     <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
     <newMapSpawnOrder>80</newMapSpawnOrder>
+    <!-- at what snow depth the snow texture is used, if it exists -->
+    <snowTextureThreshold>0.6</snowTextureThreshold>
+    <!-- at what snow depth the mineral is completely hidden -->
+    <hiddenInSnowThreshold>0.8</hiddenInSnowThreshold>
   </ThingDef>
   
   
@@ -262,6 +253,10 @@
     <printOverWalls>true</printOverWalls>
     <!-- Order in which minerals are spawned during map generation (lower numbers first) -->
     <newMapSpawnOrder>70</newMapSpawnOrder>
+    <!-- at what snow depth the snow texture is used, if it exists -->
+    <snowTextureThreshold>0.7</snowTextureThreshold>
+    <!-- at what snow depth the mineral is completely hidden -->
+    <hiddenInSnowThreshold>1</hiddenInSnowThreshold>
   </ThingDef>
   
   

@@ -889,8 +889,6 @@
     </statBases>
     <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <building>
-      <mineableThing>ComponentIndustrial</mineableThing>
-      <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <claimable>false</claimable>
@@ -920,7 +918,7 @@
       </li>
       <li>
         <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>0.8</DropProbability>
+        <DropProbability>1.5</DropProbability>
         <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
@@ -950,8 +948,6 @@
     <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
      <building>
-      <mineableThing>ComponentIndustrial</mineableThing>
-      <mineableYield>2</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <claimable>false</claimable>
@@ -974,7 +970,7 @@
       </li>
       <li>
         <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <DropProbability>1.7</DropProbability>
         <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
@@ -1030,8 +1026,6 @@
     <uiIconPath>Things/Ore/SolidOreTech/SolidOreTechA</uiIconPath>
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
      <building>
-      <mineableThing>ComponentIndustrial</mineableThing>
-      <mineableYield>3</mineableYield>
       <isInert>true</isInert>
       <canBuildNonEdificesUnder>false</canBuildNonEdificesUnder>
       <claimable>false</claimable>
@@ -1054,7 +1048,7 @@
       </li>
       <li>
         <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <DropProbability>2.5</DropProbability>
         <MinMiningSkill>3</MinMiningSkill>
       </li>
       <li>
