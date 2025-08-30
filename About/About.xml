@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
-  <name>MineralsRock: Overhaul of rocks, mountains, and mining</name>
+  <name>Minerals Rock</name>
   <author>Zachary S. L. Foster</author>
 	<packageId>zacharyfoster.mineralsrock</packageId>
   <description>Complete overhaul of mineral generation, mining mechanics, and stone visuals.</description>

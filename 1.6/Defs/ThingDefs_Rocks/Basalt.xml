@@ -83,12 +83,6 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>MAU_ChunkObsidian</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>8</MinMiningSkill>
-      </li>
-      <li>
         <ResourceDefName>MAU_ChunkDunite</ResourceDefName>
         <DropProbability>0.01</DropProbability>
         <CountPerDrop>1</CountPerDrop>
@@ -166,12 +160,6 @@
         <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
         <DropProbability>0.08</DropProbability>
         <CountPerDrop>1</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>MAU_ChunkObsidian</ResourceDefName>
-        <DropProbability>0.04</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>MAU_ChunkDunite</ResourceDefName>
@@ -273,12 +261,6 @@
         <CountPerDrop>1</CountPerDrop>
       </li>
       <li>
-        <ResourceDefName>MAU_ChunkObsidian</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>8</MinMiningSkill>
-      </li>
-      <li>
         <ResourceDefName>MAU_ChunkDunite</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
@@ -334,12 +316,6 @@
         <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>1</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>MAU_ChunkObsidian</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>MAU_ChunkDunite</ResourceDefName>
@@ -438,12 +414,6 @@
         <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
         <DropProbability>0.1</DropProbability>
         <CountPerDrop>5</CountPerDrop>
-      </li>
-      <li>
-        <ResourceDefName>MAU_ChunkObsidian</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>8</MinMiningSkill>
       </li>
       <li>
         <ResourceDefName>MAU_ChunkDunite</ResourceDefName>

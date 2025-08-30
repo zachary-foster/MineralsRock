@@ -427,9 +427,8 @@
     <associatedOres>
       <li>Limestone</li>
       <li>WeatheredLimestone</li>
-      <li>Limestone_Rough</li>
     </associatedOres>
-    <nearAssociatedOreBonus>2</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -549,7 +548,7 @@
       <li>WeatheredLimestone</li>
       <li>Limestone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>

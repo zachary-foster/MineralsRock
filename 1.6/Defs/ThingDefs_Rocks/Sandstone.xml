@@ -493,7 +493,7 @@
       <li>WeatheredSandstone</li>
       <li>Sandstone</li>
     </associatedOres>
-    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>7</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>

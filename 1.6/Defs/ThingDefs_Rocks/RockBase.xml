@@ -204,7 +204,7 @@
     <!-- at what snow depth the snow texture is used, if it exists -->
     <snowTextureThreshold>0.7</snowTextureThreshold>
     <!-- at what snow depth the mineral is completely hidden -->
-    <hiddenInSnowThreshold>0.8</hiddenInSnowThreshold>
+    <hiddenInSnowThreshold>0.85</hiddenInSnowThreshold>
   </ThingDef>
   
 
@@ -228,7 +228,7 @@
     <!-- at what snow depth the snow texture is used, if it exists -->
     <snowTextureThreshold>0.6</snowTextureThreshold>
     <!-- at what snow depth the mineral is completely hidden -->
-    <hiddenInSnowThreshold>0.8</hiddenInSnowThreshold>
+    <hiddenInSnowThreshold>0.85</hiddenInSnowThreshold>
   </ThingDef>
   
   
@@ -256,7 +256,7 @@
     <!-- at what snow depth the snow texture is used, if it exists -->
     <snowTextureThreshold>0.7</snowTextureThreshold>
     <!-- at what snow depth the mineral is completely hidden -->
-    <hiddenInSnowThreshold>1</hiddenInSnowThreshold>
+    <hiddenInSnowThreshold>1.1</hiddenInSnowThreshold>
   </ThingDef>
   
   

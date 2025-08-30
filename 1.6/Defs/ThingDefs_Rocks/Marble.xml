@@ -400,11 +400,10 @@
     <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>Marble_Rough</li>
       <li>WeatheredMarble</li>
       <li>Marble</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
@@ -520,7 +519,7 @@
       <li>WeatheredMarble</li>
       <li>Marble</li>
     </associatedOres>
-    <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>5</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
