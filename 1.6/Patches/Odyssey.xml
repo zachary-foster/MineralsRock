@@ -67,7 +67,11 @@
             <Beauty>4</Beauty>
           </statBases>
           <building>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.5</mineableDropChance>
           </building>
+          <filthLeaving>Filth_ChippedIce</filthLeaving>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
           <spawnRadius>1</spawnRadius>
@@ -137,7 +141,10 @@
           </statBases>
           <building>
             <mineablePreventMeteorite>true</mineablePreventMeteorite>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.6</mineableDropChance>
           </building>
+          <filthLeaving>Filth_ChippedIce</filthLeaving>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
           <spawnRadius>3</spawnRadius>
@@ -204,7 +211,10 @@
           </statBases>
           <building>
             <smoothedThing>SmoothedHewnGlacialIce</smoothedThing>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.7</mineableDropChance>
           </building>
+          <filthLeaving>Filth_ChippedIce</filthLeaving>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
           <spawnRadius>1</spawnRadius>
@@ -281,7 +291,10 @@
             <Beauty>4</Beauty>
           </statBases>
           <building>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.7</mineableDropChance>
           </building>
+          <filthLeaving>Filth_ChippedIce</filthLeaving>
           <!-- Other resources it might drop -->
           <randomlyDropResources>
           </randomlyDropResources>
@@ -324,7 +337,10 @@
           </statBases>
           <pathCost>100</pathCost>
           <building>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.3</mineableDropChance>
           </building>
+          <filthLeaving>Filth_ChippedIce</filthLeaving>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
           <spawnRadius>1</spawnRadius>
@@ -418,6 +434,7 @@
           <pathCost>40</pathCost>
           <building>
           </building>
+          <filthLeaving>Filth_ChippedIce</filthLeaving>
           <!--How far away it can spawn from an existing location-->
           <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
           <spawnRadius>2</spawnRadius>

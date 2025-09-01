@@ -1,15 +1,24 @@
 # Minerals Rock
 
-A complete overhaul of mountainous terrain and rocks in RimWorld, adapted to vanilla from the Hardcore SK mod by the original author.
-Rocks now come in different sizes, textures, and shapes other than square (gasp!).
-Different types of rocks have distinct appearances and properties that affect gameplay, so each map looks and feels different.
-Rock types vary more in how hard they are to mine, how much they yield when mined, how rocky the landscape is, how beautiful they are, and how much cover they provide in a gunfight.
-Want an easy to mine map with lots of building material? Go for sandstone.
-Want the ultimate mountain fortress and are prepared to work for it? Go for granite.
-This mod aims to make the rock type and terrain more strategic choices.
-Also, check the settings for options to tweak the rock properties to your liking, including setting the number of rock types per map!
+A complete overhaul of mountainous terrain and rocks in RimWorld.
+This has been adapted from the Hardcore SK mod "Minerals" by the original author (Me!).
 
-## Rock properties
+- Rocks come in different sizes, textures, and shapes other than square!
+- Different types of rocks have distinct appearances and properties, so each map looks and plays different.
+- Rock types vary more in how hard they are to mine, how much they yield when mined, how rocky the landscape is, how beautiful they are, and how much cover they provide in a gunfight.
+- Rocks are a type of "Mineral" from the Minerals Framework mod which grants them features such as dropping multiple types of resources while being mined. See Minerals Framework for more information.
+- Adds Basalt and makes it the only rock present in volcanic biomes
+
+See other mods in the "Minerals" collection to get the full experience:
+
+- **Minerals Rock Extra**: Additional rocks types
+- **Minerals Sparkle**: Valuable crystals that can be mined for gems in remote and extreme biomes
+- **Minerals Sparkle Extra**: Additional crystal types
+- **Minerals Craft**: Useful stone types and resources useful for construction and crafting
+- **Minerals Exotic**: Exotic minerals such as glowstone, coldstone, and adamant
+- **Minerals Frozen**: Dynamic ice and snow that can be used for building and cooling rooms
+
+## Rocks of the Rim
 
 ### Sandstone
 
