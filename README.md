@@ -138,10 +138,5 @@ I am not aware of any incompatibilities with other mods, but please let me know 
 
 ## Dependencies
 
-Requires Minerals Framework: ...
+Requires **Minerals Framework**
 
-## Like my mod? How much exactly? ;)
-
-If you like my mod and would like to support my work, please consider donating via Ko-fi or PayPal.
-
-...
