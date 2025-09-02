@@ -317,7 +317,6 @@
             <texPath>Things/Rock/PassableClaystone</texPath>
             <color>(240,245,255)</color>
           </graphicData>
-          <altitudeLayer>Building</altitudeLayer>
           <!-- If defined, randomly pick colors from this set -->
           <randomColorsOne>
             <li>(240,245,255)</li>
