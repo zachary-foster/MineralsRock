@@ -2,11 +2,9 @@
 <Patch>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/BiomeDef[not(defName='Sea') and not(defName='Ocean')]</xpath>
+    <xpath>/Defs/BiomeDef/extraGenSteps</xpath>
     <value>
-      <extraGenSteps>
-        <li>MF_GenStep_RemoveChunks</li>
-      </extraGenSteps>
+      <li>MF_GenStep_RemoveChunks</li>
     </value>
   </Operation>
 

@@ -439,7 +439,7 @@
       <li>Granite</li>
       <li>WeatheredGranite</li>
     </associatedOres>
-    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
+    <nearAssociatedOreBonus>20</nearAssociatedOreBonus>
     <!-- Roof requirements -->
     <mustBeUnderRoof>false</mustBeUnderRoof>
     <mustBeUnderThickRoof>false</mustBeUnderThickRoof>
