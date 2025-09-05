@@ -4,8 +4,8 @@
   <author>Zachary S. L. Foster</author>
 	<packageId>zacharyfoster.mineralsrock</packageId>
   <description>
-v0.1
-    
+Version 0.1
+
 NOTE: Under development. This is my first time adding mods to Steam, so I have some learning to do and I am sure things will need fixing.
 
 A complete overhaul of mountainous terrain and rocks in RimWorld.
@@ -27,6 +27,8 @@ The Minerals mods are still being balanced. Feel free to let me know if anything
 I am not aware of any incompatibilities with other mods, but please let me know if you find any.
 
 Requires "Minerals Framework" mod to function.
+
+See the source code and report issues at: https://github.com/zachary-foster/MineralsRock
   </description>
   <url>https://github.com/zachary-foster/MineralsRock</url>
   <supportedVersions>
