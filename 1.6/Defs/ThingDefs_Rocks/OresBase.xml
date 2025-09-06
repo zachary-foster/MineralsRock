@@ -5,6 +5,12 @@
   <ThingDef Name="WeatheredOre" ParentName="WeatheredRockBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
     <defName>WeatheredOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
     <building>
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
@@ -39,6 +45,12 @@
   <ThingDef Name="SolidOre" ParentName="SolidRockBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
     <defName>SolidOre</defName>
     <uiIconPath>Things/Ore/WeatheredOre/WeatheredOreA</uiIconPath>
+    <graphicData>
+      <shaderType>CutoutComplex</shaderType>
+      <texPath>Things/Ore/WeatheredOre</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>(1.5,1.5)</drawSize>
+    </graphicData>
     <building>
       <mineableDropChance>0.01</mineableDropChance>
       <mineableYield>1</mineableYield>
@@ -73,6 +85,9 @@
 
   <ThingDef Name="HewnOre" ParentName="HewnRockBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
     <defName>HewnOre</defName>
+    <graphicData>
+      <texPath>Things/Ore/HewnOre</texPath>
+    </graphicData>
     <uiIconPath>Things/Ore/HewnOre/HewnOreA</uiIconPath>
     <building>
       <mineableDropChance>0.01</mineableDropChance>
@@ -100,4 +115,22 @@
   </ThingDef>
   
 
+  <ThingDef Name="WeatheredGemOreBase" ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
+    <graphicData>
+      <texPath>Things/Ore/QuartzOre</texPath>
+    </graphicData>
+  </ThingDef>
+
+
+  <ThingDef Name="SolidGemOreBase" ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
+    <uiIconPath>Things/Ore/QuartzOre/QuartzOreA</uiIconPath>
+    <graphicData>
+      <texPath>Things/Ore/QuartzOre</texPath>
+    </graphicData>
+  </ThingDef>
+
+  <ThingDef Name="HewnGemOreBase" ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+  </ThingDef>
+  
 </Defs>

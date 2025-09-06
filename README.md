@@ -136,6 +136,10 @@ New rock types introduced by other mods are not automatically supported since ea
 It is relatively easy to add support for new rock types, so if you would like a particular rock type supported please let me know or even better make a pull request on GitHub!
 I am not aware of any incompatibilities with other mods, but please let me know if you find any.
 
+This mod has patches to work with the following mods:
+
+- Medieval Overhaul
+
 ## Dependencies
 
 Requires **Minerals Framework**

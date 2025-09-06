@@ -6,10 +6,6 @@
     <defName>WeatheredOreSteel</defName>
     <label>Weathered Iron Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
@@ -38,10 +34,6 @@
     <defName>SolidOreSteel</defName>
     <label>Solid Iron Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
@@ -72,26 +64,6 @@
     <label>Hewn Iron Ore Deposits</label>
     <description>Deposits of Iron Ore. Iron Ore has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(155,133,107)</colorTwo>
     </graphicData>
@@ -119,10 +91,6 @@
     <defName>WeatheredOreSilver</defName>
     <label>Weathered Silver Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
@@ -151,10 +119,6 @@
     <defName>SolidOreSilver</defName>
     <label>Solid Silver Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
@@ -183,26 +147,6 @@
     <defName>HewnOreSilver</defName>
     <label>Hewn Silver Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(147,144,134)</colorTwo>
     </graphicData>
@@ -231,10 +175,6 @@
     <defName>WeatheredOreGold</defName>
     <label>Weathered Gold Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
@@ -263,10 +203,6 @@
     <defName>SolidOreGold</defName>
     <label>Solid Gold Ore Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
@@ -296,26 +232,6 @@
     <label>Hewn Gold Ore Deposits</label>
     <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(187,173,25)</colorTwo>
     </graphicData>
@@ -343,10 +259,6 @@
     <defName>WeatheredOreJade</defName>
     <label>Weathered Jade Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
@@ -374,10 +286,6 @@
     <defName>SolidOreJade</defName>
     <label>Solid Jade Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
@@ -407,26 +315,6 @@
     <label>Hewn Jade Ore Deposits</label>
     <description>Rock containing bits of jade.</description>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(30,173,25)</colorTwo>
     </graphicData>
@@ -886,10 +774,6 @@
     <defName>WeatheredOreUranium</defName>
     <label>Weathered Uranium Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(70,70,70)</colorTwo>
     </graphicData>
@@ -913,10 +797,6 @@
     <defName>SolidOreUranium</defName>
     <label>Solid Uranium Deposits</label>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-      <texPath>Things/Ore/WeatheredOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(70,70,70)</colorTwo>
     </graphicData>
@@ -942,26 +822,6 @@
     <label>Hewn Uranium Deposits</label>
     <description>Rock containing bits of uranium.</description>
     <graphicData>
-      <shaderType>CutoutComplex</shaderType>
-			<linkType>CornerFiller</linkType>
-			<linkFlags>
-				<li>Wall</li>
-        <li>Rock</li>
-        <li>MapEdge</li>
-			</linkFlags>
-			<damageData>
-				<cornerTL>Damage/Corner</cornerTL>
-				<cornerTR>Damage/Corner</cornerTR>
-				<cornerBL>Damage/Corner</cornerBL>
-				<cornerBR>Damage/Corner</cornerBR>
-				<edgeTop>Damage/Edge</edgeTop>
-				<edgeBot>Damage/Edge</edgeBot>
-				<edgeLeft>Damage/Edge</edgeLeft>
-				<edgeRight>Damage/Edge</edgeRight>
-			</damageData>
-      <texPath>Things/Ore/HewnOre</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <drawSize>(1.5,1.5)</drawSize>
       <color>(105,95,97)</color>
       <colorTwo>(70,70,70)</colorTwo>
     </graphicData>
