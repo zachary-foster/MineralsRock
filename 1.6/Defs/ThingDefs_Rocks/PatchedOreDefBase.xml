@@ -10,7 +10,7 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>DankPyon_Iron</ResourceDefName>
+        <ResourceDefName>DankPyon_IronOre</ResourceDefName>
         <DropProbability>3</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -32,7 +32,7 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>DankPyon_Iron</ResourceDefName>
+        <ResourceDefName>DankPyon_IronOre</ResourceDefName>
         <DropProbability>4</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -54,7 +54,7 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>DankPyon_Iron</ResourceDefName>
+        <ResourceDefName>DankPyon_IronOre</ResourceDefName>
         <DropProbability>5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
       </li>
@@ -91,6 +91,7 @@
         <ResourceDefName>DankPyon_Coal</ResourceDefName>
         <DropProbability>3</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -130,6 +131,7 @@
         <ResourceDefName>DankPyon_Coal</ResourceDefName>
         <DropProbability>4</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -162,6 +164,7 @@
         <ResourceDefName>DankPyon_Coal</ResourceDefName>
         <DropProbability>5</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>SmallFossil</ResourceDefName>
@@ -196,6 +199,7 @@
         <ResourceDefName>DankPyon_Salt</ResourceDefName>
         <DropProbability>3</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Salt</ResourceDefName>
@@ -233,6 +237,7 @@
         <ResourceDefName>DankPyon_Salt</ResourceDefName>
         <DropProbability>4</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Salt</ResourceDefName>
@@ -269,6 +274,7 @@
         <ResourceDefName>DankPyon_Salt</ResourceDefName>
         <DropProbability>6</DropProbability>
         <CountPerDrop>10</CountPerDrop>
+        <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
         <ResourceDefName>Salt</ResourceDefName>
