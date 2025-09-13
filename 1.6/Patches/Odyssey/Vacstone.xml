@@ -101,7 +101,7 @@
         </ThingDef>
 
 
-        <ThingDef Name="MR_SmallVacstone" ParentName="MF_SmallRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+        <ThingDef Name="MR_SmallVacstone" ParentName="MF_SmallVacstoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
           <defName>MR_SmallVacstone</defName>
           <label>Vacstone rocks</label>
           <description>Vacstone rocks that are easily walked over and provide little cover.</description>

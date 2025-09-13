@@ -102,7 +102,7 @@
         <MinMiningSkill>7</MinMiningSkill>
       </li>
       <li>
-        <ResourceDefName>SmallFossil</ResourceDefName>
+        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>5</MinMiningSkill>
@@ -257,7 +257,7 @@
         <MinMiningSkill>7</MinMiningSkill>
       </li>
       <li>
-        <ResourceDefName>SmallFossil</ResourceDefName>
+        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
         <DropProbability>0.03</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>5</MinMiningSkill>

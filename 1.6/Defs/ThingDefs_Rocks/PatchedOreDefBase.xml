@@ -94,7 +94,7 @@
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
-        <ResourceDefName>SmallFossil</ResourceDefName>
+        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
         <DropProbability>0.04</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>8</MinMiningSkill>
@@ -134,7 +134,7 @@
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
-        <ResourceDefName>SmallFossil</ResourceDefName>
+        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
         <DropProbability>0.05</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>8</MinMiningSkill>
@@ -166,7 +166,7 @@
         <ScaleYieldBySkill>false</ScaleYieldBySkill>
       </li>
       <li>
-        <ResourceDefName>SmallFossil</ResourceDefName>
+        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
         <DropProbability>0.06</DropProbability>
         <CountPerDrop>1</CountPerDrop>
         <MinMiningSkill>8</MinMiningSkill>

@@ -8,7 +8,7 @@
     <match Class="PatchOperationAdd">
       <xpath>/Defs</xpath>
       <value>
-        
+
         <ThingDef ParentName="MR_WeatheredIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_SolidIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_HewnIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
@@ -98,7 +98,7 @@
           </ThingsToReplace>
         </ThingDef>
         
-        <ThingDef ParentName="SmoothedHewnClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+        <ThingDef ParentName="SmoothedClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
           <building>
             <mineableThing>DankPyon_ChunkClay</mineableThing>
             <mineableDropChance>0.6</mineableDropChance>

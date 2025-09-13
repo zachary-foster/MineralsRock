@@ -2,7 +2,7 @@
 <Defs>
 
 
-  <ThingDef Name="MR_WeatheredGranite" ParentName="MF_WeatheredIntrusiveIgneousRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_WeatheredGranite" ParentName="MF_WeatheredGraniteBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_WeatheredGranite</defName>
     <label>Weathered Granite</label>
     <description>Large masses of eroded granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
@@ -34,10 +34,11 @@
     <allowedTerrains>
       <li>Granite_Rough</li>
     </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Granite_Rough</li>
-    </neededNearbyTerrains>
+    <!-- Controls how extra clusters are added near assocaited things -->
+    <associatedOres>
+      <li>MR_SolidGranite</li>
+    </associatedOres>
+    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Granite</li>
@@ -45,7 +46,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="MR_SolidGranite" ParentName="MF_SolidIntrusiveIgneousRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_SolidGranite" ParentName="MF_SolidGraniteBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_SolidGranite</defName>
     <label>Solid Granite</label>
     <description>A solid wall of granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
@@ -73,14 +74,6 @@
       <mineableThing>ChunkGranite</mineableThing>
       <mineableDropChance>0.25</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Granite_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Granite_Rough</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Granite</li>
@@ -88,7 +81,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="MR_HewnGranite" ParentName="MF_HewnIntrusiveIgneousRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_HewnGranite" ParentName="MF_HewnGraniteBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnGranite</defName>
     <label>Hewn Granite</label>
     <description>Hewn wall of solid granite. Granite is an igenous rock which cooled slowly deep underground, allowing for large crystals to form. Is hardness and consistency make it a great building material, but it is hard to mine.</description>
@@ -115,16 +108,8 @@
     <building>
       <mineableThing>ChunkGranite</mineableThing>
       <mineableDropChance>0.25</mineableDropChance>
-      <smoothedThing>MR_SmoothedHewnGranite</smoothedThing>
+      <smoothedThing>MR_SmoothedGranite</smoothedThing>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Granite_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Granite</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Granite</li>
@@ -132,8 +117,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="MR_SmoothedHewnGranite" ParentName="MF_SmoothedHewnIntrusiveIgneousRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_SmoothedHewnGranite</defName>
+  <ThingDef Name="MR_SmoothedGranite" ParentName="MF_SmoothedGraniteBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_SmoothedGranite</defName>
     <label>Smoothed granite wall</label>
     <description>A smoothed wall of solid granite. Its almost pretty.</description>
     <graphicData>
@@ -146,7 +131,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="MR_BoulderGranite" ParentName="MF_BoulderIntrusiveIgneousRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_BoulderGranite" ParentName="MF_BoulderGraniteBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_BoulderGranite</defName>
     <label>Granite Boulder</label>
     <description>Granite boulder. These can be climbed over with some difficulty and provide good cover.</description>
@@ -189,12 +174,11 @@
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>ChunkGranite</li>
-      <li>MR_GraniteBoulder</li>
     </ThingsToReplace>
   </ThingDef>
 
 
-  <ThingDef Name="MR_SmallGranite" ParentName="MF_SmallIntrusiveIgneousRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_SmallGranite" ParentName="MF_SmallGraniteBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_SmallGranite</defName>
     <label>Granite rocks</label>
     <description>Granite rocks that are easily walked over and provide little cover.</description>

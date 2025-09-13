@@ -41,7 +41,7 @@
         </ThingDef>
 
 
-        <ThingDef Name="MR_SolidOreObsidian" ParentName="MF_SolidOreBase" Class="MineralsRock.ThingDef_SolidRock">
+        <ThingDef Name="MR_SolidOreObsidian" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
           <defName>MR_SolidOreObsidian</defName>
           <label>Solid Obsidian Deposits</label>
           <description>Solid rock containing streaks of volcanic glass.</description>

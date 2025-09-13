@@ -45,7 +45,7 @@
         </ThingDef>
 
 
-        <ThingDef Name="MR_SolidGlacialIce" ParentName="MF_SolidGlacialIceBase" Class="MineralsRock.ThingDef_SolidRock">
+        <ThingDef Name="MR_SolidGlacialIce" ParentName="MF_SolidGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
           <defName>MR_SolidGlacialIce</defName>
           <label>Solid glacial ice</label>
           <description>A solid wall of glacial ice with small cracks running through it.</description>
@@ -103,8 +103,8 @@
         </ThingDef>
 
 
-        <ThingDef Name="MR_SmoothedHewnGlacialIce" ParentName="MF_SmoothedGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <defName>MR_SmoothedHewnGlacialIce</defName>
+        <ThingDef Name="MR_SmoothedGlacialIce" ParentName="MF_SmoothedGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_SmoothedGlacialIce</defName>
           <label>Smoothed glacial ice wall</label>
           <description>A smoothed wall of glacial ice.</description>
           <graphicData>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
   
-  <ThingDef Name="MR_WeatheredLimestone" ParentName="MR_WeatheredLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_WeatheredLimestone" ParentName="MF_WeatheredLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_WeatheredLimestone</defName>
     <label>Weathered Limestone</label>
     <description>Weathered masses of eroded limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material and is easily quarried.</description>
@@ -33,7 +33,7 @@
   </ThingDef>
 
   
-  <ThingDef Name="MR_SolidLimestone" ParentName="MR_SolidLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_SolidLimestone" ParentName="MF_SolidLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_SolidLimestone</defName>
     <label>Solid Limestone</label>
     <description>A wall of solid limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material and is easily quarried.</description>
@@ -65,7 +65,7 @@
   </ThingDef>
   
 
-  <ThingDef Name="MR_HewnLimestone" ParentName="MR_HewnLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_HewnLimestone" ParentName="MF_HewnLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnLimestone</defName>
     <label>Hewn Limestone</label>
     <description>A wall of hewn limestone, a sedimentary rock composed of the shells of long-dead sealife. It makes a good building material and is easily quarried.</description>
@@ -81,7 +81,7 @@
     <building>
       <mineableThing>ChunkLimestone</mineableThing>
       <mineableDropChance>0.4</mineableDropChance>
-      <smoothedThing>SmoothedHewnLimestone</smoothedThing>
+      <smoothedThing>MR_SmoothedLimestone</smoothedThing>
     </building>
     <!-- The terrains this can appear on. -->
     <allowedTerrains>
@@ -98,8 +98,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="MR_SmoothHewnLimestone" ParentName="MR_SmoothHewnLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_SmoothHewnLimestone</defName>
+  <ThingDef Name="MR_SmoothedLimestone" ParentName="MF_SmoothedLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_SmoothedLimestone</defName>
     <label>Smoothed limestone wall</label>
     <description>A wall of smoothed limestone. Its a bit dull.</description>
     <graphicData>
@@ -118,7 +118,7 @@
   </ThingDef>
 
  
-  <ThingDef Name="MR_BoulderLimestone" ParentName="MR_BoulderLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_BoulderLimestone" ParentName="MF_BoulderLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_BoulderLimestone</defName>
     <label>Limestone boulder</label>
     <description>Limestone boulder. These can be climbed over with some difficulty and provide good cover.</description>
@@ -155,7 +155,7 @@
   </ThingDef>
 
 
-  <ThingDef Name="MR_SmallLimestone" ParentName="MR_SmallLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef Name="MR_SmallLimestone" ParentName="MF_SmallLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_SmallLimestone</defName>
     <label>Limestone rocks</label>
     <description>Limestone rocks that are easily walked over and provide little cover.</description>

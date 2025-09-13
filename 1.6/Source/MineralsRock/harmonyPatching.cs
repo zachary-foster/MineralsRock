@@ -95,7 +95,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
             // Try to find matching passable rock def (e.g. "Granite_Rough" -> "PassableGranite")
             string rockName = nearestRockTerrain.defName.Split('_')[0];
-            ThingDef rockDef = DefDatabase<ThingDef>.GetNamedSilentFail($"Passable{rockName}");
+            ThingDef rockDef = DefDatabase<ThingDef>.GetNamedSilentFail($"Small{rockName}");
             
             if (rockDef == null)
             {

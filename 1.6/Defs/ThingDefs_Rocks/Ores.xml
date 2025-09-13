@@ -2,8 +2,8 @@
 <Defs>
   
 
-  <ThingDef ParentName="MR_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBaseSteel</defName>
+  <ThingDef ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBaseSteel</defName>
     <label>Weathered Steel Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -30,8 +30,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidOreBase" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBaseSteel</defName>
+  <ThingDef ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBaseSteel</defName>
     <label>Solid Steel Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -58,7 +58,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnOreBaseSteel</defName>
     <label>Hewn Steel Deposits</label>
     <description>Deposits of steel. Steel has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
@@ -86,8 +86,8 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="MR_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBaseSilver</defName>
+  <ThingDef ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBaseSilver</defName>
     <label>Weathered Silver Ore Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -114,8 +114,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidOreBase" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBaseSilver</defName>
+  <ThingDef ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBaseSilver</defName>
     <label>Solid Silver Ore Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -141,7 +141,7 @@
     <mineSpeedFactor>0.45</mineSpeedFactor>
   </ThingDef>
 
-  <ThingDef ParentName="MR_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnOreBaseSilver</defName>
     <label>Hewn Silver Ore Deposits</label>
     <graphicData>
@@ -169,8 +169,8 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="MR_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBaseGold</defName>
+  <ThingDef ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBaseGold</defName>
     <label>Weathered Gold Ore Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -197,8 +197,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidOreBase" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBaseGold</defName>
+  <ThingDef ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBaseGold</defName>
     <label>Solid Gold Ore Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -224,7 +224,7 @@
     <mineSpeedFactor>0.35</mineSpeedFactor>
   </ThingDef>
 
-  <ThingDef ParentName="MR_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnOreBaseGold</defName>
     <label>Hewn Gold Ore Deposits</label>
     <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
@@ -252,8 +252,8 @@
   </ThingDef>
   
   
-  <ThingDef ParentName="MR_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBaseJade</defName>
+  <ThingDef ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBaseJade</defName>
     <label>Weathered Jade Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -279,8 +279,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidOreBase" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBaseJade</defName>
+  <ThingDef ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBaseJade</defName>
     <label>Solid Jade Deposits</label>
     <graphicData>
       <color>(105,95,97)</color>
@@ -306,7 +306,7 @@
   </ThingDef>
 
   
-  <ThingDef ParentName="MR_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnOreBaseJade</defName>
     <label>Hewn Jade Ore Deposits</label>
     <description>Rock containing bits of jade.</description>
@@ -333,8 +333,8 @@
   </ThingDef>
   
 
-  <ThingDef ParentName="MR_WeatheredTechOre" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBasePlasteel</defName>
+  <ThingDef ParentName="MF_WeatheredTechOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBasePlasteel</defName>
     <label>Weathered plasteel</label>
     <description>Ancient plasteel-rich machinery, compacted over time and weatherd by the elements. Can be mined for plasteel.</description>
     <randomlyDropResources>
@@ -377,8 +377,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidTechOre" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBasePlasteel</defName>
+  <ThingDef ParentName="MF_SolidTechOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBasePlasteel</defName>
     <label>Solid compacted plasteel</label>
     <description>Ancient plasteel-rich machinery, compacted over time. Can be mined for plasteel.</description>
     <randomlyDropResources>
@@ -423,7 +423,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_HewnTechOre" Class="MineralsRock.ThingDef_StaticMineral">
+  <ThingDef ParentName="MF_HewnTechOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnOreBasePlasteel</defName>
     <label>Hewn compacted plasteel</label>
     <description>Ancient plasteel-rich machinery, compacted over time. Can be mined for plasteel.</description>
@@ -468,8 +468,8 @@
 
 
 
-  <ThingDef ParentName="MR_WeatheredTechOre" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBaseTech</defName>
+  <ThingDef ParentName="MF_WeatheredTechOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBaseTech</defName>
     <label>Weathered compacted machinery</label>
     <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <randomlyDropResources>
@@ -512,8 +512,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidOreBase" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBaseTech</defName>
+  <ThingDef ParentName="MF_SolidTechOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBaseTech</defName>
     <label>Solid compacted machinery</label>
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
     <randomlyDropResources>
@@ -571,8 +571,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_HewnTechOre" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_HewnOreBaseTech</defName>
+  <ThingDef ParentName="MF_HewnTechOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_HewnOreBaseTech</defName>
     <label>Hewn compacted machinery</label>
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
     <randomlyDropResources>
@@ -630,8 +630,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_WeatheredOreBaseUranium</defName>
+  <ThingDef ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredOreBaseUranium</defName>
     <label>Weathered Uranium Deposits</label>
     <description>Rock containing bits of uranium.</description>
     <graphicData>
@@ -653,8 +653,8 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_SolidOreBase" Class="MineralsRock.ThingDef_StaticMineral">
-    <defName>MR_SolidOreBaseUranium</defName>
+  <ThingDef ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidOreBaseUranium</defName>
     <label>Solid Uranium Deposits</label>
     <description>Rock containing bits of uranium.</description>
     <graphicData>
@@ -676,7 +676,7 @@
   </ThingDef>
 
 
-  <ThingDef ParentName="MR_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+  <ThingDef ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
     <defName>MR_HewnOreBaseUranium</defName>
     <label>Hewn Uranium Deposits</label>
     <description>Rock containing bits of uranium.</description>

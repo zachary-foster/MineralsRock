@@ -82,7 +82,7 @@
     <building>
       <mineableThing>ChunkMarble</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
-      <smoothedThing>SmoothedHewnMarble</smoothedThing>
+      <smoothedThing>MR_SmoothedMarble</smoothedThing>
     </building>
     <!-- The terrains this can appear on. -->
     <allowedTerrains>
@@ -100,7 +100,7 @@
 
 
   <ThingDef Name="MR_SmoothedMarble" ParentName="MF_SmoothedMarbleBase" Class="MineralsFramework.ThingDef_StaticMineral">
-    <defName>MR_SmoothedHewnMarble</defName>
+    <defName>MR_SmoothedMarble</defName>
     <label>Smoothed marble wall</label>
     <description>A wall of smoothed marble. Its nice to look at.</description>
     <graphicData>
