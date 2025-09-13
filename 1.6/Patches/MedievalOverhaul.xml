@@ -8,36 +8,37 @@
     <match Class="PatchOperationAdd">
       <xpath>/Defs</xpath>
       <value>
-        <ThingDef ParentName="WeatheredIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidIronBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidCoalBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidSaltBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredRubyOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidRubyOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnRubyOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredEmeraldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidEmeraldOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnEmeraldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredSapphireOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidSapphireOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnSapphireOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredCitrineOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidCitrineOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnCitrineOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredOnyxOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidOnyxOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnOnyxOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredAmberOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidAmberOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnAmberOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="WeatheredGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="SolidGoldOreBase" Class="MineralsRock.ThingDef_SolidRock" />
-        <ThingDef ParentName="HewnGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        
+        <ThingDef ParentName="MR_WeatheredIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredRubyOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidRubyOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnRubyOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredEmeraldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidEmeraldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnEmeraldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredSapphireOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidSapphireOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnSapphireOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredCitrineOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidCitrineOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnCitrineOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredOnyxOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidOnyxOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnOnyxOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredAmberOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidAmberOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnAmberOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_WeatheredGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_SolidGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
+        <ThingDef ParentName="MR_HewnGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
 
 
         <ThingDef ParentName="WeatheredClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
@@ -59,7 +60,7 @@
           </ThingsToReplace>
         </ThingDef>
         
-        <ThingDef ParentName="SolidClaystoneBase" Class="MineralsRock.ThingDef_SolidRock">
+        <ThingDef ParentName="SolidClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
           <building>
             <mineableThing>DankPyon_ChunkClay</mineableThing>
             <mineableDropChance>0.5</mineableDropChance>

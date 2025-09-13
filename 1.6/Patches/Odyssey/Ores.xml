@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+
+
+        <ThingDef Name="MR_WeatheredOreObsidian" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_WeatheredOreObsidian</defName>
+          <label>Weathered Obsidian Deposits</label>
+          <description>Weathered chunks of sharp volcanic glass.</description>
+          <graphicData>
+            <color>(40,40,40)</color>
+            <colorTwo>(5,5,5)</colorTwo>
+          </graphicData>
+          <!-- If the primary color is based on the stone below it -->
+          <coloredByTerrain>false</coloredByTerrain>
+          <randomlyDropResources>
+            <li>
+              <ResourceDefName>Obsidian</ResourceDefName>
+              <DropProbability>5</DropProbability>
+              <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>MS_RoughGem</ResourceDefName>
+              <DropProbability>0.3</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+          </randomlyDropResources>
+          <ThingsToReplace>
+            <li>MineableObsidian</li>
+          </ThingsToReplace>
+          <!-- How easy it is to mine -->
+          <mineSpeedFactor>0.6</mineSpeedFactor>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_SolidOreObsidian" ParentName="MF_SolidOreBase" Class="MineralsRock.ThingDef_SolidRock">
+          <defName>MR_SolidOreObsidian</defName>
+          <label>Solid Obsidian Deposits</label>
+          <description>Solid rock containing streaks of volcanic glass.</description>
+          <graphicData>
+            <color>(40,40,40)</color>
+            <colorTwo>(5,5,5)</colorTwo>
+          </graphicData>
+          <!-- If the primary color is based on the stone below it -->
+          <coloredByTerrain>false</coloredByTerrain>
+          <randomlyDropResources>
+            <li>
+              <ResourceDefName>Obsidian</ResourceDefName>
+              <DropProbability>4</DropProbability>
+              <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>MS_RoughGem</ResourceDefName>
+              <DropProbability>0.5</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+          </randomlyDropResources>
+          <ThingsToReplace>
+            <li>MineableObsidian</li>
+          </ThingsToReplace>
+          <!-- How easy it is to mine -->
+          <mineSpeedFactor>0.5</mineSpeedFactor>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_HewnOreObsidian" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_HewnOreObsidian</defName>
+          <label>Hewn Obsidian Deposits</label>
+          <description>Hewn rock containing streaks of volcanic glass.</description>
+          <graphicData>
+            <color>(40,40,40)</color>
+            <colorTwo>(5,5,5)</colorTwo>
+          </graphicData>
+          <!-- If the primary color is based on the stone below it -->
+          <coloredByTerrain>false</coloredByTerrain>
+          <randomlyDropResources>
+            <li>
+              <ResourceDefName>Obsidian</ResourceDefName>
+              <DropProbability>3</DropProbability>
+              <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>MS_RoughGem</ResourceDefName>
+              <DropProbability>0.3</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+            </li>
+          </randomlyDropResources>
+          <ThingsToReplace>
+            <li>MineableObsidian</li>
+          </ThingsToReplace>
+          <!-- How easy it is to mine -->
+          <mineSpeedFactor>0.4</mineSpeedFactor>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_ObsidianFlow" ParentName="MF_BoulderRockBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_ObsidianFlow</defName>
+          <label>Obsidian Flow</label>
+          <description>A volcanic glass formed when lava cools quickly at the surface. Razor-shape edges make this very difficult to walk over.</description>
+          <graphicData>
+            <texPath>Things/Mineral/Obsidian</texPath>
+          </graphicData>
+          <uiIconPath>Things/Mineral/Obsidian/ObsidianA</uiIconPath>
+          <statBases>
+            <MaxHitPoints>600</MaxHitPoints>
+            <Beauty>5</Beauty>
+          </statBases>
+          <pathCost>150</pathCost>
+          <passability>PassThroughOnly</passability>
+          <!--How far away it can spawn from an existing location-->
+          <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
+          <spawnRadius>1</spawnRadius>
+          <!-- The probability that this mineral type will be spawned at all on a given map -->
+          <perMapProbability>0.5</perMapProbability>
+          <!--For a given map, the minimum/maximum probablility a cluster will spawn for every possible location -->
+          <minClusterProbability>0.0001</minClusterProbability>
+          <maxClusterProbability>0.001</maxClusterProbability>
+          <!-- How  many squares each cluster will be -->
+          <minClusterSize>20</minClusterSize>
+          <maxClusterSize>150</maxClusterSize>
+          <!-- The range of starting sizes of individuals in clusters -->
+          <initialSizeMin>.6</initialSizeMin>
+          <initialSizeMax>.9</initialSizeMax>
+          <!-- How much initial sizes of individuals randomly vary -->
+          <initialSizeVariation>.25</initialSizeVariation>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>VolcanicRock</li>
+            <li>MR_WeatheredBasalt</li>
+            <li>MR_SolidBasalt</li>
+            <li>MR_BasaltBase</li>
+            <li>MR_BasaltBase_Rough</li>
+            <li>Obsidian</li>
+            <li>MRE_DioriteBase_Rough</li>
+            <li>MRE_AndesiteBase_Rough</li>
+            <li>MRE_PeridotiteBase_Rough</li>
+            <li>MRE_RhyoliteBase_Rough</li>
+            <li>MRE_ScoriaBase_Rough</li>
+          </neededNearbyTerrains>
+          <!-- how far away it can be from needed nearby terrains-->
+          <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
+          <!-- Controls how extra clusters are added near assocaited ore-->
+          <associatedOres>
+            <li>MR_WeatheredOreObsidian</li>
+            <li>MR_SolidOreObsidian</li>
+          </associatedOres>
+          <nearAssociatedOreBonus>100</nearAssociatedOreBonus>
+          <!-- If true, growth rate and initial size depends on distance from needed terrains -->
+          <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
+          <!-- Roof requirements -->
+          <mustBeUnroofed>true</mustBeUnroofed>
+          <!-- The maximum number of images that will be printed per square -->
+          <maxMeshCount>8</maxMeshCount>
+          <!-- The size range -->
+          <visualSizeRange>
+            <min>0.3</min>
+            <max>1.1</max>
+          </visualSizeRange>
+          <visualClustering>0.3</visualClustering>
+          <!-- between 0 and 1. 0 = uniform distribution, 1 = normal distribution -->
+          <visualSpread>2.0</visualSpread>
+          <!-- 1 = everything appears within cell and can spawn at edge when visualClustering == 0 -->
+          <visualSizeVariation>0.5</visualSizeVariation>
+          <!-- Other resources it might drop -->
+          <randomlyDropResources>
+            <li>
+              <ResourceDefName>MS_RoughGem</ResourceDefName>
+              <DropProbability>0.2</DropProbability>
+              <CountPerDrop>1</CountPerDrop>
+              <MinMiningSkill>5</MinMiningSkill>
+            </li>
+            <li>
+              <ResourceDefName>Obsidian</ResourceDefName>
+              <DropProbability>2</DropProbability>
+              <CountPerDrop>10</CountPerDrop>
+            </li>
+            <li>
+              <ResourceDefName>CrushedStone</ResourceDefName>
+              <DropProbability>1</DropProbability>
+              <CountPerDrop>5</CountPerDrop>
+              <WasteProduct>true</WasteProduct>
+            </li>
+          </randomlyDropResources>
+          <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->
+          <otherSettlementMiningRadius>6</otherSettlementMiningRadius>
+          <!-- How easy it is to mine -->
+          <mineSpeedFactor>0.5</mineSpeedFactor>
+        </ThingDef>
+
+
+      </value>
+    </match>
+  </Operation>
+
+
+</Patch>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>Odyssey</li>
+    </mods>
+    <match Class="PatchOperationAdd">
+      <xpath>/Defs</xpath>
+      <value>
+
+
+        <ThingDef Name="MR_WeatheredGlacialIce" ParentName="MF_WeatheredGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_WeatheredGlacialIce</defName>
+          <label>Weathered glacial ice</label>
+          <description>The ragged edge of a glacier. Deep cracks reveal blue ice inside formed from decades old compacted snow.</description>
+          <graphicData>
+            <color>(255,255,255)</color>
+          </graphicData>
+          <!-- If defined, randomly pick colors from this set -->
+          <randomColorsOne>
+            <li>(240,250,255)</li>
+          </randomColorsOne>
+          <!-- If defined, randomly pick colors from this set -->
+          <randomColorsTwo>
+            <li>(240,250,255)</li>
+          </randomColorsTwo>
+          <building>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.4</mineableDropChance>
+          </building>
+          <!-- The terrains this can appear on. The default is rocky terrains-->
+          <allowedTerrains>
+            <li>SolidIce_Rough</li>
+          </allowedTerrains>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>SolidIce_Rough</li>
+          </neededNearbyTerrains>
+          <!-- Things this mineral replaces when a map is initialized -->
+          <ThingsToReplace>
+            <li>SolidIce</li>
+          </ThingsToReplace>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_SolidGlacialIce" ParentName="MF_SolidGlacialIceBase" Class="MineralsRock.ThingDef_SolidRock">
+          <defName>MR_SolidGlacialIce</defName>
+          <label>Solid glacial ice</label>
+          <description>A solid wall of glacial ice with small cracks running through it.</description>
+          <graphicData>
+            <color>(230,240,255)</color>
+          </graphicData>
+          <!-- If defined, randomly pick colors from this set -->
+          <randomColorsOne>
+            <li>(230,240,255)</li>
+          </randomColorsOne>
+          <building>
+            <mineablePreventMeteorite>true</mineablePreventMeteorite>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.5</mineableDropChance>
+          </building>
+          <!-- The terrains this can appear on. The default is rocky terrains-->
+          <allowedTerrains>
+            <li>SolidIce_Rough</li>
+          </allowedTerrains>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>SolidIce_Rough</li>
+          </neededNearbyTerrains>
+          <!-- Things this mineral replaces when a map is initialized -->
+          <ThingsToReplace>
+            <li>SolidIce</li>
+          </ThingsToReplace>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_HewnGlacialIce" ParentName="MF_HewnGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_HewnGlacialIce</defName>
+          <label>Hewn glacial ice</label>
+          <description>A hewn wall of glacial ice.</description>
+          <graphicData>
+            <color>(220,235,255)</color>
+          </graphicData>
+          <building>
+            <smoothedThing>MR_SmoothedGlacialIce</smoothedThing>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.6</mineableDropChance>
+          </building>
+          <!-- The terrains this can appear on. The default is rocky terrains-->
+          <allowedTerrains>
+            <li>SolidIce_Rough</li>
+          </allowedTerrains>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>SolidIce_Rough</li>
+          </neededNearbyTerrains>
+          <!-- Things this mineral replaces when a map is initialized -->
+          <ThingsToReplace>
+            <li>SolidIce</li>
+          </ThingsToReplace>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_SmoothedHewnGlacialIce" ParentName="MF_SmoothedGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_SmoothedHewnGlacialIce</defName>
+          <label>Smoothed glacial ice wall</label>
+          <description>A smoothed wall of glacial ice.</description>
+          <graphicData>
+            <color>(220,235,255)</color>
+          </graphicData>
+          <building>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.6</mineableDropChance>
+          </building>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_BoulderGlacialIce" ParentName="MF_BoulderGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_BoulderGlacialIce</defName>
+          <label>GlacialIce outcropping</label>
+          <description>A glacial ice outcropping</description>
+          <graphicData>
+            <color>(240,245,255)</color>
+          </graphicData>
+          <!-- If defined, randomly pick colors from this set -->
+          <randomColorsOne>
+            <li>(240,245,255)</li>
+          </randomColorsOne>
+          <!-- If defined, randomly pick colors from this set -->
+          <randomColorsTwo>
+            <li>(240,245,255)</li>
+          </randomColorsTwo>
+          <building>
+            <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
+            <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.2</mineableDropChance>
+          </building>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>SolidIce_Rough</li>
+            <li>MR_WeatheredGlacialIce</li>
+          </neededNearbyTerrains>
+          <!-- Controls how extra clusters are added near assocaited ore-->
+          <associatedOres>
+            <li>MR_WeatheredGlacialIce</li>
+          </associatedOres>
+        </ThingDef>
+
+
+        <ThingDef Name="MR_UndergroundSmallGlacialIce" ParentName="MF_UndergroundSmallGlacialIceBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_UndergroundSmallGlacialIce</defName>
+          <label>Ice fragments</label>
+          <description>Small chunks of ice that have fallen from the roof of an ice cave.</description>
+          <graphicData>
+            <color>(230,240,255)</color>
+          </graphicData>
+          <randomColorsOne>
+            <li>(230,240,255)</li>
+          </randomColorsOne>
+          <randomColorsTwo>
+            <li>(230,240,255)</li>
+          </randomColorsTwo>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>MR_SolidGlacialIce</li>
+          </neededNearbyTerrains>
+          <!-- Controls how extra clusters are added near assocaited ore-->
+          <associatedOres>
+            <li>MR_SolidGlacialIce</li>
+          </associatedOres>
+        </ThingDef>
+
+
+      </value>
+    </match>
+  </Operation>
+
+
+</Patch>

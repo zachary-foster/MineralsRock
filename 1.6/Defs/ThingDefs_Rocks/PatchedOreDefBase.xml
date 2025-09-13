@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef Name="WeatheredIronBase" ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredIron</defName>
+
+  <ThingDef Name="MR_WeatheredIronBase" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredIron</defName>
     <label>Weathered iron deposits</label>
     <description>Weathered rock containing veins of iron</description>
     <graphicData>
-	    <colorTwo>(130,108,101)</colorTwo>
+      <colorTwo>(130,108,101)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -22,13 +23,13 @@
     <mineSpeedFactor>1.0</mineSpeedFactor>
   </ThingDef>
 
-  <ThingDef Name="SolidIronBase" ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidIron</defName>
+  <ThingDef Name="MR_SolidIronBase" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidIron</defName>
     <label>Solid iron deposits</label>
     <description>Solid rock containing veins of iron</description>
     <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
     <graphicData>
-	    <colorTwo>(130,108,101)</colorTwo>
+      <colorTwo>(130,108,101)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -39,18 +40,17 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableIron</li>
-      <li>HewnIron</li>
     </ThingsToReplace>
     <!-- how easy it is to mine -->
     <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
-  
-  <ThingDef Name="HewnIronBase" ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnIron</defName>
+
+  <ThingDef Name="MR_HewnIronBase" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnIron</defName>
     <label>Hewn iron deposits</label>
     <description>Hewn rock containing veins of iron</description>
     <graphicData>
-	    <colorTwo>(130,108,101)</colorTwo>
+      <colorTwo>(130,108,101)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -67,8 +67,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredCoalBase" ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredCoal</defName>
+  <ThingDef Name="MR_WeatheredCoalBase" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredCoal</defName>
     <label>Weathered coal deposits</label>
     <description>Weathered rock containing veins of coal</description>
     <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
@@ -76,7 +76,7 @@
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
-	    <color>(60,50,50)</color>
+      <color>(60,50,50)</color>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
     <!-- The size range -->
@@ -107,8 +107,8 @@
     <mineSpeedFactor>1.2</mineSpeedFactor>
   </ThingDef>
 
-  <ThingDef Name="SolidCoalBase" ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidCoal</defName>
+  <ThingDef Name="MR_SolidCoalBase" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidCoal</defName>
     <label>Solid coal deposits</label>
     <description>Solid rock containing veins of coal</description>
     <uiIconPath>Things/Rock/WeatheredSlate/WeatheredSlateA</uiIconPath>
@@ -116,7 +116,7 @@
       <shaderType>CutoutComplex</shaderType>
       <texPath>Things/Rock/WeatheredSlate</texPath>
       <graphicClass>Graphic_Random</graphicClass>
-	    <color>(60,50,50)</color>
+      <color>(60,50,50)</color>
       <drawSize>(1.5,1.5)</drawSize>
     </graphicData>
     <!-- The size range -->
@@ -142,19 +142,18 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableCoal</li>
-      <li>HewnCoal</li>
     </ThingsToReplace>
     <!-- how easy it is to mine -->
     <mineSpeedFactor>1.1</mineSpeedFactor>
   </ThingDef>
-  
-  <ThingDef Name="HewnCoalBase" ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnCoal</defName>
+
+  <ThingDef Name="MR_HewnCoalBase" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnCoal</defName>
     <label>Hewn coal deposits</label>
     <description>Hewn rock containing veins of coal</description>
     <graphicData>
       <texPath>Things/Rock/HewnRockWall</texPath>
-	    <color>(60,50,50)</color>
+      <color>(60,50,50)</color>
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <!-- If the primary color is based on the stone below it -->
@@ -181,8 +180,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredSaltBase" ParentName="WeatheredOre" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredSalt</defName>
+  <ThingDef Name="MR_WeatheredSaltBase" ParentName="MF_WeatheredOreBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredSalt</defName>
     <label>Weathered Salt Deposit</label>
     <description>Ancient salt deposits compacted underground for eons and recently exposed where the elements have sculpted them into flowing shapes</description>
     <graphicData>
@@ -191,7 +190,7 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredSandstone/WeatheredSandstoneA</uiIconPath>
     <statBases>
-		  <Beauty>5</Beauty>
+      <Beauty>5</Beauty>
       <MaxHitPoints>1000</MaxHitPoints>
     </statBases>
     <randomlyDropResources>
@@ -217,8 +216,8 @@
     <mineSpeedFactor>1.5</mineSpeedFactor>
   </ThingDef>
 
-  <ThingDef Name="SolidSaltBase" ParentName="SolidOre" Class="Minerals.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidSalt</defName>
+  <ThingDef Name="MR_SolidSaltBase" ParentName="MF_SolidOreBase" Class="Minerals.ThingDef_SolidRock" Abstract="True">
+    <defName>MR_SolidSalt</defName>
     <label>Solid Salt Deposit</label>
     <description>Ancient salt deposits compacted underground for eons and recently exposed</description>
     <graphicData>
@@ -229,7 +228,7 @@
     </graphicData>
     <uiIconPath>Things/Rock/WeatheredBasalt/WeatheredBasaltA</uiIconPath>
     <statBases>
-		  <Beauty>2</Beauty>
+      <Beauty>2</Beauty>
       <MaxHitPoints>1100</MaxHitPoints>
     </statBases>
     <randomlyDropResources>
@@ -248,16 +247,15 @@
     <ThingsToReplace>
       <li>MineableSalt</li>
       <li>DankPyon_MineableSalt</li>
-      <li>HewnSalt</li>
     </ThingsToReplace>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1.5</mineSpeedFactor>
   </ThingDef>
-  
-  <ThingDef Name="HewnSaltBase" ParentName="HewnOre" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnSalt</defName>
+
+  <ThingDef Name="MR_HewnSaltBase" ParentName="MF_HewnOreBase" Class="Minerals.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnSalt</defName>
     <label>Hewn Salt Deposits</label>
     <description>Ancient salt deposits compacted underground for eons</description>
     <graphicData>
@@ -266,7 +264,7 @@
     </graphicData>
     <uiIconPath>Things/Rock/HewnRockWall/HewnRockWallA</uiIconPath>
     <statBases>
-		  <Beauty>1</Beauty>
+      <Beauty>1</Beauty>
       <MaxHitPoints>1200</MaxHitPoints>
     </statBases>
     <randomlyDropResources>
@@ -293,12 +291,12 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredRubyOreBase" ParentName="WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredRubyOre</defName>
+  <ThingDef Name="MR_WeatheredRubyOreBase" ParentName="MF_WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredRubyOre</defName>
     <label>Weathered ruby deposits</label>
     <description>Weathered rock containing rubies</description>
     <graphicData>
-	    <colorTwo>(170,49,49)</colorTwo>
+      <colorTwo>(170,49,49)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -312,12 +310,12 @@
     </ThingsToReplace>
   </ThingDef>
 
-  <ThingDef Name="SolidRubyOreBase" ParentName="SolidGemOreBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidRubyOre</defName>
+  <ThingDef Name="MR_SolidRubyOreBase" ParentName="MF_SolidGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidRubyOre</defName>
     <label>Solid ruby deposits</label>
     <description>Solid rock containing rubies</description>
     <graphicData>
-	    <colorTwo>(170,49,49)</colorTwo>
+      <colorTwo>(170,49,49)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -328,16 +326,15 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableRuby</li>
-      <li>HewnRubyOre</li>
     </ThingsToReplace>
   </ThingDef>
 
-  <ThingDef Name="HewnRubyOreBase" ParentName="HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnRubyOre</defName>
+  <ThingDef Name="MR_HewnRubyOreBase" ParentName="MF_HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnRubyOre</defName>
     <label>Hewn ruby deposits</label>
     <description>Hewn rock containing rubies</description>
     <graphicData>
-	    <colorTwo>(170,49,49)</colorTwo>
+      <colorTwo>(170,49,49)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -352,12 +349,12 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredSapphireOreBase" ParentName="WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredSapphireOre</defName>
+  <ThingDef Name="MR_WeatheredSapphireOreBase" ParentName="MF_WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredSapphireOre</defName>
     <label>Weathered sapphire deposits</label>
     <description>Weathered rock containing sapphires</description>
     <graphicData>
-			<colorTwo>(60,109,158)</colorTwo>
+      <colorTwo>(60,109,158)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -371,12 +368,12 @@
     </ThingsToReplace>
   </ThingDef>
 
-  <ThingDef Name="SolidSapphireOreBase" ParentName="SolidGemOreBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidSapphireOre</defName>
+  <ThingDef Name="MR_SolidSapphireOreBase" ParentName="MF_SolidGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidSapphireOre</defName>
     <label>Solid sapphire deposits</label>
     <description>Solid rock containing sapphires</description>
     <graphicData>
-			<colorTwo>(60,109,158)</colorTwo>
+      <colorTwo>(60,109,158)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -387,16 +384,15 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableSapphire</li>
-      <li>HewnSapphireOre</li>
     </ThingsToReplace>
   </ThingDef>
 
-  <ThingDef Name="HewnSapphireOreBase" ParentName="HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnSapphireOre</defName>
+  <ThingDef Name="MR_HewnSapphireOreBase" ParentName="MF_HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnSapphireOre</defName>
     <label>Hewn sapphire deposits</label>
     <description>Hewn rock containing sapphires</description>
     <graphicData>
-			<colorTwo>(60,109,158)</colorTwo>
+      <colorTwo>(60,109,158)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -411,8 +407,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredEmeraldOreBase" ParentName="WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredEmeraldOre</defName>
+  <ThingDef Name="MR_WeatheredEmeraldOreBase" ParentName="MF_WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredEmeraldOre</defName>
     <label>Weathered emerald deposits</label>
     <description>Weathered rock containing emeralds</description>
     <graphicData>
@@ -429,9 +425,9 @@
       <li>DankPyon_MineableEmerald</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="SolidEmeraldOreBase" ParentName="SolidGemOreBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidEmeraldOre</defName>
+
+  <ThingDef Name="MR_SolidEmeraldOreBase" ParentName="MF_SolidGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidEmeraldOre</defName>
     <label>Solid emerald deposits</label>
     <description>Solid rock containing emeralds</description>
     <graphicData>
@@ -446,12 +442,11 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableEmerald</li>
-      <li>HewnEmeraldOre</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="HewnEmeraldOreBase" ParentName="HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnEmeraldOre</defName>
+
+  <ThingDef Name="MR_HewnEmeraldOreBase" ParentName="MF_HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnEmeraldOre</defName>
     <label>Hewn emerald deposits</label>
     <description>Hewn rock containing emeralds</description>
     <graphicData>
@@ -469,8 +464,8 @@
     </ThingsToReplace>
   </ThingDef>
 
-  <ThingDef Name="WeatheredCitrineOreBase" ParentName="WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredCitrineOre</defName>
+  <ThingDef Name="MR_WeatheredCitrineOreBase" ParentName="MF_WeatheredGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredCitrineOre</defName>
     <label>Weathered citrine deposits</label>
     <description>Weathered rock containing citrine</description>
     <graphicData>
@@ -487,9 +482,9 @@
       <li>DankPyon_MineableCitrine</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="SolidCitrineOreBase" ParentName="SolidGemOreBase" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidCitrineOre</defName>
+
+  <ThingDef Name="MR_SolidCitrineOreBase" ParentName="MF_SolidGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidCitrineOre</defName>
     <label>Solid citrine deposits</label>
     <description>Solid rock containing citrine</description>
     <graphicData>
@@ -504,12 +499,11 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableCitrine</li>
-      <li>HewnCitrineOre</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="HewnCitrineOreBase" ParentName="HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnCitrineOre</defName>
+
+  <ThingDef Name="MR_HewnCitrineOreBase" ParentName="MF_HewnGemOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnCitrineOre</defName>
     <label>Hewn citrine deposits</label>
     <description>Hewn rock containing citrine</description>
     <graphicData>
@@ -528,12 +522,12 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredAmberOreBase" ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredAmberOre</defName>
+  <ThingDef Name="MR_WeatheredAmberOreBase" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredAmberOre</defName>
     <label>Weathered amber deposits</label>
     <description>Weathered rock containing amber</description>
     <graphicData>
-       <colorTwo>(206,140,80)</colorTwo>
+      <colorTwo>(206,140,80)</colorTwo>
     </graphicData>
     <randomlyDropResources>
       <li>
@@ -546,9 +540,9 @@
       <li>DankPyon_MineableAmber</li>
     </ThingsToReplace>
   </ThingDef>
-   
-  <ThingDef Name="SolidAmberOreBase" ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidAmberOre</defName>
+
+  <ThingDef Name="MR_SolidAmberOreBase" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidAmberOre</defName>
     <label>Solid amber deposits</label>
     <description>Solid rock containing amber</description>
     <graphicData>
@@ -563,12 +557,11 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableAmber</li>
-      <li>HewnAmberOre</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="HewnAmberOreBase" ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnAmberOre</defName>
+
+  <ThingDef Name="MR_HewnAmberOreBase" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnAmberOre</defName>
     <label>Hewn amber deposits</label>
     <description>Hewn rock containing amber</description>
     <graphicData>
@@ -587,8 +580,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredOnyxOreBase" ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredOnyxOre</defName>
+  <ThingDef Name="MR_WeatheredOnyxOreBase" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredOnyxOre</defName>
     <label>Weathered onyx deposits</label>
     <description>Weathered rock containing onyx</description>
     <graphicData>
@@ -605,9 +598,9 @@
       <li>DankPyon_MineableOnyx</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="SolidOnyxOreBase" ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidOnyxOre</defName>
+
+  <ThingDef Name="MR_SolidOnyxOreBase" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidOnyxOre</defName>
     <label>Solid onyx deposits</label>
     <description>Solid rock containing onyx</description>
     <graphicData>
@@ -622,12 +615,11 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableOnyx</li>
-      <li>HewnOnyxOre</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="HewnOnyxOreBase" ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnOnyxOre</defName>
+
+  <ThingDef Name="MR_HewnOnyxOreBase" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnOnyxOre</defName>
     <label>Hewn onyx deposits</label>
     <description>Hewn rock containing onyx</description>
     <graphicData>
@@ -646,8 +638,8 @@
   </ThingDef>
 
 
-  <ThingDef Name="WeatheredGoldOreBase" ParentName="WeatheredOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>WeatheredGoldOre</defName>
+  <ThingDef Name="MR_WeatheredGoldOreBase" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_WeatheredGoldOre</defName>
     <label>Weathered gold ore</label>
     <description>Weathered rock containing gold</description>
     <graphicData>
@@ -664,9 +656,9 @@
       <li>DankPyon_MineableGold</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="SolidGoldOreBase" ParentName="SolidOre" Class="MineralsRock.ThingDef_SolidRock" Abstract="True">
-    <defName>SolidGoldOre</defName>
+
+  <ThingDef Name="MR_SolidGoldOreBase" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_SolidGoldOre</defName>
     <label>Solid gold ore</label>
     <description>Solid rock containing gold</description>
     <graphicData>
@@ -681,12 +673,11 @@
     </randomlyDropResources>
     <ThingsToReplace>
       <li>DankPyon_MineableGold</li>
-      <li>HewnGoldOre</li>
     </ThingsToReplace>
   </ThingDef>
-  
-  <ThingDef Name="HewnGoldOreBase" ParentName="HewnOre" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
-    <defName>HewnGoldOre</defName>
+
+  <ThingDef Name="MR_HewnGoldOreBase" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral" Abstract="True">
+    <defName>MR_HewnGoldOre</defName>
     <label>Hewn gold ore</label>
     <description>Hewn rock containing gold</description>
     <graphicData>
