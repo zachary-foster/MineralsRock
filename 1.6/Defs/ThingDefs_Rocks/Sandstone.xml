@@ -67,14 +67,6 @@
       <mineableThing>ChunkSandstone</mineableThing>
       <mineableDropChance>0.5</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Sandstone_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Sandstone_Rough</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Sandstone</li>
@@ -108,10 +100,6 @@
       <mineableDropChance>0.5</mineableDropChance>
       <smoothedThing>MR_SmoothedSandstone</smoothedThing>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Sandstone_Rough</li>
-    </allowedTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Sandstone</li>

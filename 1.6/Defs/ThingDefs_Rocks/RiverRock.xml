@@ -8,11 +8,6 @@
     <description>A pile a rounded river rocks. These have been worn round during their long slow tumble from distant lands.</description>
     <graphicData>
       <texPath>Things/Rock/RiverRock</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <color>(50,50,50)</color>
-      <damageData>
-        <enabled>false</enabled>
-      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/RiverRock/RiverRockA</uiIconPath>
     <altitudeLayer>SmallWire</altitudeLayer>
@@ -22,7 +17,24 @@
       <Beauty>3</Beauty>
     </statBases>
     <pathCost>80</pathCost>
-    <filthLeaving>Filth_RubbleRock</filthLeaving>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(107,90,97)</li>
+      <li>(115,95,110)</li>
+      <li>(158,153,135)</li>
+      <li>(158,155,130)</li>
+      <li>(152,153,135)</li>
+      <li>(158,180,155)</li>
+      <li>(132,135,132)</li>
+      <li>(132,135,132)</li>
+      <li>(132,115,122)</li>
+      <li>(130,110,122)</li>
+      <li>(70,70,70)</li>
+      <li>(126,104,94)</li>
+      <li>(50,50,50)</li>
+      <li>(200,200,200)</li>
+    </randomColorsOne>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>2</spawnRadius>
@@ -108,24 +120,6 @@
         <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
-    <!-- If defined, randomly pick colors from this set -->
-    <randomColorsOne>
-      <li>(105,95,97)</li>
-      <li>(107,90,97)</li>
-      <li>(115,95,110)</li>
-      <li>(158,153,135)</li>
-      <li>(158,155,130)</li>
-      <li>(152,153,135)</li>
-      <li>(158,180,155)</li>
-      <li>(132,135,132)</li>
-      <li>(132,135,132)</li>
-      <li>(132,115,122)</li>
-      <li>(130,110,122)</li>
-      <li>(70,70,70)</li>
-      <li>(126,104,94)</li>
-      <li>(50,50,50)</li>
-      <li>(200,200,200)</li>
-    </randomColorsOne>
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>1</submergedRadius>
@@ -158,11 +152,6 @@
     <description>A pile a rounded river rocks. The ocean has worn them round by grinding them together in the surf.</description>
     <graphicData>
       <texPath>Things/Rock/RiverRock</texPath>
-      <graphicClass>Graphic_Random</graphicClass>
-      <color>(50,50,50)</color>
-      <damageData>
-        <enabled>false</enabled>
-      </damageData>
     </graphicData>
     <uiIconPath>Things/Rock/RiverRock/RiverRockA</uiIconPath>
     <altitudeLayer>SmallWire</altitudeLayer>
@@ -173,6 +162,24 @@
     </statBases>
     <pathCost>80</pathCost>
     <hideAtSnowOrSandDepth>0.7</hideAtSnowOrSandDepth>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(105,95,97)</li>
+      <li>(107,90,97)</li>
+      <li>(115,95,110)</li>
+      <li>(158,153,135)</li>
+      <li>(158,155,130)</li>
+      <li>(152,153,135)</li>
+      <li>(158,180,155)</li>
+      <li>(132,135,132)</li>
+      <li>(132,135,132)</li>
+      <li>(132,115,122)</li>
+      <li>(130,110,122)</li>
+      <li>(70,70,70)</li>
+      <li>(126,104,94)</li>
+      <li>(50,50,50)</li>
+      <li>(200,200,200)</li>
+    </randomColorsOne>
     <!--How far away it can spawn from an existing location-->
     <!-- Even though it is a static crystal, the map initialization uses "reproduction" to make clusters-->
     <spawnRadius>1</spawnRadius>
@@ -263,24 +270,6 @@
         <MinMiningSkill>5</MinMiningSkill>
       </li>
     </randomlyDropResources>
-    <!-- If defined, randomly pick colors from this set -->
-    <randomColorsOne>
-      <li>(105,95,97)</li>
-      <li>(107,90,97)</li>
-      <li>(115,95,110)</li>
-      <li>(158,153,135)</li>
-      <li>(158,155,130)</li>
-      <li>(152,153,135)</li>
-      <li>(158,180,155)</li>
-      <li>(132,135,132)</li>
-      <li>(132,135,132)</li>
-      <li>(132,115,122)</li>
-      <li>(130,110,122)</li>
-      <li>(70,70,70)</li>
-      <li>(126,104,94)</li>
-      <li>(50,50,50)</li>
-      <li>(200,200,200)</li>
-    </randomColorsOne>
     <!-- If smaller than 1, it looks smaller in water -->
     <submergedSize>0</submergedSize>
     <submergedRadius>1</submergedRadius>

@@ -61,14 +61,6 @@
             <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
             <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.5</mineableDropChance>
           </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>SolidIce_Rough</li>
-          </allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>SolidIce_Rough</li>
-          </neededNearbyTerrains>
           <!-- Things this mineral replaces when a map is initialized -->
           <ThingsToReplace>
             <li>SolidIce</li>
@@ -88,14 +80,6 @@
             <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
             <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.6</mineableDropChance>
           </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>SolidIce_Rough</li>
-          </allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>SolidIce_Rough</li>
-          </neededNearbyTerrains>
           <!-- Things this mineral replaces when a map is initialized -->
           <ThingsToReplace>
             <li>SolidIce</li>

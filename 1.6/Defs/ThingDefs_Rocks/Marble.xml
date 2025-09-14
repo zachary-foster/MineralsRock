@@ -27,6 +27,11 @@
     <neededNearbyTerrains>
       <li>Marble_Rough</li>
     </neededNearbyTerrains>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <associatedOres>
+      <li>MR_SolidMarble</li>
+      <li>Marble</li>
+    </associatedOres>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Marble</li>
@@ -51,14 +56,6 @@
       <mineableThing>ChunkMarble</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Marble_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Marble_Rough</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Marble</li>
@@ -84,14 +81,6 @@
       <mineableDropChance>0.3</mineableDropChance>
       <smoothedThing>MR_SmoothedMarble</smoothedThing>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Marble_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Marble</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Marble</li>
@@ -139,13 +128,13 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>Marble_Rough</li>
-      <li>MF_WeatheredMarble</li>
-      <li>MF_SolidMarble</li>
+      <li>MR_WeatheredMarble</li>
+      <li>MR_SolidMarble</li>
       <li>Marble</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>MF_WeatheredMarble</li>
+      <li>MR_WeatheredMarble</li>
       <li>Marble</li>
     </associatedOres>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -174,16 +163,16 @@
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>MF_BoulderMarble</li>
+      <li>MR_BoulderMarble</li>
+      <li>MR_WeatheredMarble</li>
+      <li>MR_SolidMarble</li>
       <li>Marble_Rough</li>
-      <li>MF_WeatheredMarble</li>
-      <li>MF_SolidMarble</li>
       <li>Marble</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>MF_BoulderMarble</li>
-      <li>MF_WeatheredMarble</li>
+      <li>MR_BoulderMarble</li>
+      <li>MR_WeatheredMarble</li>
       <li>Marble</li>
     </associatedOres>
   </ThingDef>

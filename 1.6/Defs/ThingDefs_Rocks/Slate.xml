@@ -53,14 +53,6 @@
       <min>2.3</min>
       <max>2.5</max>
     </visualSizeRange>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Slate_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Slate_Rough</li>
-    </neededNearbyTerrains>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -88,10 +80,6 @@
       <mineableDropChance>0.2</mineableDropChance>
       <smoothedThing>MR_SmoothedSlate</smoothedThing>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Slate_Rough</li>
-    </allowedTerrains>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
@@ -169,8 +157,8 @@
     <neededNearbyTerrains>
       <li>MR_WeatheredSlate</li>
       <li>MR_SlateForest</li>
-      <li>Slate_Rough</li>
       <li>MR_SolidSlate</li>
+      <li>Slate_Rough</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>

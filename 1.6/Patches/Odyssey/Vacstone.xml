@@ -22,10 +22,6 @@
             <mineableThing>ChunkVacstone</mineableThing>
             <mineableDropChance>0.4</mineableDropChance>
           </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>Vacstone_Rough</li>
-          </allowedTerrains>
           <!-- Things this mineral replaces when a map is initialized -->
           <ThingsToReplace>
             <li>Vacstone</li>
@@ -45,14 +41,6 @@
             <mineableDropChance>0.4</mineableDropChance>
             <smoothedThing>MR_SmoothedVacstone</smoothedThing>
           </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>Vacstone_Rough</li>
-          </allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>Vacstone_Rough</li>
-          </neededNearbyTerrains>
           <!-- Things this mineral replaces when a map is initialized -->
           <ThingsToReplace>
             <li>Vacstone</li>

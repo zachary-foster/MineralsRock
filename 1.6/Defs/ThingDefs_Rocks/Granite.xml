@@ -38,7 +38,6 @@
     <associatedOres>
       <li>MR_SolidGranite</li>
     </associatedOres>
-    <nearAssociatedOreBonus>10</nearAssociatedOreBonus>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Granite</li>
@@ -72,7 +71,7 @@
     </randomColorsTwo>
     <building>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.25</mineableDropChance>
+      <mineableDropChance>0.27</mineableDropChance>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
@@ -107,7 +106,7 @@
     </randomColorsTwo>
     <building>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.25</mineableDropChance>
+      <mineableDropChance>0.3</mineableDropChance>
       <smoothedThing>MR_SmoothedGranite</smoothedThing>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
@@ -161,9 +160,9 @@
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Granite_Rough</li>
       <li>MR_WeatheredGranite</li>
       <li>MR_SolidGranite</li>
+      <li>Granite_Rough</li>
       <li>Granite</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
@@ -204,14 +203,14 @@
     </randomColorsTwo>
     <building>
       <mineableThing>ChunkGranite</mineableThing>
-      <mineableDropChance>0.25</mineableDropChance>
+      <mineableDropChance>0.1</mineableDropChance>
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>MR_BoulderGranite</li>
-      <li>Granite_Rough</li>
       <li>MR_WeatheredGranite</li>
       <li>MR_SolidGranite</li>
+      <li>Granite_Rough</li>
       <li>Granite</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->

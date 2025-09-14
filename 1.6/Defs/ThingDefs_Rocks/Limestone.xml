@@ -50,14 +50,6 @@
       <mineableThing>ChunkLimestone</mineableThing>
       <mineableDropChance>0.4</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Limestone_Rough</li>
-		</allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Limestone_Rough</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Limestone</li>
@@ -83,14 +75,6 @@
       <mineableDropChance>0.4</mineableDropChance>
       <smoothedThing>MR_SmoothedLimestone</smoothedThing>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Limestone_Rough</li>
-		</allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Limestone</li>
-    </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
       <li>Limestone</li>
@@ -137,9 +121,9 @@
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>Limestone_Rough</li>
       <li>MR_WeatheredLimestone</li>
       <li>MR_SolidLimestone</li>
+      <li>Limestone_Rough</li>
       <li>Limestone</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
@@ -175,9 +159,9 @@
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
       <li>MR_BoulderLimestone</li>
-      <li>Limestone</li>
       <li>MR_WeatheredLimestone</li>
       <li>MR_SolidLimestone</li>
+      <li>Limestone</li>
     </neededNearbyTerrains>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>

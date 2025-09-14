@@ -156,7 +156,7 @@
           <!-- If true, growth rate and initial size depends on distance from needed terrains -->
           <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
           <!-- Roof requirements -->
-          <mustBeUnroofed>true</mustBeUnroofed>
+          <mustBeNotUnderRoof>true</mustBeNotUnderRoof>
           <!-- The maximum number of images that will be printed per square -->
           <maxMeshCount>8</maxMeshCount>
           <!-- The size range -->
