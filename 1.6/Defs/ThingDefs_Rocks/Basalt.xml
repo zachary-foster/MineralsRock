@@ -41,6 +41,11 @@
     <ThingsToReplace>
       <li>MR_BasaltBase</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -63,6 +68,11 @@
     <ThingsToReplace>
       <li>MR_BasaltBase</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -90,6 +100,11 @@
     <ThingsToReplace>
       <li>MR_BasaltBase</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -104,6 +119,11 @@
       <mineableThing>MR_ChunkBasalt</mineableThing>
       <mineableDropChance>0.4</mineableDropChance>
     </building>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -137,6 +157,11 @@
     <ThingsToReplace>
       <li>MR_ChunkBasalt</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -169,6 +194,11 @@
       <li>MR_SolidBasalt</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -202,6 +232,11 @@
       <li>MR_SolidBasalt</li>
     </associatedOres>
     <nearAssociatedOreBonus>3</nearAssociatedOreBonus>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Basalt</templateReplaceString>
+    <isTemplateFor>
+      <li>Andesite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
