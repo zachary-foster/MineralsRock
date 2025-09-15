@@ -174,8 +174,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                     // Replace template string in key fields
                     clone.defName = def.defName.Replace(def.templateReplaceString, templateStr);
                     clone.label = def.label?.Replace(def.templateReplaceString, templateStr);
-                    clone.description = def.description?.Replace(def.templateReplaceString, templateStr);
-                    
+                    clone.description = targetDef.description;
                     if (clone.building != null && targetDef.building != null)
                     {
                         if (clone.building.mineableThing != null && targetDef.building.mineableThing != null)
@@ -183,22 +182,29 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                             clone.building.mineableThing = targetDef.building.mineableThing;
                         }
                     }
-                    
                     clone.ThingsToReplace = def.ThingsToReplace?
                         .Select(s => s.Replace(def.templateReplaceString, templateStr))
                         .ToList();
-                        
                     clone.allowedTerrains = def.allowedTerrains?
                         .Select(s => s.Replace(def.templateReplaceString, templateStr))
                         .ToList();
-                        
                     clone.associatedOres = def.associatedOres?
                         .Select(s => s.Replace(def.templateReplaceString, templateStr))
                         .ToList();
-                        
                     clone.neededNearbyTerrains = def.neededNearbyTerrains?
                         .Select(s => s.Replace(def.templateReplaceString, templateStr))
                         .ToList();
+                    if (clone.graphicData != null && targetDef.graphicData != null)
+                    {
+                        clone.graphicData.color = targetDef.graphicData.color;
+                    }
+                    clone.templateReplaceString = null;
+                    clone.isTemplateFor = null;
+
+                    if (MineralsFrameworkMain.Settings.debugModeEnabled)
+                    {
+                        Log.Message($"MineralsRock: Generated '{clone.defName}' for '{targetDef.defName}' based on '{def.defName}' template.");
+                    }
 
                     DefDatabase<ThingDef_StaticMineral>.Add(clone);
                     count++;
@@ -210,102 +216,100 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
         static AutoGenerateRockReplacements()
         {
             int templateCount = ProcessTemplates();
-            Log.Message($"MineralsRock: Generated {templateCount} Mineral ThingDefs base on templates.");
-
-            //Log.Message("Starting automatic rock replacement generation");
-            //
-            //int generatedCount = 0;
-            //// Cache all defs first to prevent modification during enumeration
-            //foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.ToList())
-            //{
-            //    if (def.building == null || !def.building.isNaturalRock || def.thingClass == typeof(StaticMineral))
-            //        continue;
-            //
-            //    // Check if already replaced
-            //    bool alreadyReplaced = DefDatabase<ThingDef>.AllDefs
-            //        .OfType<ThingDef_StaticMineral>()
-            //        .Any(sm => sm.ThingsToReplace != null && sm.ThingsToReplace.Contains(def.defName));
-            //    if (alreadyReplaced)
-            //        continue;
-            //
-            //    // Check if weathered def already exists
-            //    bool alreadyExists = DefDatabase<ThingDef>.AllDefs
-            //        .Any(sm => sm.defName == "MR_Weathered" + def.defName);
-            //    if (alreadyExists)
-            //        continue;
-            //
-            //    // Create new solid def
-            //    ThingDef_StaticMineral solidDef = ThingDef_StaticMineral.MakeSolidGenericRockBaseDef();
-            //    solidDef.defName = "MR_Solid" + def.defName;
-            //    solidDef.label = "Solid " + def.label;
-            //    solidDef.description = def.description;
-            //    solidDef.graphicData.color = def.graphicData.color;
-            //    solidDef.building.mineableThing = def.building.mineableThing;
-            //    solidDef.building.mineableDropChance = def.building.mineableDropChance;
-            //    solidDef.ThingsToReplace = new List<string> { def.defName };
-            //    DefDatabase<ThingDef_StaticMineral>.Add(solidDef);
-            //
-            //    // Create new weathered def
-            //    ThingDef_StaticMineral weathedDef = ThingDef_StaticMineral.MakeWeatheredGenericRockBaseDef();
-            //    weathedDef.defName = "MR_Weathered" + def.defName;
-            //    weathedDef.label = "Weathered " + def.label;
-            //    weathedDef.description = def.description;
-            //    weathedDef.graphicData.color = def.graphicData.color;
-            //    weathedDef.building.mineableThing = def.building.mineableThing;
-            //    weathedDef.building.mineableDropChance = def.building.mineableDropChance * 0.8f;
-            //    weathedDef.ThingsToReplace = new List<string> { def.defName };
-            //    weathedDef.allowedTerrains = new List<string> { def.defName + "_Rough" };
-            //    weathedDef.associatedOres = new List<string> { solidDef.defName };
-            //    DefDatabase<ThingDef_StaticMineral>.Add(weathedDef);
-            //
-           //     // Create new hewn def
-           //     ThingDef_StaticMineral hewnDef = ThingDef_StaticMineral.MakeHewnGenericRockBaseDef();
-           //     hewnDef.defName = "MR_Hewn" + def.defName;
-           //     hewnDef.label = "Hewn " + def.label;
-           //     hewnDef.description = def.description;
-           //     hewnDef.graphicData.color = def.graphicData.color;
-           //     hewnDef.building.mineableThing = def.building.mineableThing;
-           //     hewnDef.building.mineableDropChance = def.building.mineableDropChance * 1.2f;
-           //     hewnDef.ThingsToReplace = new List<string> { def.defName };
-           //     DefDatabase<ThingDef_StaticMineral>.Add(hewnDef);
-           //
-           //     // Create new smoothed def
-           //     ThingDef_StaticMineral smoothedDef = ThingDef_StaticMineral.MakeSmoothedGenericRockBaseDef();
-           //     smoothedDef.defName = "MR_Smoothed" + def.defName;
-           //     smoothedDef.label = "Smoothed " + def.label;
-           //     smoothedDef.description = def.description;
-           //     smoothedDef.graphicData.color = def.graphicData.color;
-           //     smoothedDef.building.mineableThing = def.building.mineableThing;
-           //     smoothedDef.building.mineableDropChance = def.building.mineableDropChance * 1.2f;
-           //     DefDatabase<ThingDef_StaticMineral>.Add(smoothedDef);
-           //
-           //     // Create new boulder def
-           //     ThingDef_StaticMineral boulderDef = ThingDef_StaticMineral.MakeBoulderGenericRockBaseDef();
-           //     boulderDef.defName = "MR_Boulder" + def.defName;
-           //     boulderDef.label = def.label + " Boulder";
-           //     boulderDef.description = def.description;
-           //     boulderDef.graphicData.color = def.graphicData.color;
-           //     boulderDef.building.mineableThing = def.building.mineableThing;
-           //     boulderDef.building.mineableDropChance = def.building.mineableDropChance * 1.5f;
-           //     boulderDef.neededNearbyTerrains = new List<string> { weathedDef.defName, solidDef.defName, def.defName + "_Rough", def.defName };
-           //     boulderDef.associatedOres = new List<string> { def.defName, weathedDef.defName };
-           //     DefDatabase<ThingDef_StaticMineral>.Add(boulderDef);
-           //
-           //     // Create new small rock def
-           //     ThingDef_StaticMineral smallDef = ThingDef_StaticMineral.MakeSmallGenericRockBaseDef();
-           //     smallDef.defName = "MR_Small" + def.defName;
-           //     smallDef.label = def.label + " Rocks";
-           //     smallDef.description = def.description;
-           //     smallDef.graphicData.color = def.graphicData.color;
-           //     smallDef.building.mineableThing = def.building.mineableThing;
-           //     smallDef.building.mineableDropChance = def.building.mineableDropChance * 0.3f;
-           //     smallDef.neededNearbyTerrains = new List<string> { boulderDef.defName, weathedDef.defName, solidDef.defName, def.defName + "_Rough", def.defName };
-           //     smallDef.associatedOres = new List<string> { boulderDef.defName, def.defName, weathedDef.defName };
-           //     DefDatabase<ThingDef_StaticMineral>.Add(smallDef);
-           //
-           //     generatedCount++;
-           //     Log.Message($"MineralsFramework: Auto-generated replacement rocks for {def.defName}");
-           // }
+            Log.Message($"MineralsRock: Generated {templateCount} rock ThingDefs based on templates.");
+            
+            int generatedCount = 0;
+            // Cache all defs first to prevent modification during enumeration
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.ToList())
+            {
+                if (def.building == null || !def.building.isNaturalRock || def.thingClass == typeof(StaticMineral))
+                    continue;
+            
+                // Check if already replaced
+                bool alreadyReplaced = DefDatabase<ThingDef>.AllDefs
+                    .OfType<ThingDef_StaticMineral>()
+                    .Any(sm => sm.ThingsToReplace != null && sm.ThingsToReplace.Contains(def.defName));
+                if (alreadyReplaced)
+                    continue;
+            
+                // Check if weathered def already exists
+                bool alreadyExists = DefDatabase<ThingDef_StaticMineral>.AllDefs
+                    .Any(sm => sm.defName == "MR_Weathered" + def.defName);
+                if (alreadyExists)
+                    continue;
+            
+                // Create new solid def
+                ThingDef_StaticMineral solidDef = ThingDef_StaticMineral.MakeSolidGenericRockBaseDef();
+                solidDef.defName = "MR_Solid" + def.defName;
+                solidDef.label = "Solid " + def.label;
+                solidDef.description = def.description;
+                solidDef.graphicData.color = def.graphicData.color;
+                solidDef.building.mineableThing = def.building.mineableThing;
+                solidDef.building.mineableDropChance = def.building.mineableDropChance;
+                solidDef.ThingsToReplace = new List<string> { def.defName };
+                DefDatabase<ThingDef_StaticMineral>.Add(solidDef);
+            
+                // Create new weathered def
+                ThingDef_StaticMineral weathedDef = ThingDef_StaticMineral.MakeWeatheredGenericRockBaseDef();
+                weathedDef.defName = "MR_Weathered" + def.defName;
+                weathedDef.label = "Weathered " + def.label;
+                weathedDef.description = def.description;
+                weathedDef.graphicData.color = def.graphicData.color;
+                weathedDef.building.mineableThing = def.building.mineableThing;
+                weathedDef.building.mineableDropChance = def.building.mineableDropChance * 0.8f;
+                weathedDef.ThingsToReplace = new List<string> { def.defName };
+                weathedDef.allowedTerrains = new List<string> { def.defName + "_Rough" };
+                weathedDef.associatedOres = new List<string> { solidDef.defName };
+                DefDatabase<ThingDef_StaticMineral>.Add(weathedDef);
+            
+                // Create new hewn def
+                ThingDef_StaticMineral hewnDef = ThingDef_StaticMineral.MakeHewnGenericRockBaseDef();
+                hewnDef.defName = "MR_Hewn" + def.defName;
+                hewnDef.label = "Hewn " + def.label;
+                hewnDef.description = def.description;
+                hewnDef.graphicData.color = def.graphicData.color;
+                hewnDef.building.mineableThing = def.building.mineableThing;
+                hewnDef.building.mineableDropChance = def.building.mineableDropChance * 1.2f;
+                hewnDef.ThingsToReplace = new List<string> { def.defName };
+                DefDatabase<ThingDef_StaticMineral>.Add(hewnDef);
+           
+                // Create new smoothed def
+                ThingDef_StaticMineral smoothedDef = ThingDef_StaticMineral.MakeSmoothedGenericRockBaseDef();
+                smoothedDef.defName = "MR_Smoothed" + def.defName;
+                smoothedDef.label = "Smoothed " + def.label;
+                smoothedDef.description = def.description;
+                smoothedDef.graphicData.color = def.graphicData.color;
+                smoothedDef.building.mineableThing = def.building.mineableThing;
+                smoothedDef.building.mineableDropChance = def.building.mineableDropChance * 1.2f;
+                DefDatabase<ThingDef_StaticMineral>.Add(smoothedDef);
+           
+                // Create new boulder def
+                ThingDef_StaticMineral boulderDef = ThingDef_StaticMineral.MakeBoulderGenericRockBaseDef();
+                boulderDef.defName = "MR_Boulder" + def.defName;
+                boulderDef.label = def.label + " Boulder";
+                boulderDef.description = def.description;
+                boulderDef.graphicData.color = def.graphicData.color;
+                boulderDef.building.mineableThing = def.building.mineableThing;
+                boulderDef.building.mineableDropChance = def.building.mineableDropChance * 1.5f;
+                boulderDef.neededNearbyTerrains = new List<string> { weathedDef.defName, solidDef.defName, def.defName + "_Rough", def.defName };
+                boulderDef.associatedOres = new List<string> { def.defName, weathedDef.defName };
+                DefDatabase<ThingDef_StaticMineral>.Add(boulderDef);
+           
+                // Create new small rock def
+                ThingDef_StaticMineral smallDef = ThingDef_StaticMineral.MakeSmallGenericRockBaseDef();
+                smallDef.defName = "MR_Small" + def.defName;
+                smallDef.label = def.label + " Rocks";
+                smallDef.description = def.description;
+                smallDef.graphicData.color = def.graphicData.color;
+                smallDef.building.mineableThing = def.building.mineableThing;
+                smallDef.building.mineableDropChance = def.building.mineableDropChance * 0.3f;
+                smallDef.neededNearbyTerrains = new List<string> { boulderDef.defName, weathedDef.defName, solidDef.defName, def.defName + "_Rough", def.defName };
+                smallDef.associatedOres = new List<string> { boulderDef.defName, def.defName, weathedDef.defName };
+                DefDatabase<ThingDef_StaticMineral>.Add(smallDef);
+           
+                generatedCount++;
+                Log.Message($"MineralsFramework: Auto-generated rock ThingDef for {def.defName}. Ask for a patch for more customization.");
+            }
         }
     }
 }

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <ThingDef Name="MR_BasaltBase" ParentName="UglyRockBase">
-    <defName>MR_BasaltBase</defName>
+  <ThingDef Name="Basalt" ParentName="UglyRockBase">
+    <defName>Basalt</defName>
     <label>basalt</label>
     <description>Basalt is a very hard igneous rock.</description>
     <graphicData>
@@ -31,7 +31,7 @@
     </building>
     <!-- The terrains this can appear on. -->
     <allowedTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
@@ -39,7 +39,7 @@
     </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>MR_BasaltBase</li>
+      <li>Basalt</li>
     </ThingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Basalt</templateReplaceString>
@@ -62,11 +62,11 @@
     </building>
     <!-- The terrains this can appear on. -->
     <allowedTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
     </allowedTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>MR_BasaltBase</li>
+      <li>Basalt</li>
     </ThingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Basalt</templateReplaceString>
@@ -90,15 +90,15 @@
     </building>
     <!-- The terrains this can appear on. -->
     <allowedTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
     </allowedTerrains>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
     </neededNearbyTerrains>
     <!-- Things this mineral replaces when a map is initialized -->
     <ThingsToReplace>
-      <li>MR_BasaltBase</li>
+      <li>Basalt</li>
     </ThingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Basalt</templateReplaceString>
@@ -140,7 +140,7 @@
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
       <li>MR_WeatheredBasalt</li>
       <li>MR_SolidBasalt</li>
       <li>MR_BoulderBasalt</li>
@@ -178,7 +178,7 @@
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
       <li>MR_WeatheredBasalt</li>
       <li>MR_SolidBasalt</li>
       <li>MR_BoulderBasalt</li>
@@ -188,7 +188,7 @@
     <neededNearbyTerrainRadius>2</neededNearbyTerrainRadius>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
       <li>MR_BoulderBasalt</li>
       <li>MR_WeatheredBasalt</li>
       <li>MR_SolidBasalt</li>
@@ -215,7 +215,7 @@
     </building>
     <!-- The terrains this must be near to, but not necessarily on -->
     <neededNearbyTerrains>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
       <li>MR_WeatheredBasalt</li>
       <li>MR_SolidBasalt</li>
       <li>MR_BoulderBasalt</li>
@@ -226,7 +226,7 @@
     <neededNearbyTerrainRadius>10</neededNearbyTerrainRadius>
     <!-- Controls how extra clusters are added near assocaited ore-->
     <associatedOres>
-      <li>MR_BasaltBase_Rough</li>
+      <li>Basalt_Rough</li>
       <li>MR_BoulderBasalt</li>
       <li>MR_WeatheredBasalt</li>
       <li>MR_SolidBasalt</li>
