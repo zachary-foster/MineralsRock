@@ -152,28 +152,31 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
         private static int ProcessTemplates()
         {
             int count = 0;
-            foreach (ThingDef_StaticMineral def in DefDatabase<ThingDef_StaticMineral>.AllDefs.ToList())
+            foreach (ThingDef_StaticMineral templateDef in DefDatabase<ThingDef_StaticMineral>.AllDefs.ToList())
             {
-                if (def.isTemplateFor == null || def.isTemplateFor.Count == 0 || string.IsNullOrEmpty(def.templateReplaceString))
+                if (templateDef.isTemplateFor == null || templateDef.isTemplateFor.Count == 0 || string.IsNullOrEmpty(templateDef.templateReplaceString))
                     continue;
 
-                
-
-
-                foreach (string templateStr in def.isTemplateFor)
+                foreach (string targetDefname in templateDef.isTemplateFor)
                 {
-                    ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(templateStr);
+                    // If def to be created already exists then dont try to create
+                    string newDefname = templateDef.defName.Replace(templateDef.templateReplaceString, targetDefname);
+                    if (DefDatabase<ThingDef>.GetNamedSilentFail(newDefname) == null)
+                    {
+                        continue;
+                    }
+
+                    // If target def does not exist then dont try to create
+                    ThingDef targetDef = DefDatabase<ThingDef>.GetNamedSilentFail(targetDefname);
                     if (targetDef == null)
                     {
                         continue;
                     }
 
                     // Create deep copy and replace template strings
-                    ThingDef_StaticMineral clone = def.DeepCopy();
-                    
-                    // Replace template string in key fields
-                    clone.defName = def.defName.Replace(def.templateReplaceString, templateStr);
-                    clone.label = def.label?.Replace(def.templateReplaceString, templateStr);
+                    ThingDef_StaticMineral clone = templateDef.DeepCopy();
+                    clone.defName = templateDef.defName.Replace(templateDef.templateReplaceString, targetDefname);
+                    clone.label = templateDef.label?.Replace(templateDef.templateReplaceString, targetDefname);
                     clone.description = targetDef.description;
                     if (clone.building != null && targetDef.building != null)
                     {
@@ -181,29 +184,35 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                         {
                             clone.building.mineableThing = targetDef.building.mineableThing;
                         }
+                        clone.building.mineableDropChance = targetDef.building.mineableDropChance;
+                        clone.building.mineableYield = targetDef.building.mineableYield;
                     }
-                    clone.ThingsToReplace = def.ThingsToReplace?
-                        .Select(s => s.Replace(def.templateReplaceString, templateStr))
+                    clone.ThingsToReplace = templateDef.ThingsToReplace?
+                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
                         .ToList();
-                    clone.allowedTerrains = def.allowedTerrains?
-                        .Select(s => s.Replace(def.templateReplaceString, templateStr))
+                    clone.allowedTerrains = templateDef.allowedTerrains?
+                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
                         .ToList();
-                    clone.associatedOres = def.associatedOres?
-                        .Select(s => s.Replace(def.templateReplaceString, templateStr))
+                    clone.associatedOres = templateDef.associatedOres?
+                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
                         .ToList();
-                    clone.neededNearbyTerrains = def.neededNearbyTerrains?
-                        .Select(s => s.Replace(def.templateReplaceString, templateStr))
+                    clone.neededNearbyTerrains = templateDef.neededNearbyTerrains?
+                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
                         .ToList();
                     if (clone.graphicData != null && targetDef.graphicData != null)
                     {
                         clone.graphicData.color = targetDef.graphicData.color;
+                        clone.graphicData.colorTwo = targetDef.graphicData.colorTwo;
                     }
+                    float targetMaxHitpoints = targetDef.GetStatValueAbstract(StatDefOf.MaxHitPoints);
+                    float templateMaxHitpoints = templateDef.GetStatValueAbstract(StatDefOf.MaxHitPoints);
+                    clone.SetStatBaseValue(StatDefOf.MaxHitPoints, targetMaxHitpoints * templateMaxHitpoints / 1300);
                     clone.templateReplaceString = null;
                     clone.isTemplateFor = null;
 
                     if (MineralsFrameworkMain.Settings.debugModeEnabled)
                     {
-                        Log.Message($"MineralsRock: Generated '{clone.defName}' for '{targetDef.defName}' based on '{def.defName}' template.");
+                        Log.Message($"MineralsRock: Generated '{clone.defName}' for '{targetDef.defName}' based on '{templateDef.defName}' template.");
                     }
 
                     DefDatabase<ThingDef_StaticMineral>.Add(clone);
@@ -215,101 +224,52 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
         static AutoGenerateRockReplacements()
         {
-            int templateCount = ProcessTemplates();
-            Log.Message($"MineralsRock: Generated {templateCount} rock ThingDefs based on templates.");
-            
-            int generatedCount = 0;
-            // Cache all defs first to prevent modification during enumeration
-            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs.ToList())
+            // Generate rock/ore defs from templates defined by defname in the XML
+            int countGeratedFromDefinedTemplate = ProcessTemplates();
+            Log.Message($"MineralsRock: Generated {countGeratedFromDefinedTemplate} rock ThingDefs based on defined templates.");
+
+            // Add rocks/ores without a corresponding ThingDef_StaticMineral to the generic rock/ore's isTemplateFor
+            List<ThingDef_StaticMineral> genericRockDefs = DefDatabase<ThingDef_StaticMineral>.AllDefs
+                .Where(def => def.tags != null && def.tags.Contains("generic_rock_template"))
+                .ToList();
+            List<ThingDef_StaticMineral> generiOreDefs = DefDatabase<ThingDef_StaticMineral>.AllDefs
+                .Where(def => def.tags != null && def.tags.Contains("generic_ore_template"))
+                .ToList();
+            List<string> allReplacedThings = DefDatabase<ThingDef_StaticMineral>.AllDefs
+                .Where(def => def.ThingsToReplace != null)
+                .SelectMany(def => def.ThingsToReplace)
+                .Distinct()
+                .ToList();
+            foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs)
             {
+                // Check if it looks like a vanilla rock/ore
                 if (def.building == null || !def.building.isNaturalRock || def.thingClass == typeof(StaticMineral))
                     continue;
-            
-                // Check if already replaced
-                bool alreadyReplaced = DefDatabase<ThingDef>.AllDefs
-                    .OfType<ThingDef_StaticMineral>()
-                    .Any(sm => sm.ThingsToReplace != null && sm.ThingsToReplace.Contains(def.defName));
-                if (alreadyReplaced)
+
+                // Check if there is already a ThingDef_StaticMineral that replaces it
+                if (allReplacedThings.Contains(def.defName))
                     continue;
-            
-                // Check if weathered def already exists
-                bool alreadyExists = DefDatabase<ThingDef_StaticMineral>.AllDefs
-                    .Any(sm => sm.defName == "MR_Weathered" + def.defName);
-                if (alreadyExists)
-                    continue;
-            
-                // Create new solid def
-                ThingDef_StaticMineral solidDef = ThingDef_StaticMineral.MakeSolidGenericRockBaseDef();
-                solidDef.defName = "MR_Solid" + def.defName;
-                solidDef.label = "Solid " + def.label;
-                solidDef.description = def.description;
-                solidDef.graphicData.color = def.graphicData.color;
-                solidDef.building.mineableThing = def.building.mineableThing;
-                solidDef.building.mineableDropChance = def.building.mineableDropChance;
-                solidDef.ThingsToReplace = new List<string> { def.defName };
-                DefDatabase<ThingDef_StaticMineral>.Add(solidDef);
-            
-                // Create new weathered def
-                ThingDef_StaticMineral weathedDef = ThingDef_StaticMineral.MakeWeatheredGenericRockBaseDef();
-                weathedDef.defName = "MR_Weathered" + def.defName;
-                weathedDef.label = "Weathered " + def.label;
-                weathedDef.description = def.description;
-                weathedDef.graphicData.color = def.graphicData.color;
-                weathedDef.building.mineableThing = def.building.mineableThing;
-                weathedDef.building.mineableDropChance = def.building.mineableDropChance * 0.8f;
-                weathedDef.ThingsToReplace = new List<string> { def.defName };
-                weathedDef.allowedTerrains = new List<string> { def.defName + "_Rough" };
-                weathedDef.associatedOres = new List<string> { solidDef.defName };
-                DefDatabase<ThingDef_StaticMineral>.Add(weathedDef);
-            
-                // Create new hewn def
-                ThingDef_StaticMineral hewnDef = ThingDef_StaticMineral.MakeHewnGenericRockBaseDef();
-                hewnDef.defName = "MR_Hewn" + def.defName;
-                hewnDef.label = "Hewn " + def.label;
-                hewnDef.description = def.description;
-                hewnDef.graphicData.color = def.graphicData.color;
-                hewnDef.building.mineableThing = def.building.mineableThing;
-                hewnDef.building.mineableDropChance = def.building.mineableDropChance * 1.2f;
-                hewnDef.ThingsToReplace = new List<string> { def.defName };
-                DefDatabase<ThingDef_StaticMineral>.Add(hewnDef);
-           
-                // Create new smoothed def
-                ThingDef_StaticMineral smoothedDef = ThingDef_StaticMineral.MakeSmoothedGenericRockBaseDef();
-                smoothedDef.defName = "MR_Smoothed" + def.defName;
-                smoothedDef.label = "Smoothed " + def.label;
-                smoothedDef.description = def.description;
-                smoothedDef.graphicData.color = def.graphicData.color;
-                smoothedDef.building.mineableThing = def.building.mineableThing;
-                smoothedDef.building.mineableDropChance = def.building.mineableDropChance * 1.2f;
-                DefDatabase<ThingDef_StaticMineral>.Add(smoothedDef);
-           
-                // Create new boulder def
-                ThingDef_StaticMineral boulderDef = ThingDef_StaticMineral.MakeBoulderGenericRockBaseDef();
-                boulderDef.defName = "MR_Boulder" + def.defName;
-                boulderDef.label = def.label + " Boulder";
-                boulderDef.description = def.description;
-                boulderDef.graphicData.color = def.graphicData.color;
-                boulderDef.building.mineableThing = def.building.mineableThing;
-                boulderDef.building.mineableDropChance = def.building.mineableDropChance * 1.5f;
-                boulderDef.neededNearbyTerrains = new List<string> { weathedDef.defName, solidDef.defName, def.defName + "_Rough", def.defName };
-                boulderDef.associatedOres = new List<string> { def.defName, weathedDef.defName };
-                DefDatabase<ThingDef_StaticMineral>.Add(boulderDef);
-           
-                // Create new small rock def
-                ThingDef_StaticMineral smallDef = ThingDef_StaticMineral.MakeSmallGenericRockBaseDef();
-                smallDef.defName = "MR_Small" + def.defName;
-                smallDef.label = def.label + " Rocks";
-                smallDef.description = def.description;
-                smallDef.graphicData.color = def.graphicData.color;
-                smallDef.building.mineableThing = def.building.mineableThing;
-                smallDef.building.mineableDropChance = def.building.mineableDropChance * 0.3f;
-                smallDef.neededNearbyTerrains = new List<string> { boulderDef.defName, weathedDef.defName, solidDef.defName, def.defName + "_Rough", def.defName };
-                smallDef.associatedOres = new List<string> { boulderDef.defName, def.defName, weathedDef.defName };
-                DefDatabase<ThingDef_StaticMineral>.Add(smallDef);
-           
-                generatedCount++;
-                Log.Message($"MineralsFramework: Auto-generated rock ThingDef for {def.defName}. Ask for a patch for more customization.");
+
+                // If it is an ore, add its defname to all generic ore templates, otherwise assume it is a rock
+                if (def.building.isResourceRock)
+                {
+                    foreach (ThingDef_StaticMineral oreDef in generiOreDefs)
+                    {
+                        oreDef.isTemplateFor.Add(def.defName);
+                    }
+                }
+                else
+                {
+                    foreach (ThingDef_StaticMineral rockDef in genericRockDefs)
+                    {
+                        rockDef.isTemplateFor.Add(def.defName);
+                    }
+                }
             }
+
+            // TODO: Check for new targets added to the generic template
+            int countGeratedFromGenericTemplate = ProcessTemplates();
+            Log.Message($"MineralsRock: Generated {countGeratedFromGenericTemplate} rock ThingDefs based on generic templates.");
         }
     }
 }
