@@ -10,6 +10,33 @@
       <xpath>/Defs</xpath>
       <value>
 
+        <ThingDef Name="MR_WeatheredVacstone" ParentName="MF_WeatheredVacstoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+          <defName>MR_WeatheredVacstone</defName>
+          <label>Weathered Vacstone</label>
+          <description>A weathered wall of vacstone, a mixture of silicate rich rock and occasional streaks of unoxidized metal.</description>
+          <graphicData>
+            <color>(115,106,98)</color>
+          </graphicData>
+          <building>
+            <mineableThing>ChunkVacstone</mineableThing>
+            <mineableDropChance>0.3</mineableDropChance>
+          </building>
+          <!-- The terrains this can appear on. -->
+          <allowedTerrains>
+            <li>Vacstone_Rough</li>
+          </allowedTerrains>
+          <!-- The terrains this must be near to, but not necessarily on -->
+          <neededNearbyTerrains>
+            <li>MR_SolidVacstone</li>
+          </neededNearbyTerrains>
+          <!-- how far away it can be from needed nearby terrains-->
+          <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
+          <!-- Things this mineral replaces when a map is initialized -->
+          <ThingsToReplace>
+            <li>Vacstone</li>
+          </ThingsToReplace>
+        </ThingDef>
+
 
         <ThingDef Name="MR_SolidVacstone" ParentName="MF_SolidVacstoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
           <defName>MR_SolidVacstone</defName>

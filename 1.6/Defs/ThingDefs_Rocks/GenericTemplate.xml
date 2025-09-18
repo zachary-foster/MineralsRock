@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+  <ThingDef Name="MR_WeatheredGenericRockTemplate" ParentName="MF_WeatheredLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_WeatheredGenericRockTemplate</defName>
+    <label>Weathered GenericRockTemplate</label>
+    <description>A template rock. You should not see this descirption if things are working correctly</description>
+    <building>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.3</mineableDropChance>
+      <mineablePreventMeteorite>true</mineablePreventMeteorite>
+    </building>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <!-- The terrains this can appear on. -->
+    <allowedTerrains>
+      <li>GenericRockTemplate_Rough</li>
+    </allowedTerrains>
+    <!-- Controls how extra clusters are added near assocaited things -->
+    <associatedOres>
+      <li>MR_SolidGenericRockTemplate</li>
+    </associatedOres>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>GenericRockTemplate</li>
+    </ThingsToReplace>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>MS_RoughGem</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <MinMiningSkill>4</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_rock_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericRockTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MR_SolidGenericRockTemplate" ParentName="MF_SolidLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_SolidGenericRockTemplate</defName>
+    <label>Solid GenericRockTemplate</label>
+    <description>A template rock. You should not see this descirption if things are working correctly</description>
+    <building>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.35</mineableDropChance>
+      <mineablePreventMeteorite>true</mineablePreventMeteorite>
+    </building>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>GenericRockTemplate</li>
+    </ThingsToReplace>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>MS_RoughGem</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <MinMiningSkill>4</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_rock_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericRockTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MR_HewnGenericRockTemplate" ParentName="MF_HewnLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_HewnGenericRockTemplate</defName>
+    <label>Hewn GenericRockTemplate</label>
+    <description>A template rock. You should not see this descirption if things are working correctly</description>
+    <building>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.4</mineableDropChance>
+      <smoothedThing>MR_SmoothedGenericRockTemplate</smoothedThing>
+      <mineablePreventMeteorite>true</mineablePreventMeteorite>
+    </building>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>GenericRockTemplate</li>
+    </ThingsToReplace>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>MS_RoughGem</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <MinMiningSkill>4</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_rock_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericRockTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MR_SmoothedGenericRockTemplate" ParentName="MF_SmoothedLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_SmoothedGenericRockTemplate</defName>
+    <label>Smoothed granite wall</label>
+    <description>A template rock. You should not see this descirption if things are working correctly</description>
+    <building>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.4</mineableDropChance>
+    </building>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>MS_RoughGem</ResourceDefName>
+        <DropProbability>0.02</DropProbability>
+        <MinMiningSkill>4</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>2</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_rock_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericRockTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MR_BoulderGenericRockTemplate" ParentName="MF_BoulderLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_BoulderGenericRockTemplate</defName>
+    <label>GenericRockTemplate Boulder</label>
+    <description>A template rock. You should not see this descirption if things are working correctly</description>
+    <building>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.6</mineableDropChance>
+    </building>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+      <li>MR_WeatheredGenericRockTemplate</li>
+      <li>MR_SolidGenericRockTemplate</li>
+      <li>GenericRockTemplate_Rough</li>
+      <li>GenericRockTemplate</li>
+    </neededNearbyTerrains>
+    <!-- Controls how extra clusters are added near assocaited ore-->
+    <associatedOres>
+      <li>GenericRockTemplate</li>
+      <li>MR_WeatheredGenericRockTemplate</li>
+    </associatedOres>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>ChunkGenericRockTemplate</li>
+    </ThingsToReplace>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>MS_RoughGem</ResourceDefName>
+        <DropProbability>0.015</DropProbability>
+        <MinMiningSkill>4</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1.5</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_rock_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericRockTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MR_SmallGenericRockTemplate" ParentName="MF_SmallLimestoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_SmallGenericRockTemplate</defName>
+    <label>GenericRockTemplate rocks</label>
+    <description>A template rock. You should not see this descirption if things are working correctly</description>
+    <building>
+      <mineableThing>ChunkLimestone</mineableThing>
+      <mineableDropChance>0.1</mineableDropChance>
+    </building>
+    <graphicData>
+      <color>(255,192,203)</color>
+    </graphicData>
+    <!-- The terrains this must be near to, but not necessarily on -->
+    <neededNearbyTerrains>
+      <li>MR_BoulderGenericRockTemplate</li>
+      <li>MR_WeatheredGenericRockTemplate</li>
+      <li>MR_SolidGenericRockTemplate</li>
+      <li>GenericRockTemplate_Rough</li>
+      <li>GenericRockTemplate</li>
+    </neededNearbyTerrains>
+    <!-- Controls how extra clusters are added near assocaited ore-->
+    <associatedOres>
+      <li>MR_BoulderGenericRockTemplate</li>
+      <li>MR_WeatheredGenericRockTemplate</li>
+      <li>MR_SolidGenericRockTemplate</li>
+      <li>GenericRockTemplate</li>
+    </associatedOres>
+    <!-- Other resources it might drop -->
+    <randomlyDropResources Inherit="False">
+      <li>
+        <ResourceDefName>MS_RoughGem</ResourceDefName>
+        <DropProbability>0.01</DropProbability>
+        <MinMiningSkill>4</MinMiningSkill>
+      </li>
+      <li>
+        <ResourceDefName>CrushedStone</ResourceDefName>
+        <DropProbability>1</DropProbability>
+        <CountPerDrop>5</CountPerDrop>
+        <WasteProduct>true</WasteProduct>
+      </li>
+    </randomlyDropResources>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_rock_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericRockTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MF_WeatheredGenericOreTemplate" ParentName="MF_WeatheredOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredGenericOreTemplate</defName>
+    <label>Weathered GenericOreTemplate Deposits</label>
+    <description>A template ore. You should not see this descirption if things are working correctly</description>
+    <graphicData>
+      <color>(255,192,203)</color>
+      <colorTwo>(255,192,203)</colorTwo>
+    </graphicData>
+    <randomlyDropResources Inherit="False"/>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>GenericOreTemplate</li>
+    </ThingsToReplace>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>1</mineSpeedFactor>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_ore_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericOreTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MF_SolidGenericOreTemplate" ParentName="MF_SolidOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidGenericOreTemplate</defName>
+    <label>Solid GenericOreTemplate Deposits</label>
+    <description>A template ore. You should not see this descirption if things are working correctly</description>
+    <graphicData>
+      <color>(255,192,203)</color>
+      <colorTwo>(255,192,203)</colorTwo>
+    </graphicData>
+    <randomlyDropResources Inherit="False"/>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>GenericOreTemplate</li>
+    </ThingsToReplace>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.9</mineSpeedFactor>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_ore_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericOreTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+
+  <ThingDef Name="MR_HewnGenericOreTemplate" ParentName="MF_HewnOreBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MR_HewnGenericOreTemplate</defName>
+    <label>Hewn GenericOreTemplate Deposits</label>
+    <description>A template ore. You should not see this descirption if things are working correctly</description>
+    <graphicData>
+      <color>(255,192,203)</color>
+      <colorTwo>(255,192,203)</colorTwo>
+    </graphicData>
+    <randomlyDropResources Inherit="False"/>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <ThingsToReplace>
+      <li>GenericOreTemplate</li>
+    </ThingsToReplace>
+    <!-- How easy it is to mine -->
+    <mineSpeedFactor>0.8</mineSpeedFactor>
+    <!-- Tags which determine how some options behave  -->
+    <tags>
+      <li>generic_ore_template</li>
+    </tags>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>GenericOreTemplate</templateReplaceString>
+    <isTemplateFor>
+    </isTemplateFor>
+  </ThingDef>
+
+</Defs>

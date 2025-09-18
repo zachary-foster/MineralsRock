@@ -8,6 +8,7 @@
     <description>A pile a rounded river rocks. These have been worn round during their long slow tumble from distant lands.</description>
     <graphicData>
       <texPath>Things/Rock/RiverRock</texPath>
+      <color>(158,153,135)</color>
     </graphicData>
     <uiIconPath>Things/Rock/RiverRock/RiverRockA</uiIconPath>
     <altitudeLayer>SmallWire</altitudeLayer>

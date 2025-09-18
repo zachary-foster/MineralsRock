@@ -5,6 +5,7 @@ using RimWorld;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Policy;
 using UnityEngine;
 using Verse;
 using Verse.Noise;
@@ -149,9 +150,9 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
     [StaticConstructorOnStartup]
     public static class AutoGenerateRockReplacements
     {
-        private static int ProcessTemplates()
+        private static List<string> ProcessTemplates()
         {
-            int count = 0;
+            List<string> replacedDefs = new List<string>();
             foreach (ThingDef_StaticMineral templateDef in DefDatabase<ThingDef_StaticMineral>.AllDefs.ToList())
             {
                 if (templateDef.isTemplateFor == null || templateDef.isTemplateFor.Count == 0 || string.IsNullOrEmpty(templateDef.templateReplaceString))
@@ -159,9 +160,10 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
                 foreach (string targetDefname in templateDef.isTemplateFor)
                 {
+
                     // If def to be created already exists then dont try to create
                     string newDefname = templateDef.defName.Replace(templateDef.templateReplaceString, targetDefname);
-                    if (DefDatabase<ThingDef>.GetNamedSilentFail(newDefname) == null)
+                    if (DefDatabase<ThingDef_StaticMineral>.GetNamedSilentFail(newDefname) != null)
                     {
                         continue;
                     }
@@ -175,17 +177,35 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
                     // Create deep copy and replace template strings
                     ThingDef_StaticMineral clone = templateDef.DeepCopy();
-                    clone.defName = templateDef.defName.Replace(templateDef.templateReplaceString, targetDefname);
-                    clone.label = templateDef.label?.Replace(templateDef.templateReplaceString, targetDefname);
+                    clone.defName = newDefname;
+                    clone.label = templateDef.label?.Replace(templateDef.templateReplaceString, targetDef.label);
                     clone.description = targetDef.description;
-                    if (clone.building != null && targetDef.building != null)
+                    if (targetDef.building != null)
                     {
-                        if (clone.building.mineableThing != null && targetDef.building.mineableThing != null)
+                        if (clone.building == null)
                         {
-                            clone.building.mineableThing = targetDef.building.mineableThing;
+                            clone.building = new BuildingProperties();
                         }
-                        clone.building.mineableDropChance = targetDef.building.mineableDropChance;
-                        clone.building.mineableYield = targetDef.building.mineableYield;
+                        if (targetDef.building.mineableThing != null)
+                        {
+                            if (targetDef.building.isResourceRock && targetDef.building.mineableYield >= 3)
+                            {
+                                clone.randomlyDropResources.Add(new RandomResourceDrop()
+                                {
+                                    ResourceDefName = targetDef.building.mineableThing.defName,
+                                    DropProbability = 3,
+                                    CountPerDrop = (int)(Math.Ceiling((float)targetDef.building.mineableYield / 3f))
+
+                                });
+                            } else
+                            {
+                                clone.building.mineableThing = targetDef.building.mineableThing;
+                                clone.building.mineableDropChance = targetDef.building.mineableDropChance;
+                                clone.building.mineableYield = targetDef.building.mineableYield;
+                            }
+                                
+                        }
+                        
                     }
                     clone.ThingsToReplace = templateDef.ThingsToReplace?
                         .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
@@ -199,14 +219,32 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                     clone.neededNearbyTerrains = templateDef.neededNearbyTerrains?
                         .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
                         .ToList();
-                    if (clone.graphicData != null && targetDef.graphicData != null)
+                    if (targetDef.graphicData != null)
                     {
-                        clone.graphicData.color = targetDef.graphicData.color;
-                        clone.graphicData.colorTwo = targetDef.graphicData.colorTwo;
+                        if (clone.graphicData == null)
+                        {
+                            clone.graphicData = new GraphicData();
+                        }
+                        if (targetDef.graphicData.color != null)
+                        {
+                            clone.graphicData.color = targetDef.graphicData.color;
+                            clone.randomColorsOne = new List<Color>() { targetDef.graphicData.color };
+                        }
+                        if (targetDef.graphicData.colorTwo == null)
+                        {
+                            if (clone.graphicData.colorTwo == null)
+                            {
+                                clone.graphicData.colorTwo = targetDef.graphicData.color;
+                            }
+                        } else
+                        {
+                            clone.graphicData.colorTwo = targetDef.graphicData.colorTwo;
+                            clone.randomColorsTwo = new List<Color>() { targetDef.graphicData.colorTwo };
+                        }
                     }
                     float targetMaxHitpoints = targetDef.GetStatValueAbstract(StatDefOf.MaxHitPoints);
                     float templateMaxHitpoints = templateDef.GetStatValueAbstract(StatDefOf.MaxHitPoints);
-                    clone.SetStatBaseValue(StatDefOf.MaxHitPoints, targetMaxHitpoints * templateMaxHitpoints / 1300);
+                    clone.SetStatBaseValue(StatDefOf.MaxHitPoints, targetMaxHitpoints * templateMaxHitpoints / 1100);
                     clone.templateReplaceString = null;
                     clone.isTemplateFor = null;
 
@@ -216,17 +254,21 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                     }
 
                     DefDatabase<ThingDef_StaticMineral>.Add(clone);
-                    count++;
+
+                    if (! replacedDefs.Contains(targetDef.defName))
+                    {
+                        replacedDefs.Add(targetDef.defName);
+                    }
                 }
             }
-            return count;
+            return replacedDefs;
         }
 
         static AutoGenerateRockReplacements()
         {
             // Generate rock/ore defs from templates defined by defname in the XML
-            int countGeratedFromDefinedTemplate = ProcessTemplates();
-            Log.Message($"MineralsRock: Generated {countGeratedFromDefinedTemplate} rock ThingDefs based on defined templates.");
+            List<string> replacedWithDefined = ProcessTemplates();
+            Log.Message($"MineralsRock: Automatically generated rock defs for {replacedWithDefined.Count} modded rocks based on defined templates: {replacedWithDefined.Join<string>()}.");
 
             // Add rocks/ores without a corresponding ThingDef_StaticMineral to the generic rock/ore's isTemplateFor
             List<ThingDef_StaticMineral> genericRockDefs = DefDatabase<ThingDef_StaticMineral>.AllDefs
@@ -267,9 +309,10 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                 }
             }
 
-            // TODO: Check for new targets added to the generic template
-            int countGeratedFromGenericTemplate = ProcessTemplates();
-            Log.Message($"MineralsRock: Generated {countGeratedFromGenericTemplate} rock ThingDefs based on generic templates.");
+            // Check for new targets added to the generic templates
+            List<string> replacedWithGeneric = ProcessTemplates();
+            Log.Warning($"MineralsRock: Automatically generated rock defs for {replacedWithGeneric.Count} modded rocks based on GENERIC templates: {replacedWithGeneric.Join<string>()}.");
+
         }
     }
 }

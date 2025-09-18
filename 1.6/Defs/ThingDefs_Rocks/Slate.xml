@@ -33,6 +33,11 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Slate</templateReplaceString>
+    <isTemplateFor>
+      <li>Schist</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -65,6 +70,11 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Slate</templateReplaceString>
+    <isTemplateFor>
+      <li>Schist</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -92,6 +102,11 @@
     <ThingsToReplace>
       <li>Slate</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Slate</templateReplaceString>
+    <isTemplateFor>
+      <li>Schist</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -117,6 +132,11 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Slate</templateReplaceString>
+    <isTemplateFor>
+      <li>Schist</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -143,6 +163,11 @@
         <CountPerDrop>5</CountPerDrop>
       </li>
     </randomlyDropResources>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Slate</templateReplaceString>
+    <isTemplateFor>
+      <li>Schist</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -177,6 +202,11 @@
     <ThingsToReplace>
       <li>ChunkSlate</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Slate</templateReplaceString>
+    <isTemplateFor>
+      <li>Schist</li>
+    </isTemplateFor>
   </ThingDef>
 
 

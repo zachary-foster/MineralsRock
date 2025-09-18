@@ -30,6 +30,12 @@
     <ThingsToReplace>
       <li>Limestone</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Limestone</templateReplaceString>
+    <isTemplateFor>
+      <li>Gneiss</li>
+      <li>Quartzite</li>
+    </isTemplateFor>
   </ThingDef>
 
   
@@ -54,6 +60,12 @@
     <ThingsToReplace>
       <li>Limestone</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Limestone</templateReplaceString>
+    <isTemplateFor>
+      <li>Gneiss</li>
+      <li>Quartzite</li>
+    </isTemplateFor>
   </ThingDef>
   
 
@@ -79,6 +91,12 @@
     <ThingsToReplace>
       <li>Limestone</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Limestone</templateReplaceString>
+    <isTemplateFor>
+      <li>Gneiss</li>
+      <li>Quartzite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -99,6 +117,12 @@
       <mineableThing>ChunkLimestone</mineableThing>
       <mineableDropChance>0.4</mineableDropChance>
     </building>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Limestone</templateReplaceString>
+    <isTemplateFor>
+      <li>Gneiss</li>
+      <li>Quartzite</li>
+    </isTemplateFor>
   </ThingDef>
 
  
@@ -136,6 +160,12 @@
       <li>ChunkLimestone</li>
       <li>LimestoneBoulder</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Limestone</templateReplaceString>
+    <isTemplateFor>
+      <li>Gneiss</li>
+      <li>Quartzite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -169,6 +199,12 @@
       <li>MR_WeatheredLimestone</li>
       <li>Limestone</li>
     </associatedOres>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Limestone</templateReplaceString>
+    <isTemplateFor>
+      <li>Gneiss</li>
+      <li>Quartzite</li>
+    </isTemplateFor>
   </ThingDef>
   
 

@@ -42,6 +42,15 @@
     <ThingsToReplace>
       <li>Granite</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Granite</templateReplaceString>
+    <isTemplateFor>
+      <li>Syenite</li>
+      <li>Gabbro</li>
+      <li>Diorite</li>
+      <li>Dunite</li>
+      <li>Pegmatite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -77,6 +86,15 @@
     <ThingsToReplace>
       <li>Granite</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Granite</templateReplaceString>
+    <isTemplateFor>
+      <li>Syenite</li>
+      <li>Gabbro</li>
+      <li>Diorite</li>
+      <li>Dunite</li>
+      <li>Pegmatite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -113,6 +131,15 @@
     <ThingsToReplace>
       <li>Granite</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Granite</templateReplaceString>
+    <isTemplateFor>
+      <li>Syenite</li>
+      <li>Gabbro</li>
+      <li>Diorite</li>
+      <li>Dunite</li>
+      <li>Pegmatite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -127,6 +154,15 @@
       <mineableThing>ChunkGranite</mineableThing>
       <mineableDropChance>0.25</mineableDropChance>
     </building>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Granite</templateReplaceString>
+    <isTemplateFor>
+      <li>Syenite</li>
+      <li>Gabbro</li>
+      <li>Diorite</li>
+      <li>Dunite</li>
+      <li>Pegmatite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -174,6 +210,15 @@
     <ThingsToReplace>
       <li>ChunkGranite</li>
     </ThingsToReplace>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Granite</templateReplaceString>
+    <isTemplateFor>
+      <li>Syenite</li>
+      <li>Gabbro</li>
+      <li>Diorite</li>
+      <li>Dunite</li>
+      <li>Pegmatite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
@@ -219,6 +264,15 @@
       <li>MR_WeatheredGranite</li>
       <li>Granite</li>
     </associatedOres>
+    <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
+    <templateReplaceString>Granite</templateReplaceString>
+    <isTemplateFor>
+      <li>Syenite</li>
+      <li>Gabbro</li>
+      <li>Diorite</li>
+      <li>Dunite</li>
+      <li>Pegmatite</li>
+    </isTemplateFor>
   </ThingDef>
 
 
