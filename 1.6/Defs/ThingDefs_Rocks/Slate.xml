@@ -13,26 +13,29 @@
       <mineableThing>ChunkSlate</mineableThing>
       <mineableDropChance>0.1</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Slate_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Slate_Rough</li>
-    </neededNearbyTerrains>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Slate_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>BlocksSlate</resourceDefName>
+        <dropProbability>1</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Slate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Slate</templateReplaceString>
     <isTemplateFor>
@@ -61,15 +64,15 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>1.2</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>BlocksSlate</resourceDefName>
+        <dropProbability>1.2</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Slate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Slate</templateReplaceString>
     <isTemplateFor>
@@ -93,15 +96,15 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.8</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>BlocksSlate</resourceDefName>
+        <dropProbability>0.8</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Slate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Slate</templateReplaceString>
     <isTemplateFor>
@@ -127,9 +130,9 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>0.8</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>BlocksSlate</resourceDefName>
+        <dropProbability>0.8</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
@@ -151,16 +154,24 @@
       <mineableThing>ChunkSlate</mineableThing>
       <mineableDropChance>0.1</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_WeatheredSlate</li>
-    </neededNearbyTerrains>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_WeatheredSlate</li>
+        </defNames>
+        <radius>10</radius>
+        <foundFactor>2</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>1.6</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>BlocksSlate</resourceDefName>
+        <dropProbability>1.6</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
@@ -178,30 +189,43 @@
     <graphicData>
       <color>(70,70,70)</color>
     </graphicData>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_WeatheredSlate</li>
-      <li>MR_SlateForest</li>
-      <li>MR_SolidSlate</li>
-      <li>Slate_Rough</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_WeatheredSlate</li>
-      <li>MR_SlateForest</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_WeatheredSlate</li>
+          <li>MR_SlateForest</li>
+          <li>MR_SolidSlate</li>
+          <li>Slate_Rough</li>
+        </defNames>
+        <radius>2</radius>
+        <foundFactor>2</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_WeatheredSlate</li>
+          <li>MR_SlateForest</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>5</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>BlocksSlate</ResourceDefName>
-        <DropProbability>1.6</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>BlocksSlate</resourceDefName>
+        <dropProbability>1.6</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>ChunkSlate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Slate</templateReplaceString>
     <isTemplateFor>

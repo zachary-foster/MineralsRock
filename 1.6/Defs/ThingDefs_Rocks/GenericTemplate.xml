@@ -14,30 +14,41 @@
     <graphicData>
       <color>(255,192,203)</color>
     </graphicData>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>GenericRockTemplate_Rough</li>
-    </allowedTerrains>
-    <!-- Controls how extra clusters are added near assocaited things -->
-    <associatedOres>
-      <li>MR_SolidGenericRockTemplate</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>GenericRockTemplate_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_SolidGenericRockTemplate</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>3</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>GenericRockTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- Other resources it might drop -->
     <randomlyDropResources Inherit="False">
       <li>
-        <ResourceDefName>MS_RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <MinMiningSkill>4</MinMiningSkill>
+        <resourceDefName>MS_RoughGem</resourceDefName>
+        <dropProbability>0.02</dropProbability>
+        <minMiningSkill>4</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <wasteProduct>true</wasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -64,21 +75,21 @@
       <color>(255,192,203)</color>
     </graphicData>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>GenericRockTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- Other resources it might drop -->
     <randomlyDropResources Inherit="False">
       <li>
-        <ResourceDefName>MS_RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <MinMiningSkill>4</MinMiningSkill>
+        <resourceDefName>MS_RoughGem</resourceDefName>
+        <dropProbability>0.02</dropProbability>
+        <minMiningSkill>4</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <wasteProduct>true</wasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -106,21 +117,21 @@
       <color>(255,192,203)</color>
     </graphicData>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>GenericRockTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- Other resources it might drop -->
     <randomlyDropResources Inherit="False">
       <li>
-        <ResourceDefName>MS_RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <MinMiningSkill>4</MinMiningSkill>
+        <resourceDefName>MS_RoughGem</resourceDefName>
+        <dropProbability>0.02</dropProbability>
+        <minMiningSkill>4</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <wasteProduct>true</wasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -148,15 +159,15 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources Inherit="False">
       <li>
-        <ResourceDefName>MS_RoughGem</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <MinMiningSkill>4</MinMiningSkill>
+        <resourceDefName>MS_RoughGem</resourceDefName>
+        <dropProbability>0.02</dropProbability>
+        <minMiningSkill>4</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <wasteProduct>true</wasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -181,34 +192,48 @@
     <graphicData>
       <color>(255,192,203)</color>
     </graphicData>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_WeatheredGenericRockTemplate</li>
-      <li>MR_SolidGenericRockTemplate</li>
-      <li>GenericRockTemplate_Rough</li>
-      <li>GenericRockTemplate</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>GenericRockTemplate</li>
-      <li>MR_WeatheredGenericRockTemplate</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_WeatheredGenericRockTemplate</li>
+          <li>MR_SolidGenericRockTemplate</li>
+          <li>GenericRockTemplate_Rough</li>
+          <li>GenericRockTemplate</li>
+        </defNames>
+        <radius>10</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+        <scaleFalloff>1.5</scaleFalloff>
+      </li>
+      <li>
+        <defNames>
+          <li>GenericRockTemplate</li>
+          <li>MR_WeatheredGenericRockTemplate</li>
+        </defNames>
+        <radius>2</radius>
+        <foundFactor>10</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>ChunkGenericRockTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- Other resources it might drop -->
     <randomlyDropResources Inherit="False">
       <li>
-        <ResourceDefName>MS_RoughGem</ResourceDefName>
-        <DropProbability>0.015</DropProbability>
-        <MinMiningSkill>4</MinMiningSkill>
+        <resourceDefName>MS_RoughGem</resourceDefName>
+        <dropProbability>0.015</dropProbability>
+        <minMiningSkill>4</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1.5</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>1.5</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <wasteProduct>true</wasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -233,33 +258,47 @@
     <graphicData>
       <color>(255,192,203)</color>
     </graphicData>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_BoulderGenericRockTemplate</li>
-      <li>MR_WeatheredGenericRockTemplate</li>
-      <li>MR_SolidGenericRockTemplate</li>
-      <li>GenericRockTemplate_Rough</li>
-      <li>GenericRockTemplate</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_BoulderGenericRockTemplate</li>
-      <li>MR_WeatheredGenericRockTemplate</li>
-      <li>MR_SolidGenericRockTemplate</li>
-      <li>GenericRockTemplate</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_BoulderGenericRockTemplate</li>
+          <li>MR_WeatheredGenericRockTemplate</li>
+          <li>MR_SolidGenericRockTemplate</li>
+          <li>GenericRockTemplate_Rough</li>
+          <li>GenericRockTemplate</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+        <scaleFalloff>2</scaleFalloff>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_BoulderGenericRockTemplate</li>
+          <li>MR_WeatheredGenericRockTemplate</li>
+          <li>MR_SolidGenericRockTemplate</li>
+          <li>GenericRockTemplate</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>15</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Other resources it might drop -->
     <randomlyDropResources Inherit="False">
       <li>
-        <ResourceDefName>MS_RoughGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-        <MinMiningSkill>4</MinMiningSkill>
+        <resourceDefName>MS_RoughGem</resourceDefName>
+        <dropProbability>0.01</dropProbability>
+        <minMiningSkill>4</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <WasteProduct>true</WasteProduct>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>1</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <wasteProduct>true</wasteProduct>
       </li>
     </randomlyDropResources>
     <!-- Tags which determine how some options behave  -->
@@ -283,9 +322,9 @@
     </graphicData>
     <randomlyDropResources Inherit="False"/>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>GenericOreTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1</mineSpeedFactor>
     <!-- Tags which determine how some options behave  -->
@@ -309,9 +348,9 @@
     </graphicData>
     <randomlyDropResources Inherit="False"/>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>GenericOreTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.9</mineSpeedFactor>
     <!-- Tags which determine how some options behave  -->
@@ -335,9 +374,9 @@
     </graphicData>
     <randomlyDropResources Inherit="False"/>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>GenericOreTemplate</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.8</mineSpeedFactor>
     <!-- Tags which determine how some options behave  -->

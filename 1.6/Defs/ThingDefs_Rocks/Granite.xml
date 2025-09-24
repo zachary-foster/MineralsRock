@@ -30,18 +30,29 @@
       <mineableThing>ChunkGranite</mineableThing>
       <mineableDropChance>0.25</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Granite_Rough</li>
-    </allowedTerrains>
-    <!-- Controls how extra clusters are added near assocaited things -->
-    <associatedOres>
-      <li>MR_SolidGranite</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Granite_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_SolidGranite</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Granite</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Granite</templateReplaceString>
     <isTemplateFor>
@@ -83,9 +94,9 @@
       <mineableDropChance>0.27</mineableDropChance>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Granite</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Granite</templateReplaceString>
     <isTemplateFor>
@@ -128,9 +139,9 @@
       <smoothedThing>MR_SmoothedGranite</smoothedThing>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Granite</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Granite</templateReplaceString>
     <isTemplateFor>
@@ -194,22 +205,36 @@
       <mineableThing>ChunkGranite</mineableThing>
       <mineableDropChance>0.6</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_WeatheredGranite</li>
-      <li>MR_SolidGranite</li>
-      <li>Granite_Rough</li>
-      <li>Granite</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>Granite</li>
-      <li>MR_WeatheredGranite</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_WeatheredGranite</li>
+          <li>MR_SolidGranite</li>
+          <li>Granite_Rough</li>
+          <li>Granite</li>
+        </defNames>
+        <radius>7</radius>
+        <foundFactor>5</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+      </li>
+      <li>
+        <defNames>
+          <li>Granite</li>
+          <li>MR_WeatheredGranite</li>
+        </defNames>
+        <radius>2</radius>
+        <foundFactor>10</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+        <scaleFalloff>0.5</scaleFalloff>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>ChunkGranite</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Granite</templateReplaceString>
     <isTemplateFor>
@@ -250,20 +275,34 @@
       <mineableThing>ChunkGranite</mineableThing>
       <mineableDropChance>0.1</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_BoulderGranite</li>
-      <li>MR_WeatheredGranite</li>
-      <li>MR_SolidGranite</li>
-      <li>Granite_Rough</li>
-      <li>Granite</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_BoulderGranite</li>
-      <li>MR_WeatheredGranite</li>
-      <li>Granite</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_BoulderGranite</li>
+          <li>MR_WeatheredGranite</li>
+          <li>MR_SolidGranite</li>
+          <li>Granite_Rough</li>
+          <li>Granite</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+        <scaleFalloff>2</scaleFalloff>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_BoulderGranite</li>
+          <li>MR_WeatheredGranite</li>
+          <li>Granite</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>15</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- List of defnames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defname -->
     <templateReplaceString>Granite</templateReplaceString>
     <isTemplateFor>

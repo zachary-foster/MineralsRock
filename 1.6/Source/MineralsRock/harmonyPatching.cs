@@ -135,7 +135,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                     GenSight.LineOfSight(center, targetPos, __instance.Map))
                 {
                     MineralsFramework.StaticMineral spawned = (MineralsFramework.StaticMineral) GenSpawn.Spawn(rockDef, targetPos, __instance.Map);
-                    spawned.size = rockSize;
+                    spawned.Size = rockSize;
                 }
             }
 
@@ -192,9 +192,9 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                             {
                                 clone.randomlyDropResources.Add(new RandomResourceDrop()
                                 {
-                                    ResourceDefName = targetDef.building.mineableThing.defName,
-                                    DropProbability = 3,
-                                    CountPerDrop = (int)(Math.Ceiling((float)targetDef.building.mineableYield / 3f))
+                                    resourceDefName = targetDef.building.mineableThing.defName,
+                                    dropProbability = 3,
+                                    countPerDrop = (int)(Math.Ceiling((float)targetDef.building.mineableYield / 3f))
 
                                 });
                             } else
@@ -202,22 +202,26 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                                 clone.building.mineableThing = targetDef.building.mineableThing;
                                 clone.building.mineableDropChance = targetDef.building.mineableDropChance;
                                 clone.building.mineableYield = targetDef.building.mineableYield;
+                                clone.building.smoothedThing = targetDef.building.smoothedThing;
                             }
-                                
+
                         }
-                        
+
                     }
-                    clone.ThingsToReplace = templateDef.ThingsToReplace?
+                    clone.thingsToReplace = templateDef.thingsToReplace?
                         .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
                         .ToList();
-                    clone.allowedTerrains = templateDef.allowedTerrains?
-                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
+                    clone.nearbyThingAbundEffects = clone.nearbyThingAbundEffects?
+                        .Select(effect => {
+                            effect.defNames = effect.defNames.Select(n => n.Replace(templateDef.templateReplaceString, targetDefname)).ToList();
+                            return effect;
+                        })
                         .ToList();
-                    clone.associatedOres = templateDef.associatedOres?
-                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
-                        .ToList();
-                    clone.neededNearbyTerrains = templateDef.neededNearbyTerrains?
-                        .Select(s => s.Replace(templateDef.templateReplaceString, targetDefname))
+                    clone.nearbyThingSizeEffects = clone.nearbyThingSizeEffects?
+                        .Select(effect => {
+                            effect.defNames = effect.defNames.Select(n => n.Replace(templateDef.templateReplaceString, targetDefname)).ToList();
+                            return effect;
+                        })
                         .ToList();
                     if (targetDef.graphicData != null)
                     {
@@ -278,8 +282,8 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
                 .Where(def => def.tags != null && def.tags.Contains("generic_ore_template"))
                 .ToList();
             List<string> allReplacedThings = DefDatabase<ThingDef_StaticMineral>.AllDefs
-                .Where(def => def.ThingsToReplace != null)
-                .SelectMany(def => def.ThingsToReplace)
+                .Where(def => def.thingsToReplace != null)
+                .SelectMany(def => def.thingsToReplace)
                 .Distinct()
                 .ToList();
             foreach (ThingDef def in DefDatabase<ThingDef>.AllDefs)
@@ -311,7 +315,7 @@ typeof(MineralsFramework.ThingDef_StaticMineral).IsAssignableFrom(x.GetType())))
 
             // Check for new targets added to the generic templates
             List<string> replacedWithGeneric = ProcessTemplates();
-            Log.Warning($"MineralsRock: Automatically generated rock defs for {replacedWithGeneric.Count} modded rocks based on GENERIC templates: {replacedWithGeneric.Join<string>()}.");
+            Log.Message($"MineralsRock: Automatically generated rock defs for {replacedWithGeneric.Count} modded rocks based on GENERIC templates: {replacedWithGeneric.Join<string>()}.");
 
         }
     }

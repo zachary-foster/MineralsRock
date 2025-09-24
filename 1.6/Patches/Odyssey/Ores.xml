@@ -23,19 +23,19 @@
           <coloredByTerrain>false</coloredByTerrain>
           <randomlyDropResources>
             <li>
-              <ResourceDefName>Obsidian</ResourceDefName>
-              <DropProbability>5</DropProbability>
-              <CountPerDrop>10</CountPerDrop>
+              <resourceDefName>Obsidian</resourceDefName>
+              <dropProbability>5</dropProbability>
+              <countPerDrop>10</countPerDrop>
             </li>
             <li>
-              <ResourceDefName>MS_RoughGem</ResourceDefName>
-              <DropProbability>0.3</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
+              <resourceDefName>MS_RoughGem</resourceDefName>
+              <dropProbability>0.3</dropProbability>
+              <countPerDrop>1</countPerDrop>
             </li>
           </randomlyDropResources>
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>MineableObsidian</li>
-          </ThingsToReplace>
+          </thingsToReplace>
           <!-- How easy it is to mine -->
           <mineSpeedFactor>0.6</mineSpeedFactor>
         </ThingDef>
@@ -53,19 +53,19 @@
           <coloredByTerrain>false</coloredByTerrain>
           <randomlyDropResources>
             <li>
-              <ResourceDefName>Obsidian</ResourceDefName>
-              <DropProbability>4</DropProbability>
-              <CountPerDrop>10</CountPerDrop>
+              <resourceDefName>Obsidian</resourceDefName>
+              <dropProbability>4</dropProbability>
+              <countPerDrop>10</countPerDrop>
             </li>
             <li>
-              <ResourceDefName>MS_RoughGem</ResourceDefName>
-              <DropProbability>0.5</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
+              <resourceDefName>MS_RoughGem</resourceDefName>
+              <dropProbability>0.5</dropProbability>
+              <countPerDrop>1</countPerDrop>
             </li>
           </randomlyDropResources>
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>MineableObsidian</li>
-          </ThingsToReplace>
+          </thingsToReplace>
           <!-- How easy it is to mine -->
           <mineSpeedFactor>0.5</mineSpeedFactor>
         </ThingDef>
@@ -83,19 +83,19 @@
           <coloredByTerrain>false</coloredByTerrain>
           <randomlyDropResources>
             <li>
-              <ResourceDefName>Obsidian</ResourceDefName>
-              <DropProbability>3</DropProbability>
-              <CountPerDrop>10</CountPerDrop>
+              <resourceDefName>Obsidian</resourceDefName>
+              <dropProbability>3</dropProbability>
+              <countPerDrop>10</countPerDrop>
             </li>
             <li>
-              <ResourceDefName>MS_RoughGem</ResourceDefName>
-              <DropProbability>0.3</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
+              <resourceDefName>MS_RoughGem</resourceDefName>
+              <dropProbability>0.3</dropProbability>
+              <countPerDrop>1</countPerDrop>
             </li>
           </randomlyDropResources>
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>MineableObsidian</li>
-          </ThingsToReplace>
+          </thingsToReplace>
           <!-- How easy it is to mine -->
           <mineSpeedFactor>0.4</mineSpeedFactor>
         </ThingDef>
@@ -131,30 +131,39 @@
           <initialSizeMax>.9</initialSizeMax>
           <!-- How much initial sizes of individuals randomly vary -->
           <initialSizeVariation>.25</initialSizeVariation>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>VolcanicRock</li>
-            <li>MR_WeatheredBasalt</li>
-            <li>MR_SolidBasalt</li>
-            <li>Basalt</li>
-            <li>Basalt_Rough</li>
-            <li>Obsidian</li>
-            <li>MRE_DioriteBase_Rough</li>
-            <li>MRE_AndesiteBase_Rough</li>
-            <li>MRE_PeridotiteBase_Rough</li>
-            <li>MRE_RhyoliteBase_Rough</li>
-            <li>MRE_ScoriaBase_Rough</li>
-          </neededNearbyTerrains>
-          <!-- how far away it can be from needed nearby terrains-->
-          <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
-          <!-- Controls how extra clusters are added near assocaited ore-->
-          <associatedOres>
-            <li>MR_WeatheredOreObsidian</li>
-            <li>MR_SolidOreObsidian</li>
-          </associatedOres>
-          <nearAssociatedOreBonus>100</nearAssociatedOreBonus>
-          <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-          <neededNearbyTerrainSizeEffect>false</neededNearbyTerrainSizeEffect>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>VolcanicRock</li>
+                <li>MR_WeatheredBasalt</li>
+                <li>MR_SolidBasalt</li>
+                <li>Basalt</li>
+                <li>Basalt_Rough</li>
+                <li>Obsidian</li>
+                <li>MRE_DioriteBase_Rough</li>
+                <li>MRE_AndesiteBase_Rough</li>
+                <li>MRE_PeridotiteBase_Rough</li>
+                <li>MRE_RhyoliteBase_Rough</li>
+                <li>MRE_ScoriaBase_Rough</li>
+              </defNames>
+              <radius>5</radius>
+              <foundFactor>2</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+              <scaleByArea>true</scaleByArea>
+              <scaleByDistance>true</scaleByDistance>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_WeatheredOreObsidian</li>
+                <li>MR_SolidOreObsidian</li>
+              </defNames>
+              <radius>3</radius>
+              <foundFactor>50</foundFactor>
+              <notFoundFactor>1</notFoundFactor>
+              <scaleByArea>true</scaleByArea>
+            </li>
+          </nearbyThingAbundEffects>
           <!-- Roof requirements -->
           <mustBeNotUnderRoof>true</mustBeNotUnderRoof>
           <!-- The maximum number of images that will be printed per square -->
@@ -172,21 +181,21 @@
           <!-- Other resources it might drop -->
           <randomlyDropResources>
             <li>
-              <ResourceDefName>MS_RoughGem</ResourceDefName>
-              <DropProbability>0.2</DropProbability>
-              <CountPerDrop>1</CountPerDrop>
-              <MinMiningSkill>5</MinMiningSkill>
+              <resourceDefName>MS_RoughGem</resourceDefName>
+              <dropProbability>0.2</dropProbability>
+              <countPerDrop>1</countPerDrop>
+              <minMiningSkill>5</minMiningSkill>
             </li>
             <li>
-              <ResourceDefName>Obsidian</ResourceDefName>
-              <DropProbability>2</DropProbability>
-              <CountPerDrop>10</CountPerDrop>
+              <resourceDefName>Obsidian</resourceDefName>
+              <dropProbability>2</dropProbability>
+              <countPerDrop>10</countPerDrop>
             </li>
             <li>
-              <ResourceDefName>CrushedStone</ResourceDefName>
-              <DropProbability>1</DropProbability>
-              <CountPerDrop>5</CountPerDrop>
-              <WasteProduct>true</WasteProduct>
+              <resourceDefName>CrushedStone</resourceDefName>
+              <dropProbability>1</dropProbability>
+              <countPerDrop>5</countPerDrop>
+              <wasteProduct>true</wasteProduct>
             </li>
           </randomlyDropResources>
           <!-- Minimum distance from the nearest settlement the inital spawn needs to be in order to be spawned at the maximum probablity -->

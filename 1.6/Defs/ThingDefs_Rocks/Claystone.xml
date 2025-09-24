@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+
+  <ThingDef Name="MF_WeatheredClaystone" ParentName="MF_WeatheredClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_WeatheredClaystone</defName>
+    <label>weathered claystone</label>
+    <description>Rough claystone deposits sculpted by time and the elements into beautiful flowing shapes.</description>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(228,188,147)</li>
+      <li>(222,188,147)</li>
+      <li>(228,184,147)</li>
+      <li>(228,188,141)</li>
+    </randomColorsOne>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsTwo>
+      <li>(237,227,215)</li>
+      <li>(227,205,184)</li>
+      <li>(207,192,185)</li>
+    </randomColorsTwo>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Claystone_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+      <li>
+        <defNames>
+          <li>Claystone_Rough</li>
+        </defNames>
+        <radius>7</radius>
+        <foundFactor>10</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+        <scaleByDistance>true</scaleByDistance>
+      </li>
+    </nearbyThingAbundEffects>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <thingsToReplace>
+      <li>Claystone</li>
+    </thingsToReplace>
+    <!-- List of defNames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defName -->
+    <templateReplaceString>Claystone</templateReplaceString>
+    <isTemplateFor>
+      <li>DankPyon_NaturalWall_Clay</li>
+    </isTemplateFor>
+  </ThingDef>
+
+  <ThingDef Name="MF_SolidClaystone" ParentName="MF_SolidClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SolidClaystone</defName>
+    <label>solid claystone</label>
+    <description>Solid clay rock. Soft and easily quarried.</description>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(228,188,147)</li>
+      <li>(222,188,147)</li>
+      <li>(228,184,147)</li>
+      <li>(228,188,141)</li>
+    </randomColorsOne>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsTwo>
+      <li>(237,227,215)</li>
+      <li>(227,205,184)</li>
+      <li>(207,192,185)</li>
+    </randomColorsTwo>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <thingsToReplace>
+      <li>Claystone</li>
+    </thingsToReplace>
+    <!-- List of defNames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defName -->
+    <templateReplaceString>Claystone</templateReplaceString>
+    <isTemplateFor>
+      <li>DankPyon_NaturalWall_Clay</li>
+    </isTemplateFor>
+  </ThingDef>
+
+  <ThingDef Name="MF_HewnClaystone" ParentName="MF_HewnClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_HewnClaystone</defName>
+    <label>hewn claystone</label>
+    <description>Solid cut clay walls.</description>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(228,188,147)</li>
+      <li>(222,188,147)</li>
+      <li>(228,184,147)</li>
+      <li>(228,188,141)</li>
+    </randomColorsOne>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsTwo>
+      <li>(237,227,215)</li>
+      <li>(227,205,184)</li>
+      <li>(207,192,185)</li>
+    </randomColorsTwo>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <thingsToReplace>
+      <li>Claystone</li>
+    </thingsToReplace>
+    <!-- List of defNames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defName -->
+    <templateReplaceString>Claystone</templateReplaceString>
+    <isTemplateFor>
+      <li>DankPyon_NaturalWall_Clay</li>
+    </isTemplateFor>
+  </ThingDef>
+
+  <ThingDef Name="MF_SmoothedClaystone" ParentName="MF_SmoothedClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SmoothedClaystone</defName>
+    <label>smoothed claystone</label>
+    <description>Polished claystone surfaces with a uniform texture.</description>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(228,188,147)</li>
+      <li>(222,188,147)</li>
+      <li>(228,184,147)</li>
+      <li>(228,188,141)</li>
+    </randomColorsOne>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsTwo>
+      <li>(237,227,215)</li>
+      <li>(227,205,184)</li>
+      <li>(207,192,185)</li>
+    </randomColorsTwo>
+    <!-- List of defNames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defName -->
+    <templateReplaceString>Claystone</templateReplaceString>
+    <isTemplateFor>
+      <li>DankPyon_NaturalWall_Clay</li>
+    </isTemplateFor>
+  </ThingDef>
+
+  <ThingDef Name="MF_BoulderClaystone" ParentName="MF_BoulderClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_BoulderClaystone</defName>
+    <label>claystone boulder</label>
+    <description>Large, rounded claystone rocks shaped by the elements.</description>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(228,188,147)</li>
+      <li>(222,188,147)</li>
+      <li>(228,184,147)</li>
+      <li>(228,188,141)</li>
+    </randomColorsOne>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsTwo>
+      <li>(237,227,215)</li>
+      <li>(227,205,184)</li>
+      <li>(207,192,185)</li>
+    </randomColorsTwo>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Claystone_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+      <li>
+        <defNames>
+          <li>MF_WeatheredClaystone</li>
+          <li>Claystone</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>10</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
+    <!-- Things this mineral replaces when a map is initialized -->
+    <thingsToReplace>
+      <li>ClaystoneChunk</li>
+    </thingsToReplace>
+    <!-- List of defNames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defName -->
+    <templateReplaceString>Claystone</templateReplaceString>
+    <isTemplateFor>
+      <li>DankPyon_NaturalWall_Clay</li>
+    </isTemplateFor>
+  </ThingDef>
+
+  <ThingDef Name="MF_SmallClaystone" ParentName="MF_SmallClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
+    <defName>MF_SmallClaystone</defName>
+    <label>claystone rubble</label>
+    <description>Loose clay debries.</description>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsOne>
+      <li>(228,188,147)</li>
+      <li>(222,188,147)</li>
+      <li>(228,184,147)</li>
+      <li>(228,188,141)</li>
+    </randomColorsOne>
+    <!-- If defined, randomly pick colors from this set -->
+    <randomColorsTwo>
+      <li>(237,227,215)</li>
+      <li>(227,205,184)</li>
+      <li>(207,192,185)</li>
+    </randomColorsTwo>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MF_WeatheredClaystone</li>
+          <li>MF_BoulderClaystone</li>
+          <li>Claystone</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>2</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
+    <!-- List of defNames (if they exist) that this should be used as a template to create new defs for by replacing occurances of a string with each defName -->
+    <templateReplaceString>Claystone</templateReplaceString>
+    <isTemplateFor>
+      <li>DankPyon_NaturalWall_Clay</li>
+    </isTemplateFor>
+  </ThingDef>
+
+
+</Defs>

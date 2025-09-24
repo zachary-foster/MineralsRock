@@ -50,14 +50,18 @@
     <initialSizeMax>0.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>WaterMovingShallow</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>3</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>WaterMovingShallow</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>2</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>15</maxMeshCount>
     <!-- The size range -->
@@ -73,52 +77,52 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>RoughGem</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>1</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
-        <ScaleYieldBySkill>false</ScaleYieldBySkill>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>1</dropProbability>
+        <countPerDrop>5</countPerDrop>
+        <scaleYieldBySkill>false</scaleYieldBySkill>
       </li>
       <li>
-        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
+        <resourceDefName>MAU_SharpStoneShard</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <countPerDrop>1</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>50</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <countPerDrop>50</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Jade</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-        <MinMiningSkill>2</MinMiningSkill>
+        <resourceDefName>Amber</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <countPerDrop>10</countPerDrop>
+        <minMiningSkill>2</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>RoughUltrahardGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-        <MinMiningSkill>7</MinMiningSkill>
+        <resourceDefName>RoughUltrahardGem</resourceDefName>
+        <dropProbability>0.01</dropProbability>
+        <minMiningSkill>7</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>MS_SmallFossilResource</resourceDefName>
+        <dropProbability>0.03</dropProbability>
+        <countPerDrop>1</countPerDrop>
+        <minMiningSkill>5</minMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- If smaller than 1, it looks smaller in water -->
@@ -195,14 +199,18 @@
     <initialSizeMax>0.9</initialSizeMax>
     <!-- How much initial sizes of individuals randomly vary -->
     <initialSizeVariation>.3</initialSizeVariation>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-			<li>WaterOceanShallow</li>
-    </neededNearbyTerrains>
-    <!-- how far away it can be from needed nearby terrains-->
-    <neededNearbyTerrainRadius>4</neededNearbyTerrainRadius>
-    <!-- If true, growth rate and initial size depends on distance from needed terrains -->
-    <neededNearbyTerrainSizeEffect>true</neededNearbyTerrainSizeEffect>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>WaterOceanShallow</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>2</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- The maximum number of images that will be printed per square -->
     <maxMeshCount>20</maxMeshCount>
     <!-- The size range -->
@@ -218,57 +226,57 @@
     <!-- Other resources it might drop -->
     <randomlyDropResources>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>RoughGem</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>CrushedStone</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-        <ScaleYieldBySkill>false</ScaleYieldBySkill>
+        <resourceDefName>CrushedStone</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>10</countPerDrop>
+        <scaleYieldBySkill>false</scaleYieldBySkill>
       </li>
       <li>
-        <ResourceDefName>MAU_SharpStoneShard</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
+        <resourceDefName>MAU_SharpStoneShard</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <countPerDrop>1</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>20</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <countPerDrop>20</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Jade</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Amber</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
-        <MinMiningSkill>2</MinMiningSkill>
+        <resourceDefName>Amber</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <countPerDrop>10</countPerDrop>
+        <minMiningSkill>2</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Pearl</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
+        <resourceDefName>Pearl</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <countPerDrop>1</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>RoughUltrahardGem</ResourceDefName>
-        <DropProbability>0.01</DropProbability>
-        <MinMiningSkill>7</MinMiningSkill>
+        <resourceDefName>RoughUltrahardGem</resourceDefName>
+        <dropProbability>0.01</dropProbability>
+        <minMiningSkill>7</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>MS_SmallFossilResource</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <CountPerDrop>1</CountPerDrop>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>MS_SmallFossilResource</resourceDefName>
+        <dropProbability>0.03</dropProbability>
+        <countPerDrop>1</countPerDrop>
+        <minMiningSkill>5</minMiningSkill>
       </li>
     </randomlyDropResources>
     <!-- If smaller than 1, it looks smaller in water -->

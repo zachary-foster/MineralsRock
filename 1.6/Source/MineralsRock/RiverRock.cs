@@ -21,7 +21,7 @@ namespace MineralsRock
         {
             get
             {
-                float rate = 1f - submersibleFactor();
+                float rate = 1f - SubmersibleFactor();
                 return rate * rate;
             }
         }

@@ -30,18 +30,31 @@
             <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
             <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.4</mineableDropChance>
           </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>SolidIce_Rough</li>
-          </allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>SolidIce_Rough</li>
-          </neededNearbyTerrains>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>SolidIce_Rough</li>
+              </defNames>
+              <radius>0</radius>
+              <foundFactor>1</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_WeatheredGlacialIce</li>
+                <li>MR_SolidGlacialIce</li>
+              </defNames>
+              <radius>2</radius>
+              <foundFactor>2</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+              <scaleByDistance>true</scaleByDistance>
+            </li>
+          </nearbyThingAbundEffects>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>SolidIce</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -62,9 +75,9 @@
             <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.5</mineableDropChance>
           </building>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>SolidIce</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -81,9 +94,9 @@
             <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.6</mineableDropChance>
           </building>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>SolidIce</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -120,15 +133,27 @@
             <mineableThing MayRequire="zacharyfoster.mineralsfrozen">MF_ChunkIce</mineableThing>
             <mineableDropChance MayRequire="zacharyfoster.mineralsfrozen">0.2</mineableDropChance>
           </building>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>SolidIce_Rough</li>
-            <li>MR_WeatheredGlacialIce</li>
-          </neededNearbyTerrains>
-          <!-- Controls how extra clusters are added near assocaited ore-->
-          <associatedOres>
-            <li>MR_WeatheredGlacialIce</li>
-          </associatedOres>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>SolidIce_Rough</li>
+              </defNames>
+              <radius>0</radius>
+              <foundFactor>1</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_WeatheredGlacialIce</li>
+                <li>MR_SolidGlacialIce</li>
+              </defNames>
+              <radius>3</radius>
+              <foundFactor>2</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+              <scaleByDistance>true</scaleByDistance>
+            </li>
+          </nearbyThingAbundEffects>
         </ThingDef>
 
 
@@ -145,14 +170,25 @@
           <randomColorsTwo>
             <li>(230,240,255)</li>
           </randomColorsTwo>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>MR_SolidGlacialIce</li>
-          </neededNearbyTerrains>
-          <!-- Controls how extra clusters are added near assocaited ore-->
-          <associatedOres>
-            <li>MR_SolidGlacialIce</li>
-          </associatedOres>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>SolidIce_Rough</li>
+              </defNames>
+              <radius>0</radius>
+              <foundFactor>1</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_SolidGlacialIce</li>
+              </defNames>
+              <radius>1</radius>
+              <foundFactor>5</foundFactor>
+              <notFoundFactor>1</notFoundFactor>
+            </li>
+          </nearbyThingAbundEffects>
         </ThingDef>
 
 

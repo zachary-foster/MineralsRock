@@ -21,20 +21,30 @@
             <mineableThing>ChunkVacstone</mineableThing>
             <mineableDropChance>0.3</mineableDropChance>
           </building>
-          <!-- The terrains this can appear on. -->
-          <allowedTerrains>
-            <li>Vacstone_Rough</li>
-          </allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>MR_SolidVacstone</li>
-          </neededNearbyTerrains>
-          <!-- how far away it can be from needed nearby terrains-->
-          <neededNearbyTerrainRadius>1</neededNearbyTerrainRadius>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>Vacstone_Rough</li>
+              </defNames>
+              <radius>0</radius>
+              <foundFactor>1</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_SolidVacstone</li>
+              </defNames>
+              <radius>1</radius>
+              <foundFactor>2</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+              <scaleByArea>true</scaleByArea>
+            </li>
+          </nearbyThingAbundEffects>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>Vacstone</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -50,9 +60,9 @@
             <mineableDropChance>0.4</mineableDropChance>
           </building>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>Vacstone</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -69,9 +79,9 @@
             <smoothedThing>MR_SmoothedVacstone</smoothedThing>
           </building>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>Vacstone</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -100,19 +110,31 @@
             <mineableThing>ChunkVacstone</mineableThing>
             <mineableDropChance>.6</mineableDropChance>
           </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>Vacstone_Rough</li>
-          </allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>MR_HewnVacstone</li>
-            <li>MR_SolidVacstone</li>
-          </neededNearbyTerrains>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>Vacstone_Rough</li>
+              </defNames>
+              <radius>0</radius>
+              <foundFactor>1</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_WeatheredVacstone</li>
+              </defNames>
+              <radius>2</radius>
+              <foundFactor>10</foundFactor>
+              <notFoundFactor>1</notFoundFactor>
+              <scaleByArea>true</scaleByArea>
+              <scaleByDistance>true</scaleByDistance>
+            </li>
+          </nearbyThingAbundEffects>
           <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
+          <thingsToReplace>
             <li>ChunkVacstone</li>
-          </ThingsToReplace>
+          </thingsToReplace>
         </ThingDef>
 
 
@@ -127,22 +149,29 @@
             <mineableThing>ChunkVacstone</mineableThing>
             <mineableDropChance>0.3</mineableDropChance>
           </building>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-            <li>Vacstone_Rough</li>
-            <li>MR_SolidVacstone</li>
-            <li>MR_BoulderVacstone</li>
-            <li>MR_PassableVacstone</li>
-          </neededNearbyTerrains>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-          <allowedTerrains>
-            <li>Vacstone_Rough</li>
-          </allowedTerrains>
-          <!-- Controls how extra clusters are added near assocaited ore-->
-          <associatedOres>
-            <li>MR_BoulderVacstone</li>
-            <li>MR_SolidVacstone</li>
-          </associatedOres>
+          <!-- How nearby things or terrains affect spawn abundance -->
+          <nearbyThingAbundEffects>
+            <li>
+              <defNames>
+                <li>Vacstone_Rough</li>
+              </defNames>
+              <radius>0</radius>
+              <foundFactor>1</foundFactor>
+              <notFoundFactor>0</notFoundFactor>
+            </li>
+            <li>
+              <defNames>
+                <li>MR_BoulderVacstone</li>
+                <li>MR_WeatheredVacstone</li>
+                <li>MR_SolidVacstone</li>
+              </defNames>
+              <radius>2</radius>
+              <foundFactor>10</foundFactor>
+              <notFoundFactor>1</notFoundFactor>
+              <scaleByArea>true</scaleByArea>
+              <scaleByDistance>true</scaleByDistance>
+            </li>
+          </nearbyThingAbundEffects>
         </ThingDef>
 
 

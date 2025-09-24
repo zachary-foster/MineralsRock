@@ -27,18 +27,29 @@
       <mineableThing>ChunkSandstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Sandstone_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Sandstone_Rough</li>
-    </neededNearbyTerrains>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Sandstone_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_SolidSandstone</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Sandstone</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -68,9 +79,9 @@
       <mineableDropChance>0.5</mineableDropChance>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Sandstone</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -101,9 +112,9 @@
       <smoothedThing>MR_SmoothedSandstone</smoothedThing>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Sandstone</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -163,21 +174,35 @@
       <mineableThing>ChunkSandstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Sandstone_Rough</li>
-      <li>MR_WeatheredSandstone</li>
-      <li>Sandstone</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_WeatheredSandstone</li>
-      <li>Sandstone</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Sandstone_Rough</li>
+          <li>MR_WeatheredSandstone</li>
+          <li>Sandstone</li>
+        </defNames>
+        <radius>4</radius>
+        <foundFactor>2</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+        <scaleByDistance>true</scaleByDistance>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_WeatheredSandstone</li>
+          <li>Sandstone</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>10</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>ChunkSandstone</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -206,18 +231,22 @@
       <mineableThing>ChunkSandstone</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_BoulderSandstone</li>
-      <li>MR_WeatheredSandstone</li>
-      <li>Sandstone</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_WeatheredSandstone</li>
-      <li>MR_BoulderSandstone</li>
-      <li>Sandstone</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_BoulderSandstone</li>
+          <li>MR_WeatheredSandstone</li>
+          <li>Sandstone</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>3</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+        <scaleByArea>true</scaleByArea>
+        <scaleFalloff>2</scaleFalloff>
+      </li>
+    </nearbyThingAbundEffects>
   </ThingDef>
 
 
@@ -246,16 +275,18 @@
       <mineableThing>ChunkSandstone</mineableThing>
       <mineableDropChance>0.1</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_SolidSandstone</li>
-      <li>Sandstone</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_SolidSandstone</li>
-      <li>Sandstone</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_SolidSandstone</li>
+          <li>Sandstone</li>
+        </defNames>
+        <radius>4</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+    </nearbyThingAbundEffects>
   </ThingDef>
 
 

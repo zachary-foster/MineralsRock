@@ -12,19 +12,19 @@
     <description>Deposits of steel. Steel has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sulfur</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Sulfur</resourceDefName>
+        <dropProbability>0.3</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Steel</resourceDefName>
+        <dropProbability>10</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableSteel</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>1</mineSpeedFactor>
   </ThingDef>
@@ -40,19 +40,19 @@
     <description>Deposits of steel. Steel has a variety of uses as an economic metal, being abundant and easy to process. It can be strengthened by being mixed with other metals into alloys.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sulfur</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Sulfur</resourceDefName>
+        <dropProbability>0.3</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>11</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Steel</resourceDefName>
+        <dropProbability>11</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableSteel</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.9</mineSpeedFactor>
   </ThingDef>
@@ -68,19 +68,19 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Sulfur</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Sulfur</resourceDefName>
+        <dropProbability>0.3</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Steel</ResourceDefName>
-        <DropProbability>13</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Steel</resourceDefName>
+        <dropProbability>13</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableSteel</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.8</mineSpeedFactor>
   </ThingDef>
@@ -96,19 +96,19 @@
     <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>50</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>5</dropProbability>
+        <countPerDrop>50</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableSilver</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
@@ -124,19 +124,19 @@
     <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>50</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>6</dropProbability>
+        <countPerDrop>50</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableSilver</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.45</mineSpeedFactor>
   </ThingDef>
@@ -151,19 +151,19 @@
     <description>Deposits of Silver Ore. Silver Ore is useful as the primary currency for trading.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>60</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>6</dropProbability>
+        <countPerDrop>60</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableSilver</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.4</mineSpeedFactor>
   </ThingDef>
@@ -179,19 +179,19 @@
     <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>30</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <countPerDrop>30</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>5</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableGold</li>
-    </ThingsToReplace>
+    </thingsToReplace>
    <!-- How easy it is to mine -->
     <mineSpeedFactor>0.4</mineSpeedFactor>
   </ThingDef>
@@ -207,19 +207,19 @@
     <description>Deposits of Gold Ore. Gold Ore is a very valuable and precious metal. The allure of this rare beautiful metal is known to bring out terrible greed in people.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>30</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <countPerDrop>30</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>6</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableGold</li>
-    </ThingsToReplace>
+    </thingsToReplace>
    <!-- How easy it is to mine -->
     <mineSpeedFactor>0.35</mineSpeedFactor>
   </ThingDef>
@@ -234,19 +234,19 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Silver</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <CountPerDrop>30</CountPerDrop>
+        <resourceDefName>Silver</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <countPerDrop>30</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Gold</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Gold</resourceDefName>
+        <dropProbability>7</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableGold</li>
-    </ThingsToReplace>
+    </thingsToReplace>
    <!-- How easy it is to mine -->
     <mineSpeedFactor>0.3</mineSpeedFactor>
   </ThingDef>
@@ -262,18 +262,18 @@
     <description>Rock containing bits of jade.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>6</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Jade</resourceDefName>
+        <dropProbability>6</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <resourceDefName>RoughGem</resourceDefName>
+        <dropProbability>1</dropProbability>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableJade</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
@@ -289,18 +289,18 @@
     <description>Rock containing bits of jade.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>9</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Jade</resourceDefName>
+        <dropProbability>9</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>1</DropProbability>
+        <resourceDefName>RoughGem</resourceDefName>
+        <dropProbability>1</dropProbability>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableJade</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.55</mineSpeedFactor>
   </ThingDef>
@@ -316,18 +316,18 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Jade</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Jade</resourceDefName>
+        <dropProbability>10</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>RoughGem</ResourceDefName>
-        <DropProbability>2</DropProbability>
+        <resourceDefName>RoughGem</resourceDefName>
+        <dropProbability>2</dropProbability>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableJade</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
@@ -339,39 +339,39 @@
     <description>Ancient plasteel-rich machinery, compacted over time and weatherd by the elements. Can be mined for plasteel.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Plasteel</resourceDefName>
+        <dropProbability>3</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>AluminiumBar</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>Mechanism</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <minMiningSkill>5</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>8</MinMiningSkill>
+        <resourceDefName>ElectronicComponents</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>8</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>ComponentIndustrial</resourceDefName>
+        <dropProbability>0.3</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.02</DropProbability>
-        <MinMiningSkill>10</MinMiningSkill>
+        <resourceDefName>ComponentSpacer</resourceDefName>
+        <dropProbability>0.02</dropProbability>
+        <minMiningSkill>10</minMiningSkill>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineablePlasteel</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.35</mineSpeedFactor>
   </ThingDef>
@@ -383,39 +383,39 @@
     <description>Ancient plasteel-rich machinery, compacted over time. Can be mined for plasteel.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>3.5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Plasteel</resourceDefName>
+        <dropProbability>3.5</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>AluminiumBar</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>Mechanism</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <minMiningSkill>5</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.08</DropProbability>
-        <MinMiningSkill>8</MinMiningSkill>
+        <resourceDefName>ElectronicComponents</resourceDefName>
+        <dropProbability>0.08</dropProbability>
+        <minMiningSkill>8</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>0.4</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>ComponentIndustrial</resourceDefName>
+        <dropProbability>0.4</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <MinMiningSkill>10</MinMiningSkill>
+        <resourceDefName>ComponentSpacer</resourceDefName>
+        <dropProbability>0.03</dropProbability>
+        <minMiningSkill>10</minMiningSkill>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineablePlasteel</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- If the primary color is based on the stone below it -->
     <coloredByTerrain>false</coloredByTerrain>
     <!-- How easy it is to mine -->
@@ -429,39 +429,39 @@
     <description>Ancient plasteel-rich machinery, compacted over time. Can be mined for plasteel.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>4</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Plasteel</resourceDefName>
+        <dropProbability>4</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>0.7</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>AluminiumBar</resourceDefName>
+        <dropProbability>0.7</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.15</DropProbability>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>Mechanism</resourceDefName>
+        <dropProbability>0.15</dropProbability>
+        <minMiningSkill>5</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <MinMiningSkill>8</MinMiningSkill>
+        <resourceDefName>ElectronicComponents</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <minMiningSkill>8</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>ComponentIndustrial</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>10</MinMiningSkill>
+        <resourceDefName>ComponentSpacer</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>10</minMiningSkill>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineablePlasteel</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.25</mineSpeedFactor>
   </ThingDef>
@@ -474,39 +474,39 @@
     <description>Ancient machinery, compacted over time. Can be mined for useful components.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>AluminiumBar</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>1.5</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Plasteel</resourceDefName>
+        <dropProbability>1.5</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>Mechanism</resourceDefName>
+        <dropProbability>0.3</dropProbability>
+        <minMiningSkill>5</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <MinMiningSkill>8</MinMiningSkill>
+        <resourceDefName>ElectronicComponents</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <minMiningSkill>8</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>ComponentIndustrial</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>10</MinMiningSkill>
+        <resourceDefName>ComponentSpacer</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>10</minMiningSkill>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableComponentsIndustrial</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
@@ -518,54 +518,54 @@
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>AluminiumBar</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Plasteel</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>2.5</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>ComponentIndustrial</resourceDefName>
+        <dropProbability>2.5</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>Mechanism</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <minMiningSkill>5</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>10</MinMiningSkill>
+        <resourceDefName>ComponentSpacer</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>10</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>AdvMechanism</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <MinMiningSkill>12</MinMiningSkill>
+        <resourceDefName>AdvMechanism</resourceDefName>
+        <dropProbability>0.03</dropProbability>
+        <minMiningSkill>12</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Electronics</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <MinMiningSkill>14</MinMiningSkill>
+        <resourceDefName>Electronics</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <minMiningSkill>14</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.3</DropProbability>
-        <MinMiningSkill>8</MinMiningSkill>
+        <resourceDefName>ElectronicComponents</resourceDefName>
+        <dropProbability>0.3</dropProbability>
+        <minMiningSkill>8</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Microchips</ResourceDefName>
-        <DropProbability>0.03</DropProbability>
-        <MinMiningSkill>16</MinMiningSkill>
+        <resourceDefName>Microchips</resourceDefName>
+        <dropProbability>0.03</dropProbability>
+        <minMiningSkill>16</minMiningSkill>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableComponentsIndustrial</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.4</mineSpeedFactor>
   </ThingDef>
@@ -577,54 +577,54 @@
     <description>Ancient machinery, compacted over time. Can be mined for useful components. This deposite has been protected from the elements for a long time.</description>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>AluminiumBar</ResourceDefName>
-        <DropProbability>2</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>AluminiumBar</resourceDefName>
+        <dropProbability>2</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>Plasteel</ResourceDefName>
-        <DropProbability>3</DropProbability>
-        <CountPerDrop>10</CountPerDrop>
+        <resourceDefName>Plasteel</resourceDefName>
+        <dropProbability>3</dropProbability>
+        <countPerDrop>10</countPerDrop>
       </li>
       <li>
-        <ResourceDefName>ComponentIndustrial</ResourceDefName>
-        <DropProbability>3</DropProbability>
-        <MinMiningSkill>3</MinMiningSkill>
+        <resourceDefName>ComponentIndustrial</resourceDefName>
+        <dropProbability>3</dropProbability>
+        <minMiningSkill>3</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Mechanism</ResourceDefName>
-        <DropProbability>0.7</DropProbability>
-        <MinMiningSkill>5</MinMiningSkill>
+        <resourceDefName>Mechanism</resourceDefName>
+        <dropProbability>0.7</dropProbability>
+        <minMiningSkill>5</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ComponentSpacer</ResourceDefName>
-        <DropProbability>0.1</DropProbability>
-        <MinMiningSkill>10</MinMiningSkill>
+        <resourceDefName>ComponentSpacer</resourceDefName>
+        <dropProbability>0.1</dropProbability>
+        <minMiningSkill>10</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>AdvMechanism</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>12</MinMiningSkill>
+        <resourceDefName>AdvMechanism</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>12</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Electronics</ResourceDefName>
-        <DropProbability>0.2</DropProbability>
-        <MinMiningSkill>14</MinMiningSkill>
+        <resourceDefName>Electronics</resourceDefName>
+        <dropProbability>0.2</dropProbability>
+        <minMiningSkill>14</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>ElectronicComponents</ResourceDefName>
-        <DropProbability>0.5</DropProbability>
-        <MinMiningSkill>8</MinMiningSkill>
+        <resourceDefName>ElectronicComponents</resourceDefName>
+        <dropProbability>0.5</dropProbability>
+        <minMiningSkill>8</minMiningSkill>
       </li>
       <li>
-        <ResourceDefName>Microchips</ResourceDefName>
-        <DropProbability>0.05</DropProbability>
-        <MinMiningSkill>16</MinMiningSkill>
+        <resourceDefName>Microchips</resourceDefName>
+        <dropProbability>0.05</dropProbability>
+        <minMiningSkill>16</minMiningSkill>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableComponentsIndustrial</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.3</mineSpeedFactor>
   </ThingDef>
@@ -640,14 +640,14 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Uranium</ResourceDefName>
-        <DropProbability>7</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Uranium</resourceDefName>
+        <dropProbability>7</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableUranium</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
@@ -663,14 +663,14 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Uranium</ResourceDefName>
-        <DropProbability>9</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Uranium</resourceDefName>
+        <dropProbability>9</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableUranium</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>
@@ -686,14 +686,14 @@
     </graphicData>
     <randomlyDropResources>
       <li>
-        <ResourceDefName>Uranium</ResourceDefName>
-        <DropProbability>10</DropProbability>
-        <CountPerDrop>5</CountPerDrop>
+        <resourceDefName>Uranium</resourceDefName>
+        <dropProbability>10</dropProbability>
+        <countPerDrop>5</countPerDrop>
       </li>
     </randomlyDropResources>
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>MineableUranium</li>
-    </ThingsToReplace>
+    </thingsToReplace>
     <!-- How easy it is to mine -->
     <mineSpeedFactor>0.5</mineSpeedFactor>
   </ThingDef>

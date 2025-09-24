@@ -12,9 +12,6 @@
         <ThingDef ParentName="MR_WeatheredIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_SolidIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_HewnIronBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="MR_WeatheredCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="MR_SolidCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-        <ThingDef ParentName="MR_HewnCoalBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_WeatheredSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_SolidSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_HewnSaltBase" Class="MineralsFramework.ThingDef_StaticMineral" />
@@ -39,93 +36,6 @@
         <ThingDef ParentName="MR_WeatheredGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_SolidGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
         <ThingDef ParentName="MR_HewnGoldOreBase" Class="MineralsFramework.ThingDef_StaticMineral" />
-
-
-        <ThingDef ParentName="WeatheredClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-	      	<allowedTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-	      	</allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-          </neededNearbyTerrains>
-          <building>
-            <mineableThing>DankPyon_ChunkClay</mineableThing>
-            <mineableDropChance>0.4</mineableDropChance>
-          </building>
-          <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
-            <li>DankPyon_NaturalWall_Clay</li>
-          </ThingsToReplace>
-        </ThingDef>
-        
-        <ThingDef ParentName="SolidClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <building>
-            <mineableThing>DankPyon_ChunkClay</mineableThing>
-            <mineableDropChance>0.5</mineableDropChance>
-          </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-	      	<allowedTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-	      	</allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-          </neededNearbyTerrains>
-          <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
-            <li>DankPyon_NaturalWall_Clay</li>
-          </ThingsToReplace>
-        </ThingDef>
-
-        <ThingDef ParentName="HewnClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <building>
-            <mineableThing>DankPyon_ChunkClay</mineableThing>
-            <mineableDropChance>0.6</mineableDropChance>
-          </building>
-          <!-- The terrains this can appear on. The default is rocky terrains-->
-	      	<allowedTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-	      	</allowedTerrains>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-          </neededNearbyTerrains>
-          <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
-            <li>DankPyon_NaturalWall_Clay</li>
-          </ThingsToReplace>
-        </ThingDef>
-        
-        <ThingDef ParentName="SmoothedClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <building>
-            <mineableThing>DankPyon_ChunkClay</mineableThing>
-            <mineableDropChance>0.6</mineableDropChance>
-          </building>
-        </ThingDef>
-        
-        <ThingDef ParentName="BoulderClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <building>
-            <mineableThing>DankPyon_ChunkClay</mineableThing>
-            <mineableDropChance>0.3</mineableDropChance>
-          </building>
-          <!-- The terrains this must be near to, but not necessarily on -->
-          <neededNearbyTerrains>
-	      		<li>DankPyon_NaturalWall_Clay_Rough</li>
-          </neededNearbyTerrains>
-          <!-- Things this mineral replaces when a map is initialized -->
-          <ThingsToReplace>
-            <li>DankPyon_ChunkClay</li>
-          </ThingsToReplace>
-        </ThingDef>
-        
-        <ThingDef ParentName="PassableClaystoneBase" Class="MineralsFramework.ThingDef_StaticMineral">
-          <building>
-            <mineableThing>DankPyon_ChunkClay</mineableThing>
-            <mineableDropChance>0.1</mineableDropChance>
-          </building>
-        </ThingDef>
 
       </value>
     </match>

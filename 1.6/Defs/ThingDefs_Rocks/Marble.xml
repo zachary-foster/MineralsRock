@@ -19,23 +19,29 @@
       <mineableThing>ChunkMarble</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <!-- The terrains this can appear on. -->
-    <allowedTerrains>
-      <li>Marble_Rough</li>
-    </allowedTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Marble_Rough</li>
-    </neededNearbyTerrains>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <associatedOres>
-      <li>MR_SolidMarble</li>
-      <li>Marble</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Marble_Rough</li>
+        </defNames>
+        <radius>0</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_SolidMarble</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Marble</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -57,9 +63,9 @@
       <mineableDropChance>0.3</mineableDropChance>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Marble</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -82,9 +88,9 @@
       <smoothedThing>MR_SmoothedMarble</smoothedThing>
     </building>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>Marble</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -125,22 +131,36 @@
       <mineableThing>ChunkMarble</mineableThing>
       <mineableDropChance>0.6</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>Marble_Rough</li>
-      <li>MR_WeatheredMarble</li>
-      <li>MR_SolidMarble</li>
-      <li>Marble</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_WeatheredMarble</li>
-      <li>Marble</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>Marble_Rough</li>
+          <li>MR_WeatheredMarble</li>
+          <li>MR_SolidMarble</li>
+          <li>Marble</li>
+        </defNames>
+        <radius>8</radius>
+        <foundFactor>5</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_WeatheredMarble</li>
+          <li>Marble</li>
+        </defNames>
+        <radius>2</radius>
+        <foundFactor>10</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+        <scaleFalloff>0.5</scaleFalloff>
+      </li>
+    </nearbyThingAbundEffects>
     <!-- Things this mineral replaces when a map is initialized -->
-    <ThingsToReplace>
+    <thingsToReplace>
       <li>ChunkMarble</li>
-    </ThingsToReplace>
+    </thingsToReplace>
   </ThingDef>
 
 
@@ -161,20 +181,34 @@
       <mineableThing>ChunkMarble</mineableThing>
       <mineableDropChance>0.3</mineableDropChance>
     </building>
-    <!-- The terrains this must be near to, but not necessarily on -->
-    <neededNearbyTerrains>
-      <li>MR_BoulderMarble</li>
-      <li>MR_WeatheredMarble</li>
-      <li>MR_SolidMarble</li>
-      <li>Marble_Rough</li>
-      <li>Marble</li>
-    </neededNearbyTerrains>
-    <!-- Controls how extra clusters are added near assocaited ore-->
-    <associatedOres>
-      <li>MR_BoulderMarble</li>
-      <li>MR_WeatheredMarble</li>
-      <li>Marble</li>
-    </associatedOres>
+    <!-- How nearby things or terrains affect spawn abundance -->
+    <nearbyThingAbundEffects>
+      <li>
+        <defNames>
+          <li>MR_BoulderMarble</li>
+          <li>MR_WeatheredMarble</li>
+          <li>MR_SolidMarble</li>
+          <li>Marble_Rough</li>
+          <li>Marble</li>
+        </defNames>
+        <radius>3</radius>
+        <foundFactor>1</foundFactor>
+        <notFoundFactor>0</notFoundFactor>
+        <scaleByDistance>true</scaleByDistance>
+        <scaleFalloff>2</scaleFalloff>
+      </li>
+      <li>
+        <defNames>
+          <li>MR_BoulderMarble</li>
+          <li>MR_WeatheredMarble</li>
+          <li>Marble</li>
+        </defNames>
+        <radius>1</radius>
+        <foundFactor>15</foundFactor>
+        <notFoundFactor>1</notFoundFactor>
+        <scaleByArea>true</scaleByArea>
+      </li>
+    </nearbyThingAbundEffects>
   </ThingDef>
 
 
